@@ -1,1 +1,1 @@
-//le Fichier  qui permet de de creer des atoms
+//le Fichier  qui permet de creer des atoms
