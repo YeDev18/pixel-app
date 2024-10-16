@@ -12,7 +12,6 @@ const Button = ({
 			{children}
 			<span className="bg-black rounded-full p-1 text-white text-xl">
 				<Icon icon="basil:arrow-right-solid" />
-				<span></span>
 			</span>
 		</button>
 	);
