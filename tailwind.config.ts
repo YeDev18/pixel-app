@@ -13,7 +13,7 @@ const config: Config = {
           850: '#dc0000'
         },
       blue:{
-        800:'#0a2b38'
+        800:'#071E27'
       },
       light:{
         700:"#fae3cf"
