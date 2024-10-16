@@ -11,8 +11,6 @@
   --foreground: #171717;
 }
 
-
-
 @layer base{
   *,::after,::before{
   padding: 0;
@@ -25,25 +23,20 @@ body {
 }
 }
 
-<<<<<<< HEAD
 body {
-  color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   color:#FAE3CF;
 }
-=======
->>>>>>> main
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
-<<<<<<< HEAD
+
 .neon-effect {
   box-shadow: 0 0 20px #00f, 0 0 40px #00f, 0 0 60px #00f, 0 0 80px #00f;
 }
-=======
 
->>>>>>> main
+
