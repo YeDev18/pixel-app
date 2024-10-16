@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  /* --background: #ffffff; */
+  --background:#071e27;
+  /* --background:#0a2b38; */
+  
+  /* --background:linear-gradient(90deg, #041117, #0a2b38, #041117); */
   --foreground: #171717;
 }
 
@@ -18,10 +22,14 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  color:#FAE3CF;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+.neon-effect {
+  box-shadow: 0 0 20px #00f, 0 0 40px #00f, 0 0 60px #00f, 0 0 80px #00f;
 }
