@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import '@fontsource-variable/montserrat';
 import type { Metadata } from "next";
+
 // import localFont from "next/font/local";
 
 // const geistSans = localFont({
