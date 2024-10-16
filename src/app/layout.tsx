@@ -1,3 +1,4 @@
+import Footer from "@/core/components/organisms/footer/footer";
 import "@/styles/globals.css";
 import '@fontsource-variable/montserrat';
 import type { Metadata } from "next";
@@ -30,6 +31,7 @@ export default function RootLayout({
         className={`antialiased`}
       >
         {children}
+        <Footer/>
       </body>
     </html>
   );
