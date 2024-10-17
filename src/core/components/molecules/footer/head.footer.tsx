@@ -9,7 +9,7 @@ const HeadFooter = () => {
 			<div className="flex lg:space-y-3 flex-col max-md:w-screen max-md:items-center max-lg:gap-3 md:flex-row md:items-center lg:flex-col lg:items-start">
 				<Logo />
 				<p className="text-sm w-fit lg:w-80 max-md:text-center font-medium">
-					Bienvenue a Pixel Innov: Marketing par excellence.
+					Bienvenue a Pixel Innov : Marketing par excellence.
 					Measurable results.
 				</p>
 			</div>
