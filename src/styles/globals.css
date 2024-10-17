@@ -3,28 +3,27 @@
 @tailwind utilities;
 
 :root {
-  --background: #071E27;
-  --foreground: #171717;
+	--background: #071e27;
+	--foreground: #171717;
 }
 
-
-
-@layer base{
-  *,::after,::before{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+@layer base {
+	*,
+	::after,
+	::before {
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+		overflow-x: hidden;
+	}
+	body {
+		background: var(--background);
+		font-family: "Montserrat Variable", sans-serif;
+	}
 }
-body {
-  background: var(--background);
- font-family: 'Montserrat Variable', sans-serif;
-}
-}
-
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+	.text-balance {
+		text-wrap: balance;
+	}
 }
-

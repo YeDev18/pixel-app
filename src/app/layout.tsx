@@ -1,6 +1,6 @@
 import Footer from "@/core/components/organisms/footer/footer";
 import "@/styles/globals.css";
-import '@fontsource-variable/montserrat';
+import "@fontsource-variable/montserrat";
 import type { Metadata } from "next";
 // import localFont from "next/font/local";
 
@@ -16,23 +16,21 @@ import type { Metadata } from "next";
 // });
 
 export const metadata: Metadata = {
-  title: "Pixel App",
-  description: "Pixel app",
+	title: "Pixel App",
+	description: "Pixel app",
 };
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body
-        className={`antialiased`}
-      >
-        {children}
-        <Footer/>
-      </body>
-    </html>
-  );
+	return (
+		<html lang="en">
+			<body className={`pb-8 px-8 antialiased`}>
+				{children}
+				<Footer />
+			</body>
+		</html>
+	);
 }
