@@ -1,8 +1,9 @@
+import Success from "@/core/components/organisms/success/success";
 
 export default function Home() {
-  return (
-    <div className=" flex items-center justify-center w-screen bg-blue-950 h-screen">
-      <h1 className="text-3xl font-bold text-light-700">Pixel app</h1>
-    </div>
-  );
+	return (
+		<div className=" bg-blue-950 container mx-auto py-8">
+			<Success />
+		</div>
+	);
 }

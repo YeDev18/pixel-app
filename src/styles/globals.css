@@ -22,6 +22,18 @@
 	}
 }
 
+@layer components {
+	.card:nth-child(5),
+	.card:nth-child(6) {
+		display: none;
+	}
+	/* .card_G:nth-of-type(2n + 1) {
+		border: 1px solid blue;
+		background-color: rgb(95, 58, 1);
+		height: 500px;
+	} */
+}
+
 @layer utilities {
 	.text-balance {
 		text-wrap: balance;
