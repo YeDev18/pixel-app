@@ -12,7 +12,7 @@ const Card = () => {
 					key={index}
 					className={`text-light-100 relative max-lg:card rounded-[2.5rem] shadow-sm border border-blue-900 place-items-center ${index === 0 && " row-span-8"} ${index === 2 && " row-span-8"} ${index === 3 && " lg:row-span-8"}`}
 				>
-					<div className="w-full bg-red-600 h-full">
+					<div className="w-full h-full">
 						<Image
 							src={data.image}
 							alt="Picture of the author"

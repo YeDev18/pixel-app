@@ -32,6 +32,10 @@
 		background-color: rgb(95, 58, 1);
 		height: 500px;
 	} */
+	 .makingContactBg {
+		background-image: url('../assets/bg-pixel.webp');
+
+	 }
 }
 
 @layer utilities {
