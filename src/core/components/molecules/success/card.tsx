@@ -1,6 +1,7 @@
 import { SuccessData } from "@/core/data/success.data";
 import { Icon } from "@iconify/react";
 import Image from "next/image";
+import Tags from "../../atoms/Tags";
 
 const Card = () => {
 	return (
@@ -33,17 +34,7 @@ const Card = () => {
 
 						<p>{data.describe}</p>
 					</div>
-
-					<p className="absolute inset-4 text-blue-950 font-semibold flex  gap-4">
-						{data.tags.map((tag, index) => (
-							<span
-								key={index}
-								className="bg-light-100/60 backdrop-blur-md size-fit py-2 px-6 rounded-2xl shadow-md"
-							>
-								{tag}
-							</span>
-						))}
-					</p>
+					<Tags tags={data.tags} />
 				</div>
 			))}
 		</div>

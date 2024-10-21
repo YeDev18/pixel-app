@@ -2,7 +2,7 @@ import Card from "../../molecules/success/card";
 
 const Success = () => {
 	return (
-		<div>
+		<div className="container mx-auto">
 			<Card />
 		</div>
 	);
