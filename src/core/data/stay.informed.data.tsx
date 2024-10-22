@@ -1,6 +1,6 @@
-import img1 from "@/assets/blog/bg-12.webp";
-import img5 from "@/assets/blog/bg-13.webp";
-import img6 from "@/assets/blog/bg-14.webp";
+import img1 from "@/public/assets/blog/bg-12.webp";
+import img5 from "@/public/assets/blog/bg-13.webp";
+import img6 from "@/public/assets/blog/bg-14.webp";
 
 export const InformationInspiration = [
 	{

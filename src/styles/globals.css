@@ -33,7 +33,7 @@
 		height: 500px;
 	} */
 	.makingContactBg {
-		background-image: url("../assets/bg-pixel.webp");
+		background-image: url("../public/assets/BgPixel.webp");
 	}
 	input {
 		width: 18rem;
