@@ -1,4 +1,4 @@
-const TitleValue = ({
+const HeadSectionAbout = ({
 	head,
 	information,
 }: { head: string; information: string }) => {
@@ -14,4 +14,4 @@ const TitleValue = ({
 	);
 };
 
-export default TitleValue;
+export default HeadSectionAbout;

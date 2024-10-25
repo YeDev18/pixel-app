@@ -1,13 +1,12 @@
-import TitleValue from "../../molecules/about/values/title.about";
+import Map from "../../organisms/about/map/map";
+import Value from "../../organisms/about/values/values";
 
 const AboutAll = () => {
 	return (
-		<section className=" content-center text-center text-light-100">
-			<TitleValue
-				head="Nos Valeurs"
-				information="The Team Behind Your Digital Success"
-			/>
-		</section>
+		<div className="container mx-auto space-y-16">
+			<Value />
+			<Map />
+		</div>
 	);
 };
 
