@@ -4,7 +4,8 @@
 
 :root {
   /* --background: #ffffff; */
-  --background:#071e27;
+  /* --background:#071e27; */
+  --background:#020a0d;
   /* --background:#0a2b38; */
   
   /* --background:linear-gradient(90deg, #041117, #0a2b38, #041117); */
@@ -35,4 +36,53 @@ body {
   }
 }
 
+@layer components {
+  .bgheader {
+    /* background-image: linear-gradient(to bottom, #075c79, #094f68, #0b4357, #0b3747, #0a2b38); */
+    background: rgb(10,43,56);
+background: radial-gradient(circle, rgba(10,43,56,1) 0%, rgba(0,100,140,0.1) 58%, rgba(10,43,56,1) 100%);
+  }
+}
+
+
+.header-nav {
+  transition: max-height 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-scroll-left {
+  animation: scroll-left 20s linear infinite;
+}
+
+.animate-scroll-right {
+  animation: scroll-right 20s linear infinite;
+}
+
+.card {
+  min-width: 374px;
+  min-height: 220px; /* Ajustez la largeur en fonction de votre design */
+  background-color: #000; /* Couleur de fond de la carte */
+  box-shadow: 0 2px 5px rgba(18, 7, 28, 1); /* Ombre de la carte */
+  border-radius: 40px; /* Arrondir les bords des cartes */
+}
 

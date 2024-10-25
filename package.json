@@ -9,11 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@flaticon/flaticon-uicons": "^3.3.1",
     "@fontsource-variable/montserrat": "^5.1.0",
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@iconify/react": "^5.0.2",
     "eslint-plugin-tailwindcss": "^3.17.5",
     "next": "14.2.15",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-router-dom": "^6.27.0",
+    "sharp": "^0.33.5"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.3",

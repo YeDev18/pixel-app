@@ -1,61 +1,55 @@
-// import arrowLink from '@/app/img/arrow-link.svg';
-import BrandDesign from '@/app/img/BrandDesignStrategy.svg';
-import googleAds from '@/app/img/GoogleAds.svg';
-import marketing from '@/app/img/MarketingConsulting.svg';
-import sales from '@/app/img/SalesMarketingDepartmentAudit.svg';
-import salesScratch from '@/app/img/SalesDepartmentsFromScratch.svg';
-import smm from '@/app/img/SMM.svg';
-import web from '@/app/img/WebDevelopment.svg';
-import seo from '@/app/img/SEO.svg';
-import email from '@/app/img/EmailMarketing.svg';
-// import extention from '@/app/img/Extention.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPalette, faAd, faBullhorn, faChartLine, faSitemap, faDesktop, faSearch, faMailBulk } from '@fortawesome/free-solid-svg-icons';
 
-const svgData = [
+
+const servicedata = [
   {
     id: 1,
-    name: "Brand Design & Strategy",
-    svg: BrandDesign,
+    name: "Web Development",
+    icon: <FontAwesomeIcon icon={faDesktop} />,
   },
   {
     id: 2,
-    name: "Google Ads",
-    svg: googleAds,
+    name: "Sales & Marketing Audit",
+    icon: <FontAwesomeIcon icon={faChartLine} />,
   },
   {
     id: 3,
     name: "Marketing Consulting",
-    svg: marketing,
+    icon: <FontAwesomeIcon icon={faBullhorn} />,
   },
   {
     id: 4,
-    name: "Sales & Marketing Department Audit",
-    svg: sales,
+    
+    name: "Brand Design & Strategy",
+    icon: <FontAwesomeIcon icon={faPalette} />,
   },
   {
     id: 5,
-    name: "Sales Departments from Scratch",
-    svg: salesScratch,
+    name: "Email Marketing",
+    icon: <FontAwesomeIcon icon={faMailBulk} />,
   },
   {
     id: 6,
-    name: "Social Media Marketing",
-    svg: smm,
+    name: "Sales Departments from Scratch",
+    icon: <FontAwesomeIcon icon={faSitemap} />,
+    
   },
   {
     id: 7,
-    name: "Web Development",
-    svg: web,
+    name: "Google Ads",
+    icon: <FontAwesomeIcon icon={faAd} />,
   },
   {
     id: 8,
-    name: "SEO",
-    svg: seo,
+    name: "Social Media Marketing",
+    icon: <FontAwesomeIcon icon={faBullhorn} />,
   },
   {
     id: 9,
-    name: "Email Marketing",
-    svg: email,
+    name: "SEO",
+    icon: <FontAwesomeIcon icon={faSearch} />,
   },
 ];
 
-export default svgData;
+export default servicedata;
