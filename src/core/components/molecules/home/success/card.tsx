@@ -1,7 +1,7 @@
 import { SuccessData } from "@/core/data/success.data";
 import { Icon } from "@iconify/react";
 import Image from "next/image";
-import Tags from "../../atoms/Tags";
+import Tags from "../../../atoms/Tags";
 
 const Card = () => {
 	return (

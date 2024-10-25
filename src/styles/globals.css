@@ -27,11 +27,6 @@
 	.card:nth-child(6) {
 		display: none;
 	}
-	/* .card_G:nth-of-type(2n + 1) {
-		border: 1px solid blue;
-		background-color: rgb(95, 58, 1);
-		height: 500px;
-	} */
 	.makingContactBg {
 		background-image: url("../public/assets/BgPixel.webp");
 	}
@@ -59,6 +54,14 @@
 		cursor: pointer;
 		box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px
 			2px;
+	}
+	.ombre {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		/* background-color: none; */
+		box-shadow: 0 0 60px 30px #fae3cf, /* inner light-100 */ 0 0 100px 60px
+			#1b4c5e, /* middle blue-500 */ 0 10px 200px 90px #0ff; /* outer cyan */
 	}
 }
 

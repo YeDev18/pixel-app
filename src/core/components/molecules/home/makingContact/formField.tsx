@@ -1,6 +1,6 @@
-import { InputButton } from "../../atoms/input-button";
-import InputEmail from "../../atoms/input-email";
-import InputText from "../../atoms/input-text";
+import { InputButton } from "@/core/components/atoms/input-button";
+import InputEmail from "@/core/components/atoms/input-email";
+import InputText from "@/core/components/atoms/input-text";
 
 const FormField = () => {
 	return (

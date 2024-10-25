@@ -1,4 +1,4 @@
-import Card from "../../molecules/success/card";
+import Card from "../../../molecules/home/success/card";
 
 const Success = () => {
 	return (
