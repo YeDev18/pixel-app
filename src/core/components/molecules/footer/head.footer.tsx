@@ -5,10 +5,10 @@ import Logo from "../../atoms/Logo";
 
 const HeadFooter = () => {
 	return (
-		<div className="text-light-100 flex flex-wrap gap-y-8 items-center max-sm:justify-center max-sm:gap-x-4 justify-between ">
-			<div className="flex lg:space-y-3 flex-col max-md:w-screen max-md:items-center max-lg:gap-3 md:flex-row md:items-center lg:flex-col lg:items-start">
+		<div className="flex flex-wrap items-center justify-between gap-y-8 text-light-100 max-sm:justify-center max-sm:gap-x-4 ">
+			<div className="flex flex-col max-lg:gap-3 max-md:w-screen max-md:items-center md:flex-row md:items-center lg:flex-col lg:items-start lg:space-y-3">
 				<Logo />
-				<p className="text-sm w-fit lg:w-80 max-md:text-center font-medium">
+				<p className="w-fit text-sm font-medium max-md:text-center lg:w-80">
 					Bienvenue a Pixel Innov : Marketing par excellence.
 					Measurable results.
 				</p>
@@ -17,9 +17,9 @@ const HeadFooter = () => {
 				{Menus.map((menu, index) => {
 					return (
 						<Link
-							href="/"
+							href={menu.href}
 							key={index}
-							className="font-medium  whitespace-nowrap"
+							className="whitespace-nowrap  font-medium"
 						>
 							{menu.label}
 						</Link>

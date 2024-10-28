@@ -6,33 +6,35 @@ import Tags from "../../../atoms/Tags";
 const Card = () => {
 	return (
 		<div
-			className={` grid grid-cols  md:grid-cols-2 lg:grid-cols-3 gap-4 relative`}
+			className={` relative grid grid-cols-1  gap-4 md:grid-cols-2 lg:grid-cols-3`}
 		>
 			{SuccessData.map((data, index) => (
 				<div
 					key={index}
-					className={`text-light-100 relative max-lg:card rounded-[2.5rem] shadow-sm border border-blue-900 place-items-center ${index === 0 && " row-span-8"} ${index === 2 && " row-span-8"} ${index === 3 && " lg:row-span-8"}`}
+					className={`max-lg:card relative place-items-center rounded-[2.5rem] border border-blue-900 text-light-100 shadow-sm ${index === 0 && " row-span-8"} ${index === 2 && " row-span-8"} ${index === 3 && " lg:row-span-8"}`}
 				>
-					<div className="w-full h-full">
+					<div className="size-full">
 						<Image
 							src={data.image}
 							alt="Picture of the author"
-							className="w-full h-full "
+							className="aspect-auto size-full "
 						/>
 					</div>
-					<div className="z-10 p-8 flex flex-col  justify-center absolute space-y-4 bottom-0 bg-light-100/60 backdrop-blur  rounded-t-3xl  text-justify  text-blue-950 h-[35%]">
-						<div className=" flex justify-between items-center text-blue-950">
-							<h1 className="text-2xl font-semibold">
+					<div className="absolute bottom-0 z-10 flex  min-h-fit flex-col  justify-center space-y-4 rounded-t-3xl bg-light-100/60 p-8  text-blue-950  backdrop-blur xl:h-2/5">
+						<div className=" flex h-fit items-center justify-between text-blue-950">
+							<h1 className="whitespace-nowrap text-lg font-semibold xl:text-2xl">
 								{data.lib}
 							</h1>
 
 							<Icon
 								icon="emojione-monotone:up-right-arrow"
-								className="text-2xl"
+								className="text-lg xl:text-2xl"
 							/>
 						</div>
 
-						<p>{data.describe}</p>
+						<p className=" text-pretty text-sm lg:text-justify">
+							{data.describe}
+						</p>
 					</div>
 					<Tags tags={data.tags} />
 				</div>

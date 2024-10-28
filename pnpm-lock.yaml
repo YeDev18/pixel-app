@@ -14,6 +14,9 @@ importers:
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
+      eslint-plugin-tailwindcss:
+        specifier: ^3.17.5
+        version: 3.17.5(tailwindcss@3.4.13)
       framer-motion:
         specifier: ^11.11.9
         version: 11.11.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -27,6 +30,9 @@ importers:
         specifier: ^18
         version: 18.3.1(react@18.3.1)
     devDependencies:
+      '@angular-eslint/template-parser':
+        specifier: ^18.4.0
+        version: 18.4.0(eslint@8.57.1)(typescript@5.6.3)
       '@biomejs/biome':
         specifier: 1.9.3
         version: 1.9.3
@@ -63,6 +69,15 @@ packages:
   '@alloc/quick-lru@5.2.0':
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
     engines: {node: '>=10'}
+
+  '@angular-eslint/bundled-angular-compiler@18.4.0':
+    resolution: {integrity: sha512-HlFHt2qgdd+jqyVIkCXmrjHauXo/XY3Rp0UNabk83ejGi/raM/6lEFI7iFWzHxLyiAKk4OgGI5W26giSQw991A==}
+
+  '@angular-eslint/template-parser@18.4.0':
+    resolution: {integrity: sha512-VTep3Xd3IOaRIPL+JN/TV4/2DqUPbjtF3TNY15diD/llnrEhqFnmsvMihexbQyTqzOG+zU554oK44YfvAtHOrw==}
+    peerDependencies:
+      eslint: ^8.57.0 || ^9.0.0
+      typescript: '*'
 
   '@biomejs/biome@1.9.3':
     resolution: {integrity: sha512-POjAPz0APAmX33WOQFGQrwLvlu7WLV4CFJMlB12b6ZSg+2q6fYu9kZwLCOA+x83zXfcPd1RpuWOKJW0GbBwLIQ==}
@@ -703,9 +718,19 @@ packages:
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9.7
 
+  eslint-plugin-tailwindcss@3.17.5:
+    resolution: {integrity: sha512-8Mi7p7dm+mO1dHgRHHFdPu4RDTBk69Cn4P0B40vRQR+MrguUpwmKwhZy1kqYe3Km8/4nb+cyrCF+5SodOEmaow==}
+    engines: {node: '>=18.12.0'}
+    peerDependencies:
+      tailwindcss: ^3.4.0
+
   eslint-scope@7.2.2:
     resolution: {integrity: sha512-dOt21O7lTMhDM+X9mB4GX+DZrZtCUJPL/wlcTqxyrx5IvO0IYtILdtrQGQp+8n5S0gwSVmOf9NQrjMOgfQZlIg==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+
+  eslint-scope@8.1.0:
+    resolution: {integrity: sha512-14dSvlhaVhKKsa9Fx1l8A17s7ah7Ef7wCakJ10LYk6+GYmP9yDti2oq2SEwcyndt6knfcZyhyxwY3i9yL78EQw==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   eslint-visitor-keys@3.4.3:
     resolution: {integrity: sha512-wpc+LXeiyiisxPlEkUzU6svyS1frIO3Mgxj1fdy7Pm8Ygzguax2N3Fa/D/ag1WqbOprdI+uY6wMUl8/a2G+iag==}
@@ -1634,6 +1659,15 @@ snapshots:
 
   '@alloc/quick-lru@5.2.0': {}
 
+  '@angular-eslint/bundled-angular-compiler@18.4.0': {}
+
+  '@angular-eslint/template-parser@18.4.0(eslint@8.57.1)(typescript@5.6.3)':
+    dependencies:
+      '@angular-eslint/bundled-angular-compiler': 18.4.0
+      eslint: 8.57.1
+      eslint-scope: 8.1.0
+      typescript: 5.6.3
+
   '@biomejs/biome@1.9.3':
     optionalDependencies:
       '@biomejs/cli-darwin-arm64': 1.9.3
@@ -2414,7 +2448,18 @@ snapshots:
       string.prototype.matchall: 4.0.11
       string.prototype.repeat: 1.0.0
 
+  eslint-plugin-tailwindcss@3.17.5(tailwindcss@3.4.13):
+    dependencies:
+      fast-glob: 3.3.2
+      postcss: 8.4.47
+      tailwindcss: 3.4.13
+
   eslint-scope@7.2.2:
+    dependencies:
+      esrecurse: 4.3.0
+      estraverse: 5.3.0
+
+  eslint-scope@8.1.0:
     dependencies:
       esrecurse: 4.3.0
       estraverse: 5.3.0

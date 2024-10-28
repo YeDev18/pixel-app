@@ -30,6 +30,9 @@
 	.makingContactBg {
 		background-image: url("../public/assets/BgPixel.webp");
 	}
+	.hero {
+		background-image: url("../public/assets/BgPixel.webp");
+	}
 	input {
 		width: 18rem;
 		height: 3.5rem;

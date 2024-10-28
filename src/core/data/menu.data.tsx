@@ -1,6 +1,6 @@
 export interface MenuProps {
 	label: string;
-	href?: string;
+	href: string;
 	icon?: string;
 }
 
@@ -8,6 +8,10 @@ export const Menus: MenuProps[] = [
 	{
 		label: "Service",
 		href: "",
+	},
+	{
+		label: "A props de nous",
+		href: "/about",
 	},
 	{
 		label: "Blog",
