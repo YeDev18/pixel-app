@@ -3,8 +3,8 @@ import TextFormField from "../../../molecules/home/makingContact/textFormField";
 
 const MakingContact = () => {
 	return (
-		<div className="h-[60vh] flex justify-center items-center bg-cover bg-no-repeat makingContactBg rounded-3xl">
-			<div className="size-full px-10 xl:px-24 space-y-10 lg:size-3/4 backdrop-blur-xl border border-red-100 rounded-3xl border-opacity-25 flex max-lg:flex-col items-center justify-center lg:justify-between">
+		<div className="makingContactBg flex h-[60vh] items-center justify-center rounded-3xl bg-cover bg-no-repeat">
+			<div className="flex size-full items-center justify-center space-y-10 rounded-3xl border border-red-100/20 px-10 backdrop-blur-xl max-lg:flex-col lg:size-3/4 lg:justify-between xl:px-24">
 				<TextFormField />
 				<FormField />
 			</div>
