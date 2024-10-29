@@ -4,11 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Valeur() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 auto-rows-[minmax(0,_2fr)] gap-4 px-[380px]">
+    <div className=" py-[180px] bgheader grid grid-cols-1 md:grid-cols-2 auto-rows-[minmax(0,_2fr)] gap-4 px-[380px]">
       {ValeursData.map((valeur) => (
         <div
           key={valeur.id}
-          className="w-[350px] flex items-start p-4  rounded-[50px] shadow-md hover:shadow-lg  transition-shadow px-[30px] py-[60px] duration-300 mx-auto"
+          className="w-[350px] bg-[#020a0d] flex items-start p-4  rounded-[50px] shadow-md hover:shadow-lg  transition-shadow px-[30px] py-[60px] duration-300 mx-auto"
         >
           {/* Contenu de la carte */}
           <div>

@@ -8,6 +8,7 @@ import Faq from '../molecules/Faq/Faq';
 import Stat from '../molecules/Stat/stat';
 import ExpandingCard from '../molecules/Expandingcard/Expandingcard';
 import Team from '../molecules/Team/Team';
+import PageHeader from '../molecules/PageHeader/PageHeader';
 
 function Contact() {
   // Sélectionne la première citation pour cet exemple

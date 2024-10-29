@@ -39,8 +39,11 @@ body {
 @layer components {
   .bgheader {
     /* background-image: linear-gradient(to bottom, #075c79, #094f68, #0b4357, #0b3747, #0a2b38); */
-    background: rgb(10,43,56);
-background: radial-gradient(circle, rgba(10,43,56,1) 0%, rgba(0,100,140,0.1) 58%, rgba(10,43,56,1) 100%);
+    /* background: rgb(10,43,56);
+background: radial-gradient(circle, rgba(10,43,56,1) 0%, rgba(0,100,140,0.1) 58%, rgba(10,43,56,1) 100%); */
+
+background: rgb(0,69,83);
+background: radial-gradient(circle, rgba(0,69,83,0.5) 5%, rgba(2,10,13,1) 30%);
   }
 }
 
@@ -48,41 +51,36 @@ background: radial-gradient(circle, rgba(10,43,56,1) 0%, rgba(0,100,140,0.1) 58%
 .header-nav {
   transition: max-height 0.3s ease-in-out;
   overflow: hidden;
+}@keyframes scroll-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
-
-
 
 @keyframes scroll-left {
   0% {
-    transform: translateX(100%);
+    transform: translateX(-50%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(0);
   }
 }
 
-@keyframes scroll-right {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
+.overflow-hidden {
+  overflow: hidden;
 }
 
-.animate-scroll-left {
-  animation: scroll-left 20s linear infinite;
+.inline-flex {
+  display: inline-flex;
 }
 
 .animate-scroll-right {
-  animation: scroll-right 20s linear infinite;
+  animation: scroll-right 120s linear infinite; /* Augmenté à 120s pour ralentir */
 }
 
-.card {
-  min-width: 374px;
-  min-height: 220px; /* Ajustez la largeur en fonction de votre design */
-  background-color: #000; /* Couleur de fond de la carte */
-  box-shadow: 0 2px 5px rgba(18, 7, 28, 1); /* Ombre de la carte */
-  border-radius: 40px; /* Arrondir les bords des cartes */
+.animate-scroll-left {
+  animation: scroll-left 120s linear infinite; /* Augmenté à 120s pour ralentir */
 }
-

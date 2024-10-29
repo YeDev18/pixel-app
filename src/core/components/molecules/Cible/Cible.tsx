@@ -1,61 +1,112 @@
-import React from 'react';
-import { TargetGroups } from '../../../data/Cible'; // Assurez-vous que le chemin est correct
+// import React from 'react';
+// import CibleCard from '../../atoms/CibleCard';
 
-function Cible() {
-  const renderCards = () => {
-    return TargetGroups.map((group, index) => (
-      <div key={index} className="card mx-4 p-4 border rounded shadow-md">
-        <h3 className="font-bold">{group.name}</h3>
-        <p>{group.description}</p>
-      </div>
-    ));
-  };
+// function CibleCardsContainer() {
+//   const ids = Array.from({ length: 26 }, (_, i) => i + 1);
+
+//   return (
+//     <div className="bgheader space-y-4 relative">
+//       {/* Ombre à gauche */}
+//       <div className="absolute left-0 top-0 bottom-0 w-28 bg-gradient-to-r from-[#020a0d] to-transparent pointer-events-none z-20 opacity-90" />
+//       <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#020a0d] to-[#020a0d] pointer-events-none z-10" />
+
+//       {/* Première ligne : défile de gauche à droite */}
+//       <div className="overflow-hidden relative">
+//         <div className="inline-flex animate-scroll-right gap-4">
+//           {ids.map((id) => (
+//             <CibleCard key={id} id={id} />
+//           ))}
+//           {ids.map((id) => (
+//             <CibleCard key={`clone-${id}`} id={id} />
+//           ))}
+//         </div>
+//       </div>
+
+//       {/* Deuxième ligne : défile de droite à gauche */}
+//       <div className="overflow-hidden relative">
+//         <div className="inline-flex animate-scroll-left gap-4">
+//           {ids.map((id) => (
+//             <CibleCard key={id} id={id} />
+//           ))}
+//           {ids.map((id) => (
+//             <CibleCard key={`clone-${id}`} id={id} />
+//           ))}
+//         </div>
+//       </div>
+
+//       {/* Troisième ligne : défile de gauche à droite */}
+//       <div className="overflow-hidden relative">
+//         <div className="inline-flex animate-scroll-right gap-4">
+//           {ids.map((id) => (
+//             <CibleCard key={id} id={id} />
+//           ))}
+//           {ids.map((id) => (
+//             <CibleCard key={`clone-${id}`} id={id} />
+//           ))}
+//         </div>
+//       </div>
+
+//       {/* Ombre à droite */}
+//       <div className="absolute right-0 top-0 bottom-0 w-28 bg-gradient-to-l from-[#020a0d] to-transparent pointer-events-none z-20 opacity-90" />
+//       <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#020a0d]  to-[#020a0d] pointer-events-none z-10 " />
+//     </div>
+//   );
+// }
+
+// export default CibleCardsContainer;
+
+import React from 'react';
+import CibleCard from '../../atoms/CibleCard';
+
+function CibleCardsContainer() {
+  const ids = Array.from({ length: 26 }, (_, i) => i + 1);
 
   return (
-    <div className="overflow-hidden relative">
-      {/* Ligne 1 : Défilement vers la gauche */}
-      <div className="flex animate-scroll-left whitespace-nowrap">
-      {renderCards()}
-        {renderCards()}
-        {renderCards()}
-        {renderCards()}
-        {renderCards()}
-        {renderCards()}
-        {renderCards()}
-        {renderCards()}
-        {renderCards()} 
-        {/* Répéter les cartes pour un effet de défilement infini */}
+    <div className="bgheader space-y-4 relative">
+      {/* Ombre à gauche */}
+      <div className="absolute left-0 top-0 bottom-0 w-52 bg-gradient-to-r from-[#020a0d] to-transparent pointer-events-none z-20 " />
+      <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#020a0d] to-[#020a0d] pointer-events-none z-10 opacity-90" />
+      {/* Première ligne : défile de gauche à droite */}
+      <div className="overflow-hidden relative">
+        <div className="inline-flex animate-scroll-right gap-4">
+          {ids.map((id) => (
+            <CibleCard key={id} id={id} />
+          ))}
+          {ids.map((id) => (
+            <CibleCard key={`clone-${id}`} id={id} />
+          ))}
+        </div>
       </div>
 
-      {/* Ligne 2 : Défilement vers la droite */}
-      <div className="flex animate-scroll-right whitespace-nowrap mt-8">
-        {renderCards()}
-        {renderCards()}
-        {renderCards()}
-        {renderCards()}
-        {renderCards()}
-        {renderCards()}
-        {renderCards()}
-        {renderCards()}
-        {renderCards()} 
-        {/* Répéter les cartes pour un effet de défilement infini */}
+      {/* Deuxième ligne : défile de droite à gauche */}
+      <div className="overflow-hidden relative">
+        <div className="inline-flex animate-scroll-left gap-4">
+          {ids.map((id) => (
+            <CibleCard key={id} id={id} />
+          ))}
+          {ids.map((id) => (
+            <CibleCard key={`clone-${id}`} id={id} />
+          ))}
+        </div>
       </div>
 
-      {/* Ligne 3 : Défilement vers la gauche */}
-      <div className="flex animate-scroll-left whitespace-nowrap mt-8">
-      {renderCards()}
-        {renderCards()}
-        {renderCards()}
-        {renderCards()}
-        {renderCards()}
-        {renderCards()}
-        {renderCards()}
-        {renderCards()}
-        {renderCards()} 
-        {/* Répéter les cartes pour un effet de défilement infini */}
+      {/* Troisième ligne : défile de gauche à droite */}
+      <div className="overflow-hidden relative">
+        <div className="inline-flex animate-scroll-right gap-4">
+          {ids.map((id) => (
+            <CibleCard key={id} id={id} />
+          ))}
+          {ids.map((id) => (
+            <CibleCard key={`clone-${id}`} id={id} />
+          ))}
+        </div>
       </div>
+
+      {/* Ombre à droite */}
+      <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#020a0d]  to-[#020a0d] pointer-events-none z-10 " />
+      <div className="absolute right-0 top-0 bottom-0 w-52 bg-gradient-to-l from-[#020a0d] to-transparent pointer-events-none z-10 opacity-100" />
     </div>
   );
 }
 
-export default Cible;
+export default CibleCardsContainer;
