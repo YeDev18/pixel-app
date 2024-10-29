@@ -51,7 +51,9 @@ background: radial-gradient(circle, rgba(0,69,83,0.5) 5%, rgba(2,10,13,1) 30%);
 .header-nav {
   transition: max-height 0.3s ease-in-out;
   overflow: hidden;
-}@keyframes scroll-right {
+}
+
+@keyframes scroll-right {
   0% {
     transform: translateX(0);
   }
@@ -84,3 +86,4 @@ background: radial-gradient(circle, rgba(0,69,83,0.5) 5%, rgba(2,10,13,1) 30%);
 .animate-scroll-left {
   animation: scroll-left 120s linear infinite; /* Augmenté à 120s pour ralentir */
 }
+
