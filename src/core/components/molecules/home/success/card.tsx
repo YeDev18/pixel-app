@@ -20,7 +20,7 @@ const Card = () => {
 							className="aspect-auto size-full "
 						/>
 					</div>
-					<div className="absolute bottom-0 z-10 flex  min-h-fit flex-col  justify-center space-y-4 rounded-t-3xl bg-light-100/60 p-8  text-blue-950  backdrop-blur xl:h-2/5">
+					<div className="absolute bottom-0 z-10 flex  min-h-fit w-full flex-col  justify-center space-y-4 rounded-t-3xl bg-light-100/60 p-8  text-blue-950  backdrop-blur xl:h-2/5">
 						<div className=" flex h-fit items-center justify-between text-blue-950">
 							<h1 className="whitespace-nowrap text-lg font-semibold xl:text-2xl">
 								{data.lib}

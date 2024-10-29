@@ -3,22 +3,22 @@ import Image from "next/image";
 
 const ItemsCard = () => {
 	return (
-		<div className="grid grid-cols-3 gap-4 lg:gap-8 max-md:grid-cols-1 place-items-center ">
+		<div className="grid  grid-cols-3 place-items-center gap-4 max-md:grid-cols-1 lg:gap-8 ">
 			{InformationInspiration.map((data, index) => {
 				return (
-					<div key={index} className="space-y-6 ">
-						<div className=" max-h-[28rem]  rounded-3xl overflow-hidden ">
+					<div key={index} className="cursor-pointer space-y-6 ">
+						<div className=" max-h-[28rem]  overflow-hidden rounded-3xl ">
 							<Image
 								src={data.image}
 								alt={data.date}
-								className="w-full h-full"
+								className="size-full"
 							/>
 						</div>
 						<div className="space-y-2">
 							<span className="text-base font-medium text-light-100/80">
 								{data.date}
 							</span>
-							<h4 className=" line-clamp-2 text-2xl lg:text-lg xl:text-2xl font-medium text-light-100">
+							<h4 className=" line-clamp-2 text-2xl font-medium text-light-100 lg:text-lg xl:text-2xl">
 								{data.lib}
 							</h4>
 						</div>

@@ -5,7 +5,7 @@ import InputText from "@/core/components/atoms/input-text";
 const FormField = () => {
 	return (
 		<div className="">
-			<form className=" flex justify-center flex-col gap-8 py-2">
+			<form className=" flex flex-col justify-center gap-8 py-2">
 				<InputText />
 				<InputEmail />
 				<InputButton>Commencez maintenant</InputButton>
