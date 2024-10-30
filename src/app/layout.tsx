@@ -1,3 +1,5 @@
+import Footer from "@/core/components/organisms/footer/footer";
+import Header from "@/core/components/organisms/Header";
 import "@/styles/globals.css";
 import '@fontsource-variable/montserrat';
 import type { Metadata } from "next";
@@ -16,8 +18,8 @@ import type { Metadata } from "next";
 // });
 
 export const metadata: Metadata = {
-  title: "Pixel App",
-  description: "Pixel app",
+  title: "Pix Digital",
+  description: "Pix Digital",
 };
 
 export default function RootLayout({
@@ -28,9 +30,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`antialiased`}
+        className={`antialiased px-10 py-4 relative`  }
       >
+        <Header />
+
         {children}
+        <Footer/>
       </body>
     </html>
   );

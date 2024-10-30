@@ -1,12 +1,12 @@
 import React from 'react';
 import { headerData, buttonData } from '../../data/header.data'; 
+import Logo from '../atoms/Logo';
 
 function Header() {
   return (
-    <header className="fixed left-0 right-0 w-[96%] top-2 mx-auto flex justify-between items-center p-[24px] bg-[rgba(18, 7, 28, 0.05)] bg-opacity-20 backdrop-filter backdrop-blur-[80px] border border-[rgba(225,225,225,0.1)] rounded-[50px] shadow-lg z-10">
+    <header className=" fixed w-full top-2  mb-10 flex justify-between items-center p-[24px] bg-[rgba(18, 7, 28, 0.05)] bg-opacity-20 backdrop-filter backdrop-blur-[80px] border border-[rgba(225,225,225,0.1)] rounded-[50px] shadow-lg z-40">
       {/* Logo */}
-      <div className="text-2xl font-bold text-white">MyWebsite</div>
-
+        <Logo/>
       {/* Navigation Links */}
       <div className="flex space-x-[56px]">
         <nav className="flex items-center space-x-[26px]">

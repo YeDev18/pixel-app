@@ -21,14 +21,15 @@
 body {
   background: var(--background);
  font-family: 'Montserrat Variable', sans-serif;
+ color:#FAE3CF;
+
 }
 }
 
-body {
+/* body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
-  color:#FAE3CF;
-}
+} */
 
 @layer utilities {
   .text-balance {
@@ -87,3 +88,49 @@ background: radial-gradient(circle, rgba(0,69,83,0.5) 5%, rgba(2,10,13,1) 30%);
   animation: scroll-left 120s linear infinite; /* Augmenté à 120s pour ralentir */
 }
 
+@layer components {
+	.card:nth-child(5),
+	.card:nth-child(6) {
+		display: none;
+	}
+	.makingContactBg {
+		/* background-image: url("../public/assets/BgPixel.webp"); */
+	}
+
+	.hero {
+		background-image: url("../app/img/BgPixel.webp");
+	}
+	input {
+		width: 18rem;
+		height: 3.5rem;
+		padding: 1rem;
+		outline: none;
+		border: 1px solid #fae3cf;
+		color: #fae3cf;
+		border-radius: 5rem;
+		backdrop-filter: blur(24px);
+		background-color: inherit;
+		box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px
+			2px;
+	}
+	.inputButton {
+		width: 18rem;
+		height: 3.5rem;
+		padding: 1rem;
+		outline: none;
+		background-color: #fae3cf;
+		border-radius: 5rem;
+		font-weight: 600;
+		cursor: pointer;
+		box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px
+			2px;
+	}
+	.ombre {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		/* background-color: none; */
+		box-shadow: 0 0 60px 30px #fae3cf, /* inner light-100 */ 0 0 100px 60px
+			#1b4c5e, /* middle blue-500 */ 0 10px 200px 90px #0ff; /* outer cyan */
+	}
+}
