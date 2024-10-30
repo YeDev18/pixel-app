@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { ContactData } from '@/core/data/contact.data'; // Assurez-vous que le chemin est correct
+import { ContactData } from '@/core/data/contact.data'; 
 import Image from 'next/image';
-import Button from '../../atoms/button';
+import Button from '@/core/components/atoms/button';
 
 interface TeamInfo {
   Title: string;
@@ -101,7 +101,7 @@ function Team() {
   }, [countTeam, countProject, countHappy]);
 
   return (
-    <div className="flex h-screen px-8 space-x-8 mt-[180px]" id="team-section">
+    <div className="flex h-screen px-8 space-x-8" id="team-section">
       <div className="w-1/2 flex flex-col justify-center items-start space-y-12">
         <h2 className="text-[52px] font-400 mb-4">{teamInfo.Title}</h2>
         <p className="text-lg mb-6">{teamInfo.Desc}</p>

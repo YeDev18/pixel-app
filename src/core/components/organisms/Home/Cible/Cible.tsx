@@ -1,7 +1,7 @@
+import CibleCard from '@/core/components/molecules/Home/CibleCard/CibleCard';
 import React, { useMemo } from 'react';
-import CibleCard from '../../atoms/CibleCard';
 
-function CibleCardsContainer() {
+function Cible() {
   const ids = Array.from({ length: 26 }, (_, i) => i + 1);
 
   // Fonction pour mélanger l'ordre des ids
@@ -15,13 +15,13 @@ function CibleCardsContainer() {
   }, []);
 
   return (
-    <div className="bgheader space-y-4 relative">
+    <div className="bgheader space-y-4 sm:space-y-4 md:space-y-4 relative">
       {/* Ombre à gauche avec effet de fumée */}
-      <div className="absolute left-0 top-0 bottom-0 w-52 bg-gradient-to-r from-[#020a0d] via-[#020a0d] to-transparent pointer-events-none z-20" />
+      <div className="absolute left-0 top-0 bottom-0 w-24 sm:w-36 md:w-52 bg-gradient-to-r from-[#020a0d] via-[#020a0d] to-transparent pointer-events-none z-20" />
 
       {/* Première ligne : défile de gauche à droite */}
       <div className="overflow-hidden relative">
-        <div className="inline-flex animate-scroll-right gap-4">
+        <div className="inline-flex animate-scroll-right gap-2 sm:gap-4">
           {ids.map((id) => (
             <CibleCard key={id} id={id} />
           ))}
@@ -33,7 +33,7 @@ function CibleCardsContainer() {
 
       {/* Deuxième ligne : défile de droite à gauche */}
       <div className="overflow-hidden relative">
-        <div className="inline-flex animate-scroll-left gap-4">
+        <div className="inline-flex animate-scroll-left gap-2 sm:gap-4">
           {ids.map((id) => (
             <CibleCard key={id} id={id} />
           ))}
@@ -45,7 +45,7 @@ function CibleCardsContainer() {
 
       {/* Troisième ligne : défile de gauche à droite, ordre aléatoire */}
       <div className="overflow-hidden relative">
-        <div className="inline-flex animate-scroll-right gap-4">
+        <div className="inline-flex animate-scroll-right gap-2 sm:gap-4">
           {shuffledIds.map((id) => (
             <CibleCard key={id} id={id} />
           ))}
@@ -56,12 +56,12 @@ function CibleCardsContainer() {
       </div>
 
       {/* Ombre à droite avec effet de fumée */}
-      <div className="absolute right-0 top-0 bottom-0 w-52 bg-gradient-to-l from-[#020a0d] via-[#020a0d] to-transparent pointer-events-none z-20" />
+      <div className="absolute right-0 top-0 bottom-0 w-24 sm:w-36 md:w-52 bg-gradient-to-l from-[#020a0d] via-[#020a0d] to-transparent pointer-events-none z-20" />
 
       {/* Ombre en bas avec effet de fumée */}
-      <div className="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-t from-[#020a0d] via-[#020a0d] to-transparent pointer-events-none z-20" />
+      <div className="absolute bottom-0 left-0 right-0 h-16 sm:h-24 md:h-28 bg-gradient-to-t from-[#020a0d] via-[#020a0d] to-transparent pointer-events-none z-20" />
     </div>
   );
 }
 
-export default CibleCardsContainer;
+export default Cible;

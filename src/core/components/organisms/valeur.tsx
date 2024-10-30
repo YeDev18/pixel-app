@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Valeur() {
   return (
-    <div className=" py-[180px] bgheader grid grid-cols-1 md:grid-cols-2 auto-rows-[minmax(0,_2fr)] gap-4 px-[380px]">
+    <div className="bgheader grid grid-cols-1 md:grid-cols-2 auto-rows-[minmax(0,_2fr)] gap-4 px-[380px]">
       {ValeursData.map((valeur) => (
         <div
           key={valeur.id}

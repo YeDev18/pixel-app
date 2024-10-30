@@ -1,19 +1,18 @@
-import AllServices from '../molecules/AllServices/AllServices';
-import PageHeader from '../molecules/PageHeader/PageHeader'; 
 import Header from '@/core/components/organisms/Header';
 import Contact from './Contact';
-import Cible from '../molecules/Cible/Cible';
 import Valeur from '../organisms/valeur';
+import Cible from '../organisms/Home/Cible/Cible';
+import Team from '../organisms/Home/Team/Team';
+import AllServices from '../organisms/Home/AllServices/AllServices';
 
 export default function Home() {
   return (
-    <div className=''>
+    <div className='space-y-[180px]'>
       {/* <Header /> */}
-      <PageHeader/>
       <Valeur/>
       <AllServices/>
-
-    <Cible/>
+      <Team/>
+      <Cible/>
     </div>
   );
 }
