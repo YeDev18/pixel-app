@@ -1,7 +1,7 @@
-import Footer from "@/core/components/organisms/footer/footer";
 import Header from "@/core/components/organisms/Header";
+import Footer from "@/core/components/organisms/footer/footer";
 import "@/styles/globals.css";
-import '@fontsource-variable/montserrat';
+import "@fontsource-variable/montserrat";
 import type { Metadata } from "next";
 
 // import localFont from "next/font/local";
@@ -18,25 +18,23 @@ import type { Metadata } from "next";
 // });
 
 export const metadata: Metadata = {
-  title: "Pix Digital",
-  description: "Pix Digital",
+	title: "Pix Digital",
+	description: "Pix Digital",
 };
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body
-        className={`antialiased px-10 py-4 relative`  }
-      >
-        <Header />
+	return (
+		<html lang="en">
+			<body className={`antialiased px-10 py-4`}>
+				<Header />
 
-        {children}
-        <Footer/>
-      </body>
-    </html>
-  );
+				{children}
+				<Footer />
+			</body>
+		</html>
+	);
 }
