@@ -1,14 +1,8 @@
-import React from 'react';
-import logo from '../../../app/img/logo.png';
-import Image from 'next/image';
-
 const Logo = () => {
 	return (
-		<Image
-			src={logo}
-			alt="Pixel Innov Logo"
-			className="h-20 sm:h-20 object-contain"
-		/>
+		<h1 className="font-semibold whitespace-nowrap text-light-100 text-2xl">
+			Pixel Innov
+		</h1>
 	);
 };
 

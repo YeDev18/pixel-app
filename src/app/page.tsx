@@ -1,12 +1,5 @@
-"use client";
-import Home from "@/core/components/pages/Home";
+import HomeAll from "@/core/components/templ@tes/home/home";
 
-function App() {
-	return (
-		<div className="relative">
-			<Home />
-		</div>
-	);
+export default function Home() {
+	return <HomeAll />;
 }
-
-export default App;
