@@ -8,7 +8,7 @@ function Valeur() {
 				{ValeursData.slice(0, 4).map((valeur) => (
 					<div
 						key={valeur.id}
-						className="w-[350px] bg-[#0a2b38] flex items-start p-6 rounded-[50px] shadow-md hover:shadow-lg transition-shadow duration-300 mx-auto"
+						className="w-[350px] bg-[#0a2b38] flex items-start p-6 rounded-[50px]   transition-shadow duration-300 mx-auto"
 					>
 						{/* Contenu de la carte */}
 						<div>
