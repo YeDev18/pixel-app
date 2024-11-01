@@ -28,11 +28,12 @@
 		display: none;
 	}
 	.makingContactBg {
-		background-image: url("../public/assets/BgPixel.webp");
+		background-image: url("/assets/BgPixel.webp");
 	}
 	.hero {
-		background-image: url("../public/assets/BgPixel.webp");
+		background-image: url("/assets/BgPixel.webp");
 	}
+
 	input {
 		width: 18rem;
 		height: 3.5rem;
@@ -66,6 +67,7 @@
 		box-shadow: 0 0 60px 30px #fae3cf, /* inner light-100 */ 0 0 100px 60px
 			#1b4c5e, /* middle blue-500 */ 0 10px 200px 90px #0ff; /* outer cyan */
 	}
+
 	.parent {
 		background: white;
 		width: fit;

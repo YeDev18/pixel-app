@@ -15,10 +15,17 @@ const Animation = () => {
 			>
 				<motion.div
 					layout
+					whileHover={{
+						scale: 1.2,
+						transition: { duration: 1 },
+					}}
+					whileTap={{ scale: 0.9 }}
 					className="flex w-40 content-center items-center justify-center rounded-full  bg-red-300 p-8 text-center"
 					onClick={() => setIsOpen(!isOpen)}
 				>
-					<div className="w-20 rounded-lg bg-white">vi</div>
+					<motion.div className="w-20 rounded-lg bg-white">
+						vi
+					</motion.div>
 				</motion.div>
 			</motion.div>
 		</div>

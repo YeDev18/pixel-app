@@ -1,9 +1,3 @@
-import img4 from "@/public/assets/blog/bg-11.webp";
-import img1 from "@/public/assets/blog/bg-12.webp";
-import img5 from "@/public/assets/blog/bg-13.webp";
-import img6 from "@/public/assets/blog/bg-14.webp";
-import img3 from "@/public/assets/blog/bg-15.webp";
-
 export const SuccessData = [
 	{
 		lib: `E-Commerce Boom`,
@@ -12,7 +6,7 @@ export const SuccessData = [
                         presence, securing vital early-stage
                         funding.`,
 		tags: ["Revnue", "E-commerce"],
-		image: img1,
+		image: "/assets/blog/bg-11.webp",
 	},
 	{
 		lib: `Startup's Digital Journey`,
@@ -21,7 +15,7 @@ export const SuccessData = [
                         presence, securing vital early-stage
                         funding.`,
 		tags: ["StartupSuccess", "StartupSuccess"],
-		image: img4,
+		image: "/assets/blog/bg-12.webp",
 	},
 	{
 		lib: `Brand Reinvention`,
@@ -30,7 +24,7 @@ export const SuccessData = [
                         presence, securing vital early-stage
                         funding.`,
 		tags: ["E-Commerce", "StartupSuccess"],
-		image: img5,
+		image: "/assets/blog/bg-13.webp",
 	},
 	{
 		lib: `Local Business Domination`,
@@ -39,7 +33,7 @@ export const SuccessData = [
                         presence, securing vital early-stage
                         funding.`,
 		tags: ["LocalBusiness"],
-		image: img6,
+		image: "/assets/blog/bg-14.webp",
 	},
 	{
 		lib: `Local Business Domination`,
@@ -48,7 +42,7 @@ export const SuccessData = [
                         presence, securing vital early-stage
                         funding.`,
 		tags: ["LocalBusiness", "StartupSuccess"],
-		image: img4,
+		image: "/assets/blog/bg-15.webp",
 	},
 	{
 		lib: `Startup's Digital Journey`,
@@ -57,6 +51,6 @@ export const SuccessData = [
                         presence, securing vital early-stage
                         funding.`,
 		tags: ["Engagement", "StartupSuccess"],
-		image: img3,
+		image: "/assets/blog/bg-11.webp",
 	},
 ];
