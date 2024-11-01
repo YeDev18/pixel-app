@@ -4,7 +4,7 @@ import Logo from '../atoms/Logo';
 
 function Header() {
   return (
-    <header className=" fixed w-full top-2  mb-10 flex justify-between items-center p-[24px] bg-[rgba(18, 7, 28, 0.05)] bg-opacity-20 backdrop-filter backdrop-blur-[80px] border border-[rgba(225,225,225,0.1)] rounded-[50px] shadow-lg z-40">
+    <header className=" fixed w-[95%] top-2  mb-10 flex justify-between items-center p-[24px] bg-[rgba(18, 7, 28, 0.05)] bg-opacity-20 backdrop-filter backdrop-blur-[80px] border border-[rgba(225,225,225,0.1)] rounded-[50px] shadow-lg z-40">
       {/* Logo */}
         <Logo/>
       {/* Navigation Links */}
