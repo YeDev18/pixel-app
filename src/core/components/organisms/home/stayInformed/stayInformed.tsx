@@ -3,7 +3,7 @@ import ItemsCard from "@/core/components/molecules/home/stayInformed/items.card"
 
 const StayInformed = () => {
 	return (
-		<div className="space-y-12 container mx-auto">
+		<div className="container mx-auto space-y-12">
 			<HeadInformed />
 			<ItemsCard />
 		</div>

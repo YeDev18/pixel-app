@@ -4,6 +4,7 @@ import ArrowRight from "./icons/arrow-right";
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 	children: ReactNode;
 	className?: string;
+	props?: string;
 }
 const Button = ({ children, className }: ButtonProps) => {
 	return (
