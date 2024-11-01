@@ -1,12 +1,13 @@
 import React from 'react';
 import logo from '../../../app/img/logo.png';
+import Image from 'next/image';
 
 const Logo = () => {
 	return (
-		<img
+		<Image
 			src={logo}
 			alt="Pixel Innov Logo"
-			className="h-8 sm:h-10 object-contain"
+			className="h-20 sm:h-20 object-contain"
 		/>
 	);
 };

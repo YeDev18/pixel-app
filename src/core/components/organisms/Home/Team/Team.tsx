@@ -111,16 +111,16 @@ function Team() {
           <div className="flex flex-col justify-center items-center space-y-10 h-full">
             <div className="flex justify-center items-center space-x-20">
               <div className="text-center">
-                <h3 className="text-[52px] font-400">{countTeam}+</h3>
+                <h3 className="text-[52px] font-700">{countTeam}+</h3>
                 <p>Membres de l'équipe</p>
               </div>
               <div className="text-center">
-                <h3 className="text-[52px] font-400">{countProject}+</h3>
+                <h3 className="text-[52px] font-700">{countProject}+</h3>
                 <p>Projets réalisés</p>
               </div>
             </div>
             <div className="text-center">
-              <h3 className="text-[52px] font-400">{countHappy}+</h3>
+              <h3 className="text-[52px] font-700">{countHappy}+</h3>
               <p>Clients satisfaits</p>
             </div>
           </div>
