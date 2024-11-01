@@ -1,28 +1,24 @@
-import ValeursData from "@/core/data/valeur.data";
+import { ValuesData } from "@/core/data/valeur.data";
 
 const CardValue = () => {
 	return (
-		<div>
-			{ValeursData.slice(0, 4).map((valeur) => (
+		<>
+			{ValuesData.map((value) => (
 				<div
-					key={valeur.id}
-					className="mx-auto flex w-[350px] items-start rounded-[50px] bg-[#0a2b38] p-6 transition-shadow duration-300"
+					key={value.id}
+					className="mx-auto flex w-full items-start rounded-3xl border border-[#0a3b4e] bg-[#04374b] px-2 py-6 transition-shadow duration-300 md:w-80 "
 				>
-					<div>
-						{/* <FontAwesomeIcon
-							icon={valeur.icon}
-							className="size-6 text-white"
-						/> */}
+					<div className="text-light-100">
 						<h3 className="ml-6 text-[18px] font-bold">
-							{valeur.name}
+							{value.name}
 							<span className="mt-2 block text-[14px] font-normal">
-								{valeur.description}
+								{value.description}
 							</span>
 						</h3>
 					</div>
 				</div>
 			))}
-		</div>
+		</>
 	);
 };
 

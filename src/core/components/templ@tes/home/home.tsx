@@ -7,7 +7,7 @@ import Values from "../../organisms/home/value/values";
 
 export default function HomeAll() {
 	return (
-		<div className=" space-y-24 bg-blue-950 py-8">
+		<div className=" space-y-24  py-8">
 			{/* <div className="bg-red-200 p-4">
 				<Link href="./animation">Animation</Link>
 			</div> */}

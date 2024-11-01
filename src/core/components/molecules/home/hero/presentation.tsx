@@ -14,7 +14,6 @@ const Presentation = () => {
 							Amplifiez votre marque avec un marketing numérique
 							expert
 						</p>
-
 						<Button className=" w-fit gap-4 lg:w-full">
 							Joignez-nous
 						</Button>

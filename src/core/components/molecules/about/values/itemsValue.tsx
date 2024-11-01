@@ -1,5 +1,4 @@
 import { ValueData } from "@/core/data/value.data";
-import Image from "next/image";
 
 const ItemsValue = () => {
 	return (
@@ -7,20 +6,19 @@ const ItemsValue = () => {
 			{ValueData.map((value, index) => (
 				<div
 					key={index}
-					className="flex max-md:flex-col items-center justify-start gap-6 lg:gap-14"
+					className="flex items-center justify-start gap-6 max-md:flex-col lg:gap-14"
 				>
-					<div className="max-h-[35rem] w-[100%]  md:max-w-[30rem] overflow-hidden rounded-lg">
-						<Image
-							src={value.image}
-							alt={value.lib}
-							className="w-[100%] h-[100%]"
-						/>
-					</div>
-					<hgroup className="text-start space-y-3">
-						<h1 className="text-2xl lg:text-4xl font-medium ">
+					<div
+						className="h-96 w-full overflow-hidden rounded-lg bg-red-400 bg-cover bg-center md:max-w-[30rem] lg:h-[30rem]"
+						style={{
+							backgroundImage: `url(${value.image})`,
+						}}
+					></div>
+					<hgroup className="space-y-3 text-start">
+						<h1 className="text-2xl font-medium lg:text-4xl ">
 							{value.lib}
 						</h1>
-						<p className=" lg:w-[75vh] max-md:text-justify text-base/relaxed xl:text-lg/relaxed">
+						<p className=" text-base/relaxed max-md:text-justify lg:w-[75vh] xl:text-lg/relaxed">
 							{value.describe}
 						</p>
 					</hgroup>
