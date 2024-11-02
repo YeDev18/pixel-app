@@ -3,7 +3,7 @@ import Value from "../../organisms/about/values/values";
 
 const AboutAll = () => {
 	return (
-		<div className="container mx-auto space-y-16">
+		<div className="container mx-auto space-y-16 ">
 			<Value />
 			<Map />
 		</div>

@@ -1,4 +1,4 @@
-import { Icon } from "@iconify/react";
+import PointFilled from "../../atoms/icons/point";
 
 const Copyright = () => {
 	return (
@@ -8,7 +8,7 @@ const Copyright = () => {
 			</p>
 			<div className="flex items-center justify-center gap-2 max-lg:text-sm">
 				<p>Terms & Conditions</p>
-				<Icon icon="tabler:point-filled" className="opacity-10" />
+				<PointFilled className="opacity-10" />
 
 				<p>Privacy & Policy</p>
 			</div>

@@ -1,7 +1,7 @@
-"use client";
 import { SuccessData } from "@/core/data/success.data";
-import { Icon } from "@iconify/react";
-import { motion } from "framer-motion";
+import * as motion from "framer-motion/client";
+
+import UpArrowRight from "@/core/components/atoms/icons/arrow.up.right";
 import Tags from "../../../atoms/Tags";
 
 const Card = () => {
@@ -33,16 +33,12 @@ const Card = () => {
 							transition={{ duration: 1, ease: "easeIn" }}
 							className="absolute bottom-0 z-10 flex  h-fit w-full flex-col  justify-center space-y-4 rounded-t-3xl bg-light-100/60 px-8 py-16 text-blue-950  backdrop-blur xl:h-fit"
 						>
-							<motion.div className=" flex h-fit items-center justify-between text-blue-950">
+							<div className=" flex h-fit items-center justify-between text-blue-950">
 								<h1 className="whitespace-nowrap text-lg font-semibold xl:text-2xl">
 									{data.lib}
 								</h1>
-
-								<Icon
-									icon="emojione-monotone:up-right-arrow"
-									className="text-lg xl:text-2xl"
-								/>
-							</motion.div>
+								<UpArrowRight className="text-lg xl:text-2xl" />
+							</div>
 
 							<motion.p
 								variants={child}

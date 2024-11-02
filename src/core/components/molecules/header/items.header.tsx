@@ -6,7 +6,11 @@ const ItemsHeader = () => {
 		<div className="hidden items-center justify-center gap-x-16 tracking-wide md:flex ">
 			<menu className="space-x-4 max-lg:hidden max-lg:text-sm">
 				{Menus.map((item, index) => (
-					<Link key={index} href={item.href}>
+					<Link
+						key={index}
+						href={item.href}
+						className="transition-all hover:opacity-60"
+					>
 						{item.label}
 					</Link>
 				))}

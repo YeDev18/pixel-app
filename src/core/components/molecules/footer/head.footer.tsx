@@ -1,5 +1,4 @@
 import { IconSocials, Menus } from "@/core/data/menu.data";
-import { Icon } from "@iconify/react";
 import Link from "next/link";
 import Logo from "../../atoms/Logo";
 
@@ -19,7 +18,7 @@ const HeadFooter = () => {
 						<Link
 							href={menu.href}
 							key={index}
-							className="whitespace-nowrap  font-medium"
+							className="whitespace-nowrap  font-medium transition-all hover:opacity-60"
 						>
 							{menu.label}
 						</Link>
@@ -35,7 +34,7 @@ const HeadFooter = () => {
 							className="text-3xl xl:text-4xl"
 							key={index}
 						>
-							<Icon icon={social.icon} />
+							{social.icon}
 						</Link>
 					);
 				})}
