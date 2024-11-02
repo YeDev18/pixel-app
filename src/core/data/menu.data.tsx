@@ -6,21 +6,22 @@ export interface MenuProps {
 
 export const Menus: MenuProps[] = [
 	{
-		label: "Service",
-		href: "",
-	},
-	{
 		label: "A props de nous",
 		href: "/about",
 	},
 	{
-		label: "Blog",
+		label: "Service",
 		href: "",
 	},
 	{
 		label: "Project",
 		href: "",
 	},
+	{
+		label: "Blog",
+		href: "",
+	},
+
 	{
 		label: "Contact",
 		href: "",

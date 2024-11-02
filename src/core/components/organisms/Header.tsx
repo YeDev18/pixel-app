@@ -1,17 +1,17 @@
-import { buttonData, headerData } from "../../data/header.data";
+import { headerData } from "../../data/header.data";
 import Logo from "../atoms/Logo";
 
 function Header() {
 	return (
-		<header className=" w-[95%] p-6 justify-between items-center flex fixed top-6 inset-x-1/2 -translate-x-1/2 bg-opacity-20 backdrop-filter backdrop-blur-[80px] border border-[rgba(225,225,225,0.1)] rounded-full shadow-lg z-40">
+		<header className=" fixed inset-x-1/2 top-6 z-40 flex w-[95%] -translate-x-1/2 items-center justify-between rounded-full border border-[rgba(225,225,225,0.1)] p-6 shadow-lg backdrop-blur-[80px]">
 			<Logo />
-			<div className="flex gap-24 items-center ">
+			<div className="flex items-center gap-24 ">
 				<nav className="flex items-center gap-6">
 					{headerData.map((item) => (
 						<a
 							key={item.id}
 							href={item.link}
-							className="hover:text-gray-400 text-[16px] font-normal text-white transition duration-300"
+							className="text-[16px] font-normal text-white transition duration-300 hover:text-gray-400"
 						>
 							{item.name}
 						</a>
@@ -20,14 +20,13 @@ function Header() {
 
 				<div className="flex items-center space-x-[32px]">
 					<span>+225 07 07 07 07 07</span>
-					<a
+					{/* <a
 						href={buttonData.link}
-						className="bg-[rgba(18, 7, 28, 0.05)] bg-op`acity-20 backdrop-filter backdrop-blur-[80px] border border-[rgba(225,225,225,0.1)] text-white font-bold py-2 px-4 rounded-full transition-all duration-300 
-             hover:backdrop-blur-[120px] 
-             hover:shadow-[0_0_42px_rgba(133,72,244,1)] hover:bg-transparent"
+						className="bg-[rgba(18, 7, 28, 0.05)] bg-op`acity-20 rounded-full border border-[rgba(225,225,225,0.1)] px-4 py-2 font-bold text-white backdrop-blur-[80px] transition-all duration-300 hover:bg-transparent 
+             				hover:shadow-[0_0_42px_rgba(133,72,244,1)] hover:backdrop-blur-[120px]"
 					>
 						{buttonData.name}
-					</a>
+					</a> */}
 				</div>
 			</div>
 		</header>
