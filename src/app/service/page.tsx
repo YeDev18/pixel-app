@@ -1,5 +1,7 @@
+import ServiceAll from "@/core/components/templ@tes/service/service";
+
 const Blog = () => {
-	return <div>page</div>;
+	return <ServiceAll />;
 };
 
 export default Blog;

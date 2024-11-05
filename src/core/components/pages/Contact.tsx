@@ -1,26 +1,23 @@
-import React from 'react';
-import Slider from '../atoms/Slider';
 // import FormatQuote from '../../../app/img/FormatQuote.png';
-import { ContactData } from '../../data/contact.data'; // Assurez-vous d'importer vos données
-import CitationCard from '../molecules/citationContact/CitationCard';
-import Form from '../molecules/contactForm/Form';
-import Faq from '../molecules/Faq/Faq';
-import Stat from '../molecules/Stat/stat';
-import ExpandingCard from '../molecules/Expandingcard/Expandingcard';
-import Team from '../molecules/Team/Team';
-import PageHeader from '../molecules/PageHeader/PageHeader';
+import { ContactData } from "../../data/contact.data"; // Assurez-vous d'importer vos données
+import Faq from "../molecules/Faq/Faq";
+import Stat from "../molecules/Stat/stat";
+import Team from "../molecules/Team/Team";
+import CitationCard from "../molecules/citationContact/CitationCard";
+import Form from "../molecules/contactForm/Form";
+import ExpandingCard from "../molecules/dontUse/expandingcard/expandingcard";
 
 function Contact() {
-  // Sélectionne la première citation pour cet exemple
+	// Sélectionne la première citation pour cet exemple
 
-  const { quotes } = ContactData;
-  const quote = quotes[0]; // Choisir la première citation, par exemple
+	const { quotes } = ContactData;
+	const quote = quotes[0]; // Choisir la première citation, par exemple
 
-  return (
-    <>
-   <div className="flex flex-col md:flex-row gap-4 w-full h-screen mt-40 px-8">
-      {/* Citation section */}
-      {/* <div className="w-[65%] h-full flex flex-col items-center justify-center rounded-lg border-[rgba(255,255,255,0.1)] border-x relative">
+	return (
+		<>
+			<div className="mt-40 flex h-screen w-full flex-col gap-4 px-8 md:flex-row">
+				{/* Citation section */}
+				{/* <div className="w-[65%] h-full flex flex-col items-center justify-center rounded-lg border-[rgba(255,255,255,0.1)] border-x relative">
         <div className="absolute top-0 left-0 m-4">
           <img src={FormatQuote} alt="Quote Icon" />
         </div>
@@ -36,21 +33,19 @@ function Contact() {
 
         <Slider />
       </div> */}
-      
-      <CitationCard id={1}/>
-   
-   
-      
-      {/* Formulaire section */}
-         <Form/>
-    </div>
-   
-    <Faq/>
-    <Stat/>
-    <ExpandingCard/>
-    <Team/>
-    </>
-  );
+
+				<CitationCard id={1} />
+
+				{/* Formulaire section */}
+				<Form />
+			</div>
+
+			<Faq />
+			<Stat />
+			<ExpandingCard />
+			<Team />
+		</>
+	);
 }
 
 export default Contact;
