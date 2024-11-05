@@ -71,7 +71,7 @@
 		height: 0px;
 		border-radius: 50%;
 
-		box-shadow: 0 0 80px 20px #fae3cf, /* inner light-100 */ 0 0 100px 60px
+		box-shadow: 0 0 200px 50px #fae3cf, /* inner light-100 */ 0 0 100px 60px
 			#04374b, /* middle blue-500 */ 0 10px 200px 90px #075777; /* outer cyan */
 	}
 	.card_wrap {

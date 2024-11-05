@@ -1,6 +1,6 @@
 import { IconSocials, Menus } from "@/core/data/menu.data";
 import Link from "next/link";
-import Logo from "../../atoms/Logo";
+import Logo from "../../../atoms/Logo";
 
 const HeadFooter = () => {
 	return (

@@ -1,5 +1,14 @@
-export const SuccessData = [
+export type SuccessDataProps = {
+	id: number;
+	lib: string;
+	describe: string;
+	tags: string[];
+	image: string;
+};
+
+export const SuccessData: SuccessDataProps[] = [
 	{
+		id: 1,
 		lib: `E-Commerce Boom`,
 		describe: `Follow the remarkable journey of a startup
                         as we helped them establish a solid online
@@ -9,6 +18,7 @@ export const SuccessData = [
 		image: "/assets/blog/bg-11.webp",
 	},
 	{
+		id: 2,
 		lib: `Startup's Digital Journey`,
 		describe: `Follow the remarkable journey of a startup
                         as we helped them establish a solid online
@@ -18,6 +28,7 @@ export const SuccessData = [
 		image: "/assets/blog/bg-12.webp",
 	},
 	{
+		id: 3,
 		lib: `Brand Reinvention`,
 		describe: `Follow the remarkable journey of a startup
                         as we helped them establish a solid online
@@ -27,6 +38,7 @@ export const SuccessData = [
 		image: "/assets/blog/bg-13.webp",
 	},
 	{
+		id: 4,
 		lib: `Local Business Domination`,
 		describe: `Follow the remarkable journey of a startup
                         as we helped them establish a solid online
@@ -36,6 +48,7 @@ export const SuccessData = [
 		image: "/assets/blog/bg-14.webp",
 	},
 	{
+		id: 5,
 		lib: `Local Business Domination`,
 		describe: `Follow the remarkable journey of a startup
                         as we helped them establish a solid online
@@ -45,6 +58,7 @@ export const SuccessData = [
 		image: "/assets/blog/bg-15.webp",
 	},
 	{
+		id: 6,
 		lib: `Startup's Digital Journey`,
 		describe: `Follow the remarkable journey of a startup
                         as we helped them establish a solid online

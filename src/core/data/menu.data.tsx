@@ -16,20 +16,15 @@ export const Menus: MenuProps[] = [
 	},
 	{
 		label: "Service",
-		href: "",
+		href: "/service",
 	},
 	{
-		label: "Project",
-		href: "",
+		label: "Projet",
+		href: "/projet",
 	},
 	{
 		label: "Blog",
-		href: "",
-	},
-
-	{
-		label: "Contact",
-		href: "",
+		href: "/blog",
 	},
 ];
 

@@ -1,4 +1,4 @@
-import PointFilled from "../../atoms/icons/point";
+import PointFilled from "../../../atoms/icons/point";
 
 const Copyright = () => {
 	return (

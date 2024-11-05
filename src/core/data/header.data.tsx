@@ -1,38 +1,33 @@
 const headerData = [
-    {
-      id: 1,
-      name: "Services",
-      link: "/services",
-      desc:'Notre, Expertise votre succès'
-    },
-    {
-      id: 2,
-      name: "Study Cases",
-      link: "/study-cases",
-      desc:'Notre, Expertise votre succès'
+	{
+		id: 1,
+		name: "About Us",
+		link: "/about",
+		desc: "Tout ce que vous voulez savoir sur nous",
+	},
+	{
+		id: 2,
+		name: "Services",
+		link: "/services",
+		desc: "Notre, Expertise votre succès",
+	},
+	{
+		id: 3,
+		name: "Projet",
+		link: "/study-cases",
+		desc: "Notre, Expertise votre succès",
+	},
+	{
+		id: 4,
+		name: "Blog",
+		link: "/Blog",
+		desc: "Restez informer et Inspirer",
+	},
+];
 
-    },
-    {
-      id: 3,
-      name: "Blog",
-      link: "/blog",
-      desc:'Restez informer et Inspirer'
+const buttonData = {
+	name: "Get Started",
+	link: "/Contact",
+};
 
-    },
-    {
-        id: 4,
-        name: "About Us",
-        link: "/about",
-        desc:'Tout ce que vous voulez savoir sur nous'
-  
-      }
-      
-  ];
-  
-  const buttonData = {
-    name: "Get Started",
-    link: "/Contact",
-  };
-  
-  export { headerData, buttonData };
-  
+export { buttonData, headerData };
