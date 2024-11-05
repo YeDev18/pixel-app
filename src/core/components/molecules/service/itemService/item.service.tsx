@@ -15,7 +15,7 @@ const ItemService = ({ arrayService }: ArrayServiceProps) => {
 				<span className="hidden text-2xl group-hover:flex xl:text-4xl">
 					<ArrowRightUpCircle />
 				</span>
-				<p className="font-medium tracking-wider lg:text-xl xl:text-3xl">
+				<p className="font-medium tracking-wide lg:text-xl xl:text-3xl">
 					{arrayService.name}
 				</p>
 			</div>
