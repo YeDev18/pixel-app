@@ -16,7 +16,7 @@ function AllServices() {
         {firstRow.map((service) => (
           <div
             key={service.id}
-            className='group relative flex items-center justify-center gap-2 sm:gap-6 p-1 sm:p-2 px-3 sm:px-6 border border-gray-300 border-opacity-10 rounded-full shadow-lg h-[56px] sm:h-[88px] transition-all ease-in duration-300 delay-150 w-fit hover:bg-[#0a2b38]'
+            className='group relative flex items-center justify-center gap-2 sm:gap-6 p-1 sm:p-2 px-3 sm:px-6 border border-gray-300 border-opacity-10 rounded-full shadow-lg h-[56px] sm:h-[88px] transition-all ease-in duration-300 delay-150 w-fit hover:bg-[#004553]'
           >
             <span className='text-[20px] sm:text-[32px] transition-opacity duration-300 delay-75 group-hover:opacity-0'>
               {service.icon}
@@ -38,7 +38,7 @@ function AllServices() {
         {secondRow.map((service) => (
           <div
             key={service.id}
-            className='group relative flex items-center justify-center gap-2 sm:gap-6 p-1 sm:p-2 px-3 sm:px-6 border border-gray-300 border-opacity-10 rounded-full shadow-lg h-[56px] sm:h-[88px] transition-all ease-in duration-300 delay-150 w-fit hover:bg-[#0a2b38]'
+            className='group relative flex items-center justify-center gap-2 sm:gap-6 p-1 sm:p-2 px-3 sm:px-6 border border-gray-300 border-opacity-10 rounded-full shadow-lg h-[56px] sm:h-[88px] transition-all ease-in duration-300 delay-150 w-fit hover:bg-[#004553]'
           >
             <span className='text-[20px] sm:text-[32px] transition-opacity duration-300 delay-75 group-hover:opacity-0'>
               {service.icon}
@@ -60,7 +60,7 @@ function AllServices() {
         {thirdRow.map((service) => (
           <div
             key={service.id}
-            className='group relative flex items-center justify-center gap-2 sm:gap-6 p-1 sm:p-2 px-3 sm:px-6 border border-gray-300 border-opacity-10 rounded-full shadow-lg h-[56px] sm:h-[88px] transition-all ease-in duration-300 delay-150 w-fit hover:bg-[#0a2b38]'
+            className='group relative flex items-center justify-center gap-2 sm:gap-6 p-1 sm:p-2 px-3 sm:px-6 border border-gray-300 border-opacity-10 rounded-full shadow-lg h-[56px] sm:h-[88px] transition-all ease-in duration-300 delay-150 w-fit hover:bg-[#004553]'
           >
             <span className='text-[20px] sm:text-[32px] transition-opacity duration-300 delay-75 group-hover:opacity-0'>
               {service.icon}
@@ -82,7 +82,7 @@ function AllServices() {
         {fourthRow.map((service) => (
           <div
             key={service.id}
-            className='group relative flex items-center justify-center gap-2 sm:gap-6 p-1 sm:p-2 px-3 sm:px-6 border border-gray-300 border-opacity-10 rounded-full shadow-lg h-[56px] sm:h-[88px] transition-all ease-in duration-300 delay-150 w-fit hover:bg-[#0a2b38]'
+            className='group relative flex items-center justify-center gap-2 sm:gap-6 p-1 sm:p-2 px-3 sm:px-6 border border-gray-300 border-opacity-10 rounded-full shadow-lg h-[56px] sm:h-[88px] transition-all ease-in duration-300 delay-150 w-fit hover:bg-[#004553]'
           >
             <span className='text-[20px] sm:text-[32px] transition-opacity duration-300 delay-75 group-hover:opacity-0'>
               {service.icon}

@@ -7,7 +7,7 @@ const Logo = () => {
 		<Image
 			src={logo}
 			alt="Pixel Innov Logo"
-			className="h-20 sm:h-20 object-contain"
+			className="h-12 sm:h-12 object-contain "
 		/>
 	);
 };
