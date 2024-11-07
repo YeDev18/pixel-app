@@ -1,3 +1,8 @@
+import { ReactNode } from "react";
+import Facebook from "../components/atoms/icons/facebook";
+import Instagram from "../components/atoms/icons/instagram";
+import Linkedin from "../components/atoms/icons/linkedin";
+
 export interface MenuProps {
 	label: string;
 	href: string;
@@ -6,38 +11,34 @@ export interface MenuProps {
 
 export const Menus: MenuProps[] = [
 	{
-		label: "Service",
-		href: "",
-	},
-	{
 		label: "A props de nous",
 		href: "/about",
 	},
 	{
+		label: "Service",
+		href: "/service",
+	},
+	{
+		label: "Projet",
+		href: "/projet",
+	},
+	{
 		label: "Blog",
-		href: "",
-	},
-	{
-		label: "Project",
-		href: "",
-	},
-	{
-		label: "Contact",
-		href: "",
+		href: "/blog",
 	},
 ];
 
-export const IconSocials: { label: string; icon: string }[] = [
+export const IconSocials: { label: string; icon: ReactNode }[] = [
 	{
 		label: "Facebook",
-		icon: "mdi:facebook",
+		icon: <Facebook />,
 	},
 	{
 		label: "Instagram",
-		icon: "mdi:instagram",
+		icon: <Instagram />,
 	},
 	{
 		label: "Linkedin",
-		icon: "mdi:linkedin",
+		icon: <Linkedin />,
 	},
 ];
