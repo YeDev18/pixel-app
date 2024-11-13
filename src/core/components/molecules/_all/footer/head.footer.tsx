@@ -1,7 +1,6 @@
+import { Logo } from "@/core/components/atoms/logo";
 import { IconSocials, Menus } from "@/core/data/menu.data";
 import Link from "next/link";
-import Logo from "../../../atoms/Logo";
-
 const HeadFooter = () => {
 	return (
 		<div className="flex flex-wrap items-center justify-between gap-y-8 text-light-100 max-sm:justify-center max-sm:gap-x-4 ">

@@ -1,5 +1,5 @@
-import Footer from "@/core/components/organisms/footer/footer";
-import Header from "@/core/components/organisms/header/header";
+import Footer from "@/core/components/organisms/_all/footer/footer";
+import Header from "@/core/components/organisms/_all/header/header";
 import "@/styles/globals.css";
 import "@fontsource-variable/montserrat";
 import type { Metadata } from "next";
