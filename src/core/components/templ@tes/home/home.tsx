@@ -8,11 +8,7 @@ import Values from "../../organisms/home/value/values";
 
 export default function HomeAll() {
 	return (
-		<div className=" space-y-24  py-4">
-			{/* <div className="bg-red-200 p-4">
-				<Link href="./animation">Animation</Link>
-			</div> */}
-
+		<div className="space-y-24 py-4">
 			<Hero />
 			<Values />
 			<Success />
