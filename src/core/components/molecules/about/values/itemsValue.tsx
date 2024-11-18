@@ -11,7 +11,7 @@ const ItemsValue = ({ value }: { value: ValueDataProps }) => {
 					}}
 				></div>
 				<hgroup className="space-y-3 text-start">
-					<h1 className="py-2 text-2xl font-medium lg:text-4xl ">
+					<h1 className="overflow-hidden py-2 text-2xl font-medium lg:text-4xl">
 						{value.lib}
 					</h1>
 					<p className=" text-base/relaxed max-md:text-justify lg:w-[75vh] xl:text-lg/relaxed">

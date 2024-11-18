@@ -1,4 +1,4 @@
-import ItemService from "@/core/components/molecules/service/item.service.tsx/item.service";
+import ItemService from "@/core/components/molecules/service/itemService/itemService";
 import { ServiceData } from "@/core/data/service.data";
 
 const ItemsService = () => {

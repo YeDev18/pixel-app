@@ -1,4 +1,4 @@
-import ItemsService from "../../organisms/service/itemsService/items.service";
+import ItemsService from "../../organisms/_all/itemsService/itemsService";
 
 const ServiceAll = () => {
 	return (

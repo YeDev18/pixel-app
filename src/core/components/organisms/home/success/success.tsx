@@ -1,17 +1,28 @@
-import Card from "@/core/components/molecules/Home/success/card";
+"use client";
+
+import Button from "@/core/components/atoms/Button";
 import { SuccessData } from "@/core/data/success.data";
+import { SectionMotion } from "../../_all/sectionMotion/section.motion";
+import Card from "@/core/components/molecules/Home/success/card";
 
 const Success = () => {
 	return (
-		<div className="container  mx-auto">
-			<div
-				className={` relative grid grid-cols-1  gap-4 md:grid-cols-2 lg:grid-cols-3`}
-			>
-				{SuccessData.map((data, index) => {
-					return <Card key={index} arrayItemsCard={data} />;
-				})}
-			</div>
-		</div>
+		<>
+			<SectionMotion>
+				<div className="container mx-auto flex flex-col items-center space-y-16  xl:w-fit">
+					<div
+						className={` relative grid w-full grid-cols-1  gap-4   md:grid-cols-2 lg:grid-cols-3`}
+					>
+						{SuccessData.map((data, index) => {
+							return <Card key={index} arrayItemsCard={data} />;
+						})}
+					</div>
+					<Button className=" w-fit gap-4 align-middle text-black">
+						Voir plus
+					</Button>
+				</div>
+			</SectionMotion>
+		</>
 	);
 };
 

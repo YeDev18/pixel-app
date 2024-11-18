@@ -1,6 +1,6 @@
-import Contact from "../../molecules/_all/footer/contact";
-import Copyright from "../../molecules/_all/footer/copyright";
-import HeadFooter from "../../molecules/_all/footer/head.footer";
+import Contact from "../../../molecules/_all/footer/contact";
+import Copyright from "../../../molecules/_all/footer/copyright";
+import HeadFooter from "../../../molecules/_all/footer/head.footer";
 
 const Footer = () => {
 	return (
