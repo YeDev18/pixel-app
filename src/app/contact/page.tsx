@@ -1,5 +1,7 @@
+import ContactAll from "@/core/components/templ@tes/contact/contact";
+
 const Contact = () => {
-	return <div>page</div>;
+	return <ContactAll />;
 };
 
 export default Contact;
