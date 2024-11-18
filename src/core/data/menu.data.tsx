@@ -11,7 +11,7 @@ export interface MenuProps {
 
 export const Menus: MenuProps[] = [
 	{
-		label: "A props de nous",
+		label: "A propos de nous",
 		href: "/about",
 	},
 	{
@@ -26,6 +26,7 @@ export const Menus: MenuProps[] = [
 		label: "Blog",
 		href: "/blog",
 	},
+	
 ];
 
 export const IconSocials: { label: string; icon: ReactNode }[] = [

@@ -14,7 +14,7 @@ export const SuccessData: SuccessDataProps[] = [
                         as we helped them establish a solid online
                         presence, securing vital early-stage
                         funding.`,
-		tags: ["Revnue", "E-commerce"],
+		tags: ["Revenue", "E-commerce"],
 		image: "/assets/blog/bg-11.webp",
 	},
 	{

@@ -39,30 +39,30 @@ export const ServiceData: ServiceDataProps[] = [
 		name: "Brand Design & Strategy",
 		icon: <Design />,
 	},
-	{
-		id: 5,
-		name: "SMM",
-		icon: <Message />,
-	},
-	{
-		id: 6,
-		name: "Sales Departments from Scratch",
-		icon: <Sales />,
-	},
-	{
-		id: 7,
-		name: "Google Ads",
-		icon: <Ads />,
-	},
-	{
-		id: 9,
-		name: "Email Marketing",
-		icon: <Email />,
-	},
+	// {
+	// 	id: 5,
+	// 	name: "SMM",
+	// 	icon: <Message />,
+	// },
+	// {
+	// 	id: 6,
+	// 	name: "Sales Departments from Scratch",
+	// 	icon: <Sales />,
+	// },
+	// {
+	// 	id: 7,
+	// 	name: "Google Ads",
+	// 	icon: <Ads />,
+	// },
+	// {
+	// 	id: 9,
+	// 	name: "Email Marketing",
+	// 	icon: <Email />,
+	// },
 
-	{
-		id: 9,
-		name: "SEO",
-		icon: <SEO />,
-	},
+	// {
+	// 	id: 9,
+	// 	name: "SEO",
+	// 	icon: <SEO />,
+	// },
 ];

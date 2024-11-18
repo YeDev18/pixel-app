@@ -1,5 +1,4 @@
 import * as motion from "framer-motion/client";
-
 import UpArrowRight from "@/core/components/atoms/icons/arrow.up.right";
 import { SuccessDataProps } from "@/core/data/success.data";
 import Tags from "../../../atoms/Tags";

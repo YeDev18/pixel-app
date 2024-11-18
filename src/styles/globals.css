@@ -116,6 +116,12 @@
 			transform: translateX(0);
 		}
 	}
+	.primaire{
+		background: #0a2b38;
+	}
+	.secondaire{
+		background:#fae3cf;
+	}
 
 	.overflow-hidden {
 		overflow: hidden;

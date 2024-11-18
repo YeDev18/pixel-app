@@ -1,5 +1,10 @@
 
+import BgCard from "../../atoms/bgCard";
+import ServiceHeaderCard from "../../atoms/serviceHeaderCard/headerCard";
+import ExpandingCard from "../../molecules/dontUse/expandingcard/expandingcard";
+import ProcessContainer from "../../molecules/dontUse/processCard/ProcessCard";
 import Team from "../../molecules/dontUse/team/team";
+import ServiceStackList from "../../molecules/service/ServiceStack/SeviceStack";
 import Cible from "../../organisms/Home/cible/Cible";
 import Hero from "../../organisms/Home/hero/hero";
 import MakingContact from "../../organisms/Home/makingContact/makingContact";
@@ -19,11 +24,14 @@ export default function HomeAll() {
 			<Hero />
 			<Values />
 			<ItemsService/>
+			<ExpandingCard/>
 			<Success />
 			<Team/>
 			<MakingContact />
+			
 			<Cible/>
 			<StayInformed />
+
 		</div>
 	);
 }
