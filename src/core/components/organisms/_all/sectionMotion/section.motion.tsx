@@ -8,7 +8,7 @@ export const SectionMotion = ({ children }: { children: ReactNode }) => {
 			whileInView={{ opacity: 1, y: 0 }}
 			transition={{ duration: 0.4, ease: "easeInOut" }}
 			viewport={{ once: true, amount: 0.2 }}
-			className="overflow-hidden "
+			className="overflow-y-hidden "
 		>
 			{children}
 		</motion.div>

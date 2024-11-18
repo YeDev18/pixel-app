@@ -20,9 +20,12 @@ const ItemsHeader = () => {
 			<div className="flex items-center justify-center gap-8 max-lg:text-sm">
 				<p> +225 04 07 52 58 56 </p>
 
-				<button className="rounded-3xl border px-5 py-3 text-sm">
+				<Link
+					href="/contact"
+					className="rounded-3xl border px-5 py-3 text-sm"
+				>
 					Contactez Nous
-				</button>
+				</Link>
 			</div>
 		</div>
 	);
