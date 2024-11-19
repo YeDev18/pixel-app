@@ -1,23 +1,40 @@
+"use client";
 import ArrowUp from "@/core/components/atoms/icons/arrow.up";
 import Quote from "@/core/components/atoms/icons/quote";
 import Avatar from "@/core/components/atoms/icons/user";
 
 import { CommmentsData } from "@/core/data/comments.data";
+import { useState } from "react";
 
 const Comments = () => {
+	const [commentIndex, setCommentIndex] = useState(1);
+	const nextIndex = () => {
+		if (commentIndex === CommmentsData.length) return;
+		setCommentIndex((prev) => prev + 1);
+	};
+	const prevIndex = () => {
+		if (commentIndex === 1) return;
+		setCommentIndex((prev) => prev - 1);
+	};
 	return (
 		<>
 			<div className="relative h-fit w-full ">
 				<div className="absolute bottom-14 right-14 flex flex-col space-y-4 text-2xl font-semibold text-light-100">
-					<button className=" cursor-pointer rounded-full border p-2">
+					<button
+						className=" cursor-pointer rounded-full border p-2"
+						onClick={nextIndex}
+					>
 						<ArrowUp />
 					</button>
-					<button className="rotate-180 cursor-pointer  rounded-full border p-2 ">
+					<button
+						className="rotate-180 cursor-pointer  rounded-full border p-2 "
+						onClick={prevIndex}
+					>
 						<ArrowUp />
 					</button>
 				</div>
 				{CommmentsData.map((comment) => {
-					if (comment.id === 4) {
+					if (comment.id === commentIndex) {
 						return (
 							<div
 								className="w-full text-light-100"

@@ -1,10 +1,13 @@
-const Tags = ({ tags }) => {
+type TagsProps = {
+	tags: string[];
+};
+const Tags = ({ tags }: TagsProps) => {
 	return (
-		<p className="absolute inset-4 text-blue-950 font-semibold flex flex-wrap  gap-4">
+		<p className="absolute inset-4 flex flex-wrap gap-4 font-semibold  text-blue-950">
 			{tags.map((tag: string, index: number) => (
 				<span
 					key={index}
-					className="bg-light-100/60 max-lg:text-sm max-xl:text-sm backdrop-blur-md size-fit py-2 px-3 rounded-2xl shadow-md whitespace-nowrap"
+					className="size-fit whitespace-nowrap rounded-2xl bg-light-100/60 px-3 py-2 shadow-md backdrop-blur-md max-xl:text-sm max-lg:text-sm"
 				>
 					{tag}
 				</span>
