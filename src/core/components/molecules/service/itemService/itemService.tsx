@@ -9,7 +9,7 @@ type ArrayServiceProps = {
 const ItemService = ({ arrayService }: ArrayServiceProps) => {
 	return (
 		<>
-			<div className="group relative flex cursor-pointer items-center justify-center gap-4 overflow-hidden rounded-full border p-3 text-base text-light-100 transition-all  hover:border-light-600 hover:bg-light-600  md:text-lg lg:p-6 xl:px-6 ">
+			<div className="group relative flex cursor-pointer items-center justify-center gap-4 overflow-hidden rounded-full border p-3 text-base text-light-100 transition-all  hover:border-blue-900 hover:bg-blue-900 md:text-lg lg:p-6 xl:px-6 ">
 				<Link
 					href={`/service/${arrayService.name}`}
 					className="absolute size-full cursor-pointer bg-black/0"

@@ -19,7 +19,7 @@ function Cible() {
  <div className=" space-y-4 sm:space-y-4 md:space-y-4 relative ">
 
       {/* Ombre à gauche avec effet de fumée */}
-      <div className="absolute left-0 top-0 bottom-0 w-24 sm:w-36 md:w-52 bg-gradient-to-r from-[#04374b] via-[#04374b] to-transparent pointer-events-none z-20" />
+      <div className="absolute left-0 top-0 bottom-0 w-24 sm:w-36 md:w-52 bg-gradient-to-r from-[#07161b] via-[#07161b] to-transparent pointer-events-none z-20" />
 
       {/* Première ligne : défile de gauche à droite */}
       <div className="overflow-hidden relative">
@@ -58,10 +58,10 @@ function Cible() {
       </div>
 
       {/* Ombre à droite avec effet de fumée */}
-      <div className="absolute right-0 top-0 bottom-0 w-24 sm:w-36 md:w-52 bg-gradient-to-l from-[#04374b] via-[#04374b] to-transparent pointer-events-none z-20" />
+      <div className="absolute right-0 top-0 bottom-0 w-24 sm:w-36 md:w-52 bg-gradient-to-l from-[#07161b] via-[#07161b] to-transparent pointer-events-none z-20" />
 
       {/* Ombre en bas avec effet de fumée */}
-      <div className="absolute bottom-0 left-0 right-0 h-16 sm:h-24 md:h-28 bg-gradient-to-t from-[#04374b] via-[#04374b] to-transparent pointer-events-none z-20" />
+      <div className="absolute bottom-0 left-0 right-0 h-16 sm:h-24 md:h-28 bg-gradient-to-t from-[#07161b] via-[#07161b] to-transparent pointer-events-none z-20" />
     </div>
 
    

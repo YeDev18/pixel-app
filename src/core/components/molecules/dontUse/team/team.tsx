@@ -23,7 +23,7 @@ function Team() {
 		Happy: Number(ContactData.stat[0]?.Happy) || 0,
 	};
 
-	console.log("Données de stats:", stats); // Log des données de stats
+	console.log("Données de stats:", stats); 
 
 	const [countTeam, setCountTeam] = useState<number>(0);
 	const [countProject, setCountProject] = useState<number>(0);

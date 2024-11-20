@@ -13,7 +13,7 @@ function Values() {
 				className=" card_ombre absolute inset-x-1/2 -z-10 h-4 -translate-x-1/2 bg-black"
 			></motion.div>
 			<SectionMotion>
-				<div className="card_wrap grid grid-cols-1 place-content-center justify-center gap-4  max-md:w-screen md:grid-cols-2">
+				<div className=" grid grid-cols-1 place-content-center justify-center gap-4  max-md:w-screen md:grid-cols-2">
 					<CardValue />
 				</div>
 			</SectionMotion>

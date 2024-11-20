@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState, useEffect } from 'react';
 import { ContactData } from '@/core/data/contact.data'; // Assurez-vous que le chemin est correct
 
