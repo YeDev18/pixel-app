@@ -11,9 +11,10 @@
 	"dependencies": {
 		"@flaticon/flaticon-uicons": "^3.3.1",
 		"@fontsource-variable/montserrat": "^5.1.0",
+		"@popmotion/popcorn": "^0.4.4",
 		"clsx": "^2.1.1",
 		"eslint-plugin-tailwindcss": "^3.17.5",
-		"framer-motion": "^11.11.9",
+		"framer-motion": "^11.11.17",
 		"next": "14.2.15",
 		"react": "^18",
 		"react-dom": "^18",
