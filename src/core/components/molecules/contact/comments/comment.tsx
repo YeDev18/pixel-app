@@ -18,7 +18,7 @@ const Comments = () => {
 	};
 	return (
 		<>
-			<div className="relative h-fit w-full ">
+			<div className="relative h-fit w-full border-none ">
 				<div className="absolute bottom-14 right-14 flex flex-col space-y-4 text-2xl font-semibold text-light-100">
 					<button
 						className=" cursor-pointer rounded-full border p-2"
