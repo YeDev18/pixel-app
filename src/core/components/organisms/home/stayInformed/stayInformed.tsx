@@ -1,5 +1,5 @@
-import { HeadInformed } from "@/core/components/molecules/_all/stayInformed/head.informed";
-import ItemCard from "@/core/components/molecules/_all/stayInformed/item.card";
+import { HeadInformed } from "@/core/components/molecules/_all/stay.informed/head.informed";
+import ItemCard from "@/core/components/molecules/_all/stay.informed/item.card";
 import { InformationInspiration } from "@/core/data/stay.informed.data";
 import { SectionMotion } from "../../_all/sectionMotion/section.motion";
 

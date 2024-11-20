@@ -11,7 +11,7 @@ const ItemService = ({ arrayService }: ArrayServiceProps) => {
 		<>
 			<div className="group relative flex cursor-pointer items-center justify-center gap-4 overflow-hidden rounded-full border p-3 text-base text-light-100 transition-all  hover:border-light-600 hover:bg-light-600  md:text-lg lg:p-6 xl:px-6 ">
 				<Link
-					href={`/service/${arrayService.link}`}
+					href={`/${arrayService.link}`}
 					className="absolute size-full cursor-pointer bg-black/0"
 				></Link>
 				<span className="text-2xl group-hover:hidden xl:text-4xl">

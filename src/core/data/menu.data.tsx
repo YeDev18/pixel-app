@@ -3,10 +3,14 @@ import Facebook from "../components/atoms/icons/facebook";
 import Instagram from "../components/atoms/icons/instagram";
 import Linkedin from "../components/atoms/icons/linkedin";
 
+type Definition = {
+	paragraph: string;
+};
 export interface MenuProps {
 	label: string;
 	href: string;
 	icon?: string;
+	definition?: Definition[];
 }
 
 export const Menus: MenuProps[] = [
