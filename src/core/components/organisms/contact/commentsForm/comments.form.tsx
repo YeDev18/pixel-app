@@ -3,7 +3,7 @@ import FormField from "@/core/components/molecules/contact/form/form";
 
 const CommentForm = () => {
 	return (
-		<div className="flex items-start justify-between gap-4  max-lg:flex-col-reverse ">
+		<div className="flex h-screen items-start justify-between gap-4  max-lg:flex-col-reverse ">
 			<Comments />
 			<FormField />
 		</div>

@@ -6,7 +6,7 @@ const CardValue = () => {
 			{ValuesData.map((value) => (
 				<div
 					key={value.id}
-					className="mx-auto flex w-full items-center rounded-3xl border border-[#0a3b4e] bg-[#04374b] p-6 transition-shadow duration-300 md:h-64 md:w-96 lg:pl-12 "
+					className="mx-auto flex w-full items-center rounded-3xl bg-[#07161b] p-6 transition-shadow duration-300 md:h-64 md:w-96 lg:pl-12 "
 				>
 					<div className="space-y-4 text-light-100">
 						<h3 className="text-xl font-bold">{value.name}</h3>

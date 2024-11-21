@@ -3,7 +3,10 @@ export const InputButton = ({
 	className,
 }: { children: React.ReactNode; className?: string }) => {
 	return (
-		<button className={`${className} inputButton`} type="submit">
+		<button
+			className={`${className} inputButton bg-white text-[#04374b]`}
+			type="submit"
+		>
 			{children}
 		</button>
 	);

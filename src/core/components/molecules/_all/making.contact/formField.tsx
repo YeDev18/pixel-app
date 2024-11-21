@@ -5,8 +5,8 @@ const FormField = () => {
 	return (
 		<div className="">
 			<form className=" flex flex-col justify-center gap-8 py-2">
-				<Input type="text" />
-				<Input type="email" />
+				<Input type="text" placeholder="Nom" />
+				<Input type="email" placeholder="Email" />
 				<InputButton>Commencez maintenant</InputButton>
 			</form>
 		</div>

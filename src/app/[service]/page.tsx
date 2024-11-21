@@ -1,4 +1,4 @@
-import HeadService from "@/core/components/molecules/service.item/head/head";
+import HeadService from "@/core/components/organisms/service.item/head/head";
 import ServiceItem from "@/core/components/templ@tes/service.item/service.item.all";
 import { ServiceData, ServiceDataProps } from "@/core/data/service.data";
 
@@ -11,8 +11,7 @@ const ServiceName = ({ params }: { params: { service: string } }) => {
 		<div className="space-y-4 overflow-y-hidden">
 			<HeadService blog={blog} />
 
-			<ServiceItem />
-			{params.service}
+			<ServiceItem blog={blog} />
 		</div>
 	);
 };

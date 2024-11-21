@@ -3,12 +3,6 @@ import { ContactData } from "@/core/data/contact.data";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-// interface TeamInfo {
-// 	Title: string;
-// 	Desc: string;
-// 	img: string;
-// }
-
 interface Stats {
 	Team: number;
 	project: number;
@@ -23,7 +17,7 @@ function Team() {
 		Happy: Number(ContactData.stat[0]?.Happy) || 0,
 	};
 
-	console.log("Données de stats:", stats); // Log des données de stats
+	console.log("Données de stats:", stats);
 
 	const [countTeam, setCountTeam] = useState<number>(0);
 	const [countProject, setCountProject] = useState<number>(0);
@@ -113,10 +107,10 @@ function Team() {
 	return (
 		<div className="flex h-screen space-x-8 px-8" id="team-section">
 			<div className="flex w-1/2 flex-col items-start justify-center space-y-12">
-				<h2 className="mb-4 text-[52px] font-medium">
+				<h2 className="mb-4 shrink-0 text-[52px] font-medium">
 					{teamInfo.Title}
 				</h2>
-				<p className="mb-6 text-lg">{teamInfo.Desc}</p>
+				<p className="mb-6 shrink-0 text-lg">{teamInfo.Desc}</p>
 
 				<div className="size-full rounded-lg border border-[rgba(255,255,255,0.1)] p-4 shadow-md">
 					<div className="flex h-full flex-col items-center justify-center space-y-10">

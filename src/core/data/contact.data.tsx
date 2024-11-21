@@ -1,5 +1,5 @@
 import Team from "@/app/img/Team.jpg";
-export const CommentsData = {
+export const ContactData = {
 	quotes: [
 		{
 			id: 1,

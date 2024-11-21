@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 :root {
-	--background: #04374b;
+	--background: #07161b;
+	/* --background: #07111b; */
+	/* --background:  #0b1226 ; */
 	--foreground: #171717;
 }
 
@@ -18,8 +20,17 @@
 	}
 	body {
 		background: var(--background);
-		font-family: "Montserrat Variable", sans-serif;
+		font-family: "Nineteenth", sans-serif;
+		color: #fae3cf;
 	}
+}
+@font-face {
+	font-family: "Nineteenth";
+	font-style: normal;
+	font-weight: normal;
+	src: local("Nineteenth Regular"),
+		url("../../public/assets/font/Nineteenth\ \(Personal\ use\).woff")
+		format("woff");
 }
 
 @layer components {
@@ -116,6 +127,12 @@
 		100% {
 			transform: translateX(0);
 		}
+	}
+	.primaire {
+		background: #0a2b38;
+	}
+	.secondaire {
+		background: #fae3cf;
 	}
 
 	.overflow-hidden {
