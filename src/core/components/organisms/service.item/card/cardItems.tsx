@@ -1,11 +1,11 @@
-// import Card from "@/core/components/molecules/service.item/card/card";
+import Card from "@/core/components/molecules/service.item/card/card";
 
-// const CardItems = ({ blog }) => {
-// 	return (
-// 		<div>
-// 			<Card card={blog} />
-// 		</div>
-// 	);
-// };
+const CardItems = () => {
+	return (
+		<div>
+			<Card />
+		</div>
+	);
+};
 
-// export default CardItems;
+export default CardItems;

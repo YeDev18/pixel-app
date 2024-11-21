@@ -1,15 +1,13 @@
-// import CardItems from "../../organisms/service.item/card/cardItems";
-// import Cover from "../../organisms/service.item/cover/cover";
+import CardItems from "../../organisms/service.item/card/cardItems";
+import Cover from "../../organisms/service.item/cover/cover";
 
-// const ServiceItem = ({ blog }) => {
-// 	return (
-// 		<div>
-// 			<Cover />
-// 			{blog?.card?.map((blog, index) => (
-// 				<CardItems key={index} blog={blog} />
-// 			))}
-// 		</div>
-// 	);
-// };
+const ServiceItem = () => {
+	return (
+		<div>
+			<Cover />
+			<CardItems />
+		</div>
+	);
+};
 
-// export default ServiceItem;
+export default ServiceItem;
