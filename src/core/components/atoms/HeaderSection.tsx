@@ -43,7 +43,7 @@ const HeaderSection: React.FC<HeaderSectionProps> = ({
 
   return (
     <div className={`${alignClass} space-y-6`}>
-      <h1 className={`${titleClass} font-400 `}>{title}</h1>
+      <h1 className={`${titleClass} font-400 `}>{title} <span className='text-[70px] text-[#DC0000]'>.</span></h1>
       <p className={`${subtitleClass} `}>{subtitle}</p>
     </div>
   );

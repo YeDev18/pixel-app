@@ -16,6 +16,8 @@ import Success from "../../organisms/Home/success/success";
 import Values from "../../organisms/Home/value/values";
 import HeaderSection from "../../atoms/HeaderSection";
 import TextCible from "../../molecules/dontUse/textCible/TextCible";
+import HowWeWork from "../../molecules/_all/HowWeWork/HowWeWork";
+import HowWeWorkList from "../../organisms/Home/HowWeWork.tsx/HowWeWork";
 // import Link from "next/link";
 
 export default function HomeAll() {
@@ -23,12 +25,14 @@ export default function HomeAll() {
 		<div className="space-y-24 py-4">
 			<Hero />
 			<Values />
+			<HowWeWorkList/>
 			<HeaderSection
 				title="Notre Expertise, Votre succès "
 				customTitleSize="52px"
 				customSubtitleSize="16px"
 				align="center"
 			/>
+			
 			<ItemsService/>
 			<ExpandingCard/>
 			<HeaderSection

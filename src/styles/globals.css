@@ -157,7 +157,14 @@
 		text-wrap: balance;
 	}
 }
-
+.scrollbar-hide {
+	scrollbar-width: none; /* Firefox */
+	-ms-overflow-style: none; /* IE 10+ */
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+	display: none; /* Chrome, Safari, Edge */
+  }
+  
 /* .bgheader {
 	background-image: linear-gradient(to bottom, #075c79, #094f68, #0b4357, #0b3747, #0a2b38); 
 	background: rgb(10,43,56);
