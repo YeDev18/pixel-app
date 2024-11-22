@@ -110,6 +110,10 @@
 	.button_shadow {
 		box-shadow: inset -4px 0px 39px 19px rgba(0, 0, 0, 0.1);
 	}
+	.cardText:before{
+		content: attr(data-parent);
+
+	}
 
 	@keyframes scroll-right {
 		0% {
