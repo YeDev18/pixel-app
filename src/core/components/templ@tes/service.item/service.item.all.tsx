@@ -3,7 +3,7 @@ import Cover from "../../organisms/service.item/cover/cover";
 
 const ServiceItem = () => {
 	return (
-		<div>
+		<div className="space-y-14">
 			<Cover />
 			<CardItems />
 		</div>
