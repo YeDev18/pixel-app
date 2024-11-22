@@ -36,7 +36,7 @@ const Comments = () => {
 								key={comment.id}
 							>
 								<div className="flex h-[45rem] max-h-[48rem] w-full  flex-col justify-between rounded-3xl bg-blue-800 p-8  lg:w-full">
-									<Quote />
+									<Quote color="#DC0000"/>
 									<p className="text-xl/relaxed font-medium lg:text-2xl/relaxed">
 										{comment.text}
 									</p>
