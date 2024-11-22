@@ -1,19 +1,22 @@
-import React from 'react';
-import { TargetGroups } from '../../../../data/Cible';
+import { TargetGroups } from "../../../../data/Cible";
 
-function CibleCard({ id }) {
-  const group = TargetGroups.find((item) => item.id === id);
+function CibleCard({ id }: { id: number }) {
+	const group = TargetGroups.find((item) => item.id === id);
 
-  if (!group) {
-    return <div>Card not found</div>;
-  }
+	if (!group) {
+		return <div>Card not found</div>;
+	}
 
-  return (
-    <div className="w-[250px] sm:w-[300px] md:w-[350px] lg:w-[400px] h-[150px] sm:h-[200px] bg-[#07161b] flex flex-col justify-center p-4 sm:p-6 rounded-[30px] sm:rounded-[50px] bgtransition-transform duration-300 transform hover:scale-105">
-      <p className="font-normal mb-2 sm:mb-4 text-sm sm:text-base">{group.description}</p>
-      <h3 className="text-[14px] sm:text-[16px] font-bold">{group.name}</h3>
-    </div>
-  );
+	return (
+		<div className="flex h-[150px] w-[250px] flex-col justify-center rounded-[30px] bg-[#07161b] p-4 duration-300 hover:scale-105 sm:h-[200px] sm:w-[300px] sm:rounded-[50px] sm:p-6 md:w-[350px] lg:w-[400px]">
+			<p className="mb-2 text-sm font-normal sm:mb-4 sm:text-base">
+				{group.description}
+			</p>
+			<h3 className="text-[14px] font-bold sm:text-[16px]">
+				{group.name}
+			</h3>
+		</div>
+	);
 }
 
 export default CibleCard;

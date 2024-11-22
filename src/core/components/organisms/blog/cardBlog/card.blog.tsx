@@ -1,4 +1,4 @@
-import ItemCard from "@/core/components/molecules/_all/stayInformed/item.card";
+import ItemCard from "@/core/components/molecules/_all/stay.informed/item.card";
 import { InformationInspiration } from "@/core/data/stay.informed.data";
 const CardBlog = () => {
 	return (

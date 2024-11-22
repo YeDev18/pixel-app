@@ -1,5 +1,5 @@
-import FormField from "../../../molecules/_all/makingContact/formField";
-import TextFormField from "../../../molecules/_all/makingContact/textFormField";
+import FormField from "../../../molecules/_all/making.contact/formField";
+import TextFormField from "../../../molecules/_all/making.contact/textFormField";
 
 const MakingContact = () => {
 	return (

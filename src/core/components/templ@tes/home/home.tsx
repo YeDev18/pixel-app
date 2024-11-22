@@ -1,23 +1,17 @@
-
-import BgCard from "../../atoms/bgCard";
-import ServiceHeaderCard from "../../atoms/serviceHeaderCard/headerCard";
-import Subtitle from "../../atoms/Subtitle";
-import Title from "../../atoms/HeaderSection";
-import ExpandingCard from "../../molecules/dontUse/expandingcard/expandingcard";
-import ProcessContainer from "../../molecules/dontUse/processCard/ProcessCard";
-import Team from "../../molecules/dontUse/team/team";
-import ServiceStackList from "../../molecules/service/ServiceStack/SeviceStack";
-import ItemsService from "../../organisms/_all/itemsService/itemsService";
-import Cible from "../../organisms/Home/cible/Cible";
-import Hero from "../../organisms/Home/hero/hero";
-import MakingContact from "../../organisms/Home/makingContact/makingContact";
-import StayInformed from "../../organisms/Home/stayInformed/stayInformed";
-import Success from "../../organisms/Home/success/success";
-import Values from "../../organisms/Home/value/values";
 import HeaderSection from "../../atoms/HeaderSection";
+import ExpandingCard from "../../molecules/dont.use/expandingcard/expandingcard";
+
+import Team from "../../molecules/dont.use/team/team";
 import TextCible from "../../molecules/dontUse/textCible/TextCible";
 import HowWeWork from "../../molecules/_all/HowWeWork/HowWeWork";
 import HowWeWorkList from "../../organisms/Home/HowWeWork.tsx/HowWeWork";
+import Hero from "../../organisms/Home/hero/hero";
+import Values from "../../organisms/Home/value/values";
+import ItemsService from "../../organisms/_all/itemsService/itemsService";
+import Success from "../../organisms/Home/success/success";
+import MakingContact from "../../organisms/Home/makingContact/makingContact";
+import Cible from "../../organisms/Home/cible/Cible";
+import StayInformed from "../../organisms/Home/stayInformed/stayInformed";
 // import Link from "next/link";
 
 export default function HomeAll() {
@@ -28,6 +22,7 @@ export default function HomeAll() {
 			<HowWeWorkList/>
 			<HeaderSection
 				title="Notre Expertise, Votre succès "
+				subtitle=""
 				customTitleSize="52px"
 				customSubtitleSize="16px"
 				align="center"
@@ -43,7 +38,7 @@ export default function HomeAll() {
 				align="center"
 			/>
 			<Success />
-			<Team/>
+			<Team />
 			<MakingContact />
 			<HeaderSection
 				title="Vous Faites Partir De Nos Cibles"
@@ -52,8 +47,8 @@ export default function HomeAll() {
 				customSubtitleSize="16px"
 				align="center"
 			/>
-				<Cible/>
-			<TextCible/>
+			<Cible />
+			<TextCible />
 			<HeaderSection
 				title="Restez Informé Et Inspriré"
 				subtitle="Découvrez Nos Dernières Idées, Astuces Et Tendances"
@@ -62,7 +57,6 @@ export default function HomeAll() {
 				align="center"
 			/>
 			<StayInformed />
-
 		</div>
 	);
 }

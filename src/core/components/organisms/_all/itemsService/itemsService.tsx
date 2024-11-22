@@ -1,6 +1,6 @@
+import ItemService from "@/core/components/molecules/service/itemService/itemService";
 import { ServiceData } from "@/core/data/service.data";
 import { SectionMotion } from "../sectionMotion/section.motion";
-import ItemService from "@/core/components/molecules/service/itemService/itemService";
 
 const ItemsService = () => {
 	return (

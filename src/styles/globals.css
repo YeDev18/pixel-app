@@ -22,15 +22,16 @@
 		background: var(--background);
 		font-family: "Nineteenth", sans-serif;
 		color: #fae3cf;
-
 	}
 }
 @font-face {
-    font-family: 'Nineteenth';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Nineteenth Regular'), url('../../public/assets/font/Nineteenth\ \(Personal\ use\).woff') format('woff');   
-    }
+	font-family: "Nineteenth";
+	font-style: normal;
+	font-weight: normal;
+	src: local("Nineteenth Regular"),
+		url("../../public/assets/font/Nineteenth\ \(Personal\ use\).woff")
+		format("woff");
+}
 
 @layer components {
 	.card:nth-child(5),
@@ -109,6 +110,10 @@
 	.button_shadow {
 		box-shadow: inset -4px 0px 39px 19px rgba(0, 0, 0, 0.1);
 	}
+	.cardText:before{
+		content: attr(data-parent);
+
+	}
 
 	@keyframes scroll-right {
 		0% {
@@ -127,12 +132,11 @@
 			transform: translateX(0);
 		}
 	}
-	.primaire{
+	.primaire {
 		background: #0a2b38;
-		
 	}
-	.secondaire{
-		background:#fae3cf;
+	.secondaire {
+		background: #fae3cf;
 	}
 
 	.overflow-hidden {

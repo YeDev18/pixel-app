@@ -1,6 +1,6 @@
+import CardValue from "@/core/components/molecules/home/values/cardValue";
 import * as motion from "framer-motion/client";
 import { SectionMotion } from "../../_all/sectionMotion/section.motion";
-import CardValue from "@/core/components/molecules/Home/values/cardValue";
 
 function Values() {
 	return (

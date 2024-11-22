@@ -3,7 +3,7 @@ import Input from "@/core/components/atoms/input";
 const FormField = () => {
 	return (
 		<>
-			<div className="flex w-full h-f ull flex-col  items-center justify-center gap-4 rounded-3xl bg-blue-800 py-16 lg:h-[45rem] lg:w-[50rem]">
+			<div className="flex size-full flex-col items-center  justify-center gap-4 rounded-3xl bg-blue-800 py-16 lg:h-[45rem] lg:w-[50rem]">
 				<h4 className="overflow-hidden p-4 text-4xl font-extralight text-light-100">
 					Contactez-Nous
 				</h4>

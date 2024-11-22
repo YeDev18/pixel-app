@@ -1,4 +1,3 @@
-import { Logo } from "@/core/components/atoms/logo";
 import { IconSocials, Menus } from "@/core/data/menu.data";
 import Link from "next/link";
 // import Logo from "../../../atoms/Logo";
