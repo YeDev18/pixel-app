@@ -1,3 +1,4 @@
+"use client";
 import { ServiceDataProps } from "@/core/data/service.data";
 
 const HeadService = ({
@@ -5,6 +6,7 @@ const HeadService = ({
 }: {
 	blog: ServiceDataProps | undefined;
 }) => {
+	console.log(blog);
 	return (
 		<div className="container mx-auto overflow-y-hidden py-4 text-light-100  xl:px-52">
 			<h1 className="py-7 text-3xl font-medium lg:text-5xl">
