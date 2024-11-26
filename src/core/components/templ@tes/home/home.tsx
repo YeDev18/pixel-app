@@ -29,7 +29,7 @@ export default function HomeAll() {
 			/>
 			
 			<ItemsService/>
-			<ExpandingCard/>
+			{/* <ExpandingCard/> */}
 			<HeaderSection
 				title="Nos Projets à succès"
 				subtitle="Découvrez comment nous avons aidé nos clients à obtenir des résultats remarquables"

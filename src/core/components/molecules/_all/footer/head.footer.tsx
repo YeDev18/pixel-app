@@ -8,7 +8,7 @@ const HeadFooter = () => {
 			<div className="flex flex-col max-lg:gap-3 max-md:w-screen max-md:items-center md:flex-row md:items-center lg:flex-col lg:items-start lg:space-y-3">
 				{/* <Logo /> */}
 				<p className="w-fit text-sm font-medium max-md:text-center lg:w-80">
-					Bienvenue a Pixel Innov : Marketing par excellence.
+					Bienvenue a Pix Digit <span className='text-[35px] text-[#DC0000]'>.</span>  : Marketing par excellence.
 					Measurable results.
 				</p>
 			</div>

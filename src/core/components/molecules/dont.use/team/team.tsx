@@ -1,4 +1,5 @@
 "use client";
+import Button from "@/core/components/atoms/Button";
 import { ContactData } from "@/core/data/contact.data";
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -106,11 +107,14 @@ function Team() {
 
 	return (
 		<div className="flex h-screen space-x-8 px-8" id="team-section">
-			<div className="flex w-1/2 flex-col items-start justify-center space-y-12">
-				<h2 className="mb-4 shrink-0 text-[52px] font-medium">
+			<div className="flex w-1/2 flex-col items-start justify-center space-y-8">
+				<h2 className="shrink-0 text-[52px] font-medium">
 					{teamInfo.Title}
 				</h2>
-				<p className="mb-6 shrink-0 text-lg">{teamInfo.Desc}</p>
+				<p className="shrink-0 text-lg mb-12">{teamInfo.Desc}</p>
+				<Button className="shrink-0 w-fit gap-4 align-middle text-black">
+						Voir plus
+				</Button>
 
 				<div className="size-full rounded-lg border border-[rgba(255,255,255,0.1)] p-4 shadow-md">
 					<div className="flex h-full flex-col items-center justify-center space-y-10">

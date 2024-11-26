@@ -7,8 +7,8 @@ interface ComputerProps extends SVGProps<SVGSVGElement> {
 }
 
 export function Computer({
-	width = 24,
-	height = 24,
+	width = 35,
+	height = 35,
 	color = 'white',
 	...props
 }: ComputerProps) {
