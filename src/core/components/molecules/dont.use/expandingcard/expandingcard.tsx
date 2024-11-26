@@ -4,7 +4,7 @@ import { cardsData } from "@/core/data/card.data";
 
 const ExpandingCard = () => {
 	return (
-		<div className="flex w-[80vw] ">
+		<div className="container mx-auto flex ">
 			{cardsData.map((card) => (
 				<div
 					key={card.id}
