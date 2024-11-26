@@ -5,12 +5,12 @@ export default function ServiceLayout({
 	children,
 }: { children: React.ReactNode }) {
 	return (
-		<div className="space-y-16">
+		<>
 			<HeadSection
 				head="Service"
 				information="Notre, Expertise votre succès"
 			/>
 			{children}
-		</div>
+		</>
 	);
 }
