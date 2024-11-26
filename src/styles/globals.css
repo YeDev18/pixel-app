@@ -74,15 +74,31 @@
 		width: 40px;
 		height: 40px;
 		border-radius: 50%;
-		box-shadow: 0 0 60px 30px #fae3cf, /* inner light-100 */ 0 0 100px 60px
+		box-shadow:  0 0 60px 30px #fae3cf, /* inner light-100 */ 0 0 100px 60px
 			#1b4c5e, /* middle blue-500 */ 0 10px 200px 90px #0ff; /* outer cyan */
 	}
 	.card_ombre {
 		width: 0px;
 		height: 0px;
-		border-radius: 50%;
-		box-shadow: 0 0 200px 50px #fae3cf, /* inner light-100 */ 0 0 100px 60px
+		border-radius: 100%;
+		box-shadow:  0 0 200px 50px #fae3cf, /* inner light-100 */ 0 0 100px 60px
 			#04374b, /* middle blue-500 */ 0 10px 200px 90px #075777; /* outer cyan */
+	}
+	.card_service_ombre {
+		width: 0px;
+		height: 0px;
+		border-radius: 0;
+		box-shadow: 0 0 500px 30px #07161b, /* inner light-100 */ 0 0px 200px 50px
+			#fae3cf, /* middle blue-500 */ 0 10px 500px 90px #07161b; /* outer cyan */
+	}
+
+	.ombre{
+		/*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=fae3cf&c2=07161b&gt=r&gd=dcc
+*/
+background: rgba(250, 227, 207, 1.0);
+background: radial-gradient(at center, rgba(250, 227, 207, 1.0), rgba(7, 22, 27, 1.0));
 	}
 	.card_wrap {
 		box-shadow: inset 0px 0px 66px 37px #04374b, 0px 10px 15px -3px #04374b;
@@ -115,7 +131,15 @@
 
 	}
 
-	@keyframes scroll-right {
+	.viva{
+		
+		background-image: radial-gradient( #fae3cf 40%, #07161b, #07161b );
+		background-repeat: no-repeat;
+
+
+	}
+
+		@keyframes scroll-right {
 		0% {
 			transform: translateX(0);
 		}

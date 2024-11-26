@@ -1,43 +1,22 @@
-import { SVGProps } from 'react';
+import { SVGProps } from "react";
 
-interface ComputerProps extends SVGProps<SVGSVGElement> {
-	width?: number | string;
-	height?: number | string;
-	color?: string;
-}
-
-export function Computer({
-	width = 35,
-	height = 35,
-	color = 'white',
-	...props
-}: ComputerProps) {
+export function Computer(props: SVGProps<SVGSVGElement>) {
 	return (
 		<svg
-			width={width}
-			height={height}
-			viewBox="0 0 24 24"
-			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
+			width="1em"
+			height="1em"
+			// fill="none"
+			viewBox="0 0 24 24"
 			{...props}
 		>
-			<g clipPath="url(#clip0_1007_38703)">
-				<path
-					d="M20 18C21.1 18 22 17.1 22 16V6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V16C2 17.1 2.89 18 4 18H1C0.45 18 0 18.45 0 19C0 19.55 0.45 20 1 20H23C23.55 20 24 19.55 24 19C24 18.45 23.55 18 23 18H20ZM13 14.47V12.28C10.22 12.28 8.39 13.13 7 15C7.56 12.33 9.11 9.67 13 9.13V7L16.61 10.36C16.82 10.56 16.82 10.89 16.61 11.09L13 14.47Z"
-					fill={color}
-				/>
-			</g>
-			<defs>
-				<clipPath id="clip0_1007_38703">
-					<rect width="24" height="24" fill="white" />
-				</clipPath>
-			</defs>
+			<path
+				fill="currentColor"
+				d="M2 21q-.425 0-.712-.288T1 20t.288-.712T2 19h20q.425 0 .713.288T23 20t-.288.713T22 21zm2-3q-.825 0-1.412-.587T2 16V5q0-.825.588-1.412T4 3h16q.825 0 1.413.588T22 5v11q0 .825-.587 1.413T20 18z"
+			></path>
 		</svg>
 	);
 }
-
-
-
 
 export function Marketing(props: SVGProps<SVGSVGElement>) {
 	return (

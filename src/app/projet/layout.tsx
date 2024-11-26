@@ -5,12 +5,12 @@ export default function ProjectLayout({
 	children,
 }: { children: React.ReactNode }) {
 	return (
-		<div className="space-y-16">
+		<>
 			<HeadSection
 				head="Projet"
 				information="Notre, Expertise votre succès"
 			/>
 			{children}
-		</div>
+		</>
 	);
 }
