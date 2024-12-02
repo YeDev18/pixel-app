@@ -1,7 +1,7 @@
 import { ProcessProps } from "@/core/data/service.data";
 import * as motion from "framer-motion/client";
 
-const ProcessCardItem = ({ array }: { array: ProcessProps }) => {
+const ProcessItem = ({ array }: { array: ProcessProps }) => {
   return (
     <motion.div
     initial={{ opacity: 0, y: 10 }}
@@ -33,4 +33,4 @@ const ProcessCardItem = ({ array }: { array: ProcessProps }) => {
   );
 };
 
-export default ProcessCardItem;
+export default ProcessItem;

@@ -18,6 +18,12 @@ export type ProcessProps = {
 	paragraph: string;
 	item: string;
 };
+// export type PackageProps = {
+// 	id: number;
+// 	name: string;
+// 	desc: string;
+// 	price:string;
+// };
 
 export type ServiceDataProps = {
 	id: number;
@@ -106,11 +112,18 @@ export const ServiceData: ServiceDataProps[] = [
 				paragraph:
 					"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum maxime neque pariatur doloribus natus quae reiciendis, voluptate modi praesentium ipsa doloremque et id veniam vitae blanditiis odit. Quo, praesentium obcaecati.",
 			},
+			{
+				id: 5,
+				item: "Discovery and Strategy",
+				paragraph:
+					"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum maxime neque pariatur doloribus natus quae reiciendis, voluptate modi praesentium ipsa doloremque et id veniam vitae blanditiis odit. Quo, praesentium obcaecati.",
+			},
 		],
+	
 	},
 	{
 		id: 2,
-		name: "Sale & Marketing Audit",
+		name: "Community management",
 		link: "sale-marketing-audit",
 		icon: <Graph />,
 		definitions: [
@@ -186,11 +199,12 @@ export const ServiceData: ServiceDataProps[] = [
 					"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum maxime neque pariatur doloribus natus quae reiciendis, voluptate modi praesentium ipsa doloremque et id veniam vitae blanditiis odit. Quo, praesentium obcaecati.",
 			},
 		],
+	
 	},
 
 	{
 		id: 3,
-		name: "Marketing Consulting",
+		name: "Conception Graphique",
 		link: "marketing-consulting",
 		icon: <Marketing />,
 		definitions: [
@@ -266,6 +280,7 @@ export const ServiceData: ServiceDataProps[] = [
 					"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum maxime neque pariatur doloribus natus quae reiciendis, voluptate modi praesentium ipsa doloremque et id veniam vitae blanditiis odit. Quo, praesentium obcaecati.",
 			},
 		],
+	
 	},
 
 	{
@@ -346,5 +361,6 @@ export const ServiceData: ServiceDataProps[] = [
 					"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum maxime neque pariatur doloribus natus quae reiciendis, voluptate modi praesentium ipsa doloremque et id veniam vitae blanditiis odit. Quo, praesentium obcaecati.",
 			},
 		],
+	
 	},
 ];
