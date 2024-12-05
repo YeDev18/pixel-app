@@ -3,28 +3,202 @@
 @tailwind utilities;
 
 :root {
-  --background: #071E27;
-  --foreground: #171717;
+	--background: #07161b;
+	/* --background: #07111b; */
+	/* --background:  #0b1226 ; */
+	--foreground: #171717;
 }
 
-
-
-@layer base{
-  *,::after,::before{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+@layer base {
+	*,
+	::after,
+	::before {
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+		overflow-x: hidden;
+	}
+	body {
+		background: var(--background);
+		font-family: "Montserrat", sans-serif;
+		color: #fae3cf;
+	}
 }
-body {
-  background: var(--background);
- font-family: 'Montserrat Variable', sans-serif;
-}
-}
+/* @font-face {
+	font-family: "Nineteenth";
+	font-style: normal;
+	font-weight: normal;
+	src: local("Nineteenth Regular"),
+		url("../../public/assets/font/Nineteenth\ \(Personal\ use\).woff")
+		format("woff");
+} */
 
+@layer components {
+	.card:nth-child(5),
+	.card:nth-child(6) {
+		display: none;
+	}
+	.makingContactBg {
+		background-image: url("/assets/BgPixel.webp");
+	}
+	.hero {
+		background-image: url("/assets/BgPixel.webp");
+	}
+
+	input {
+		width: 18rem;
+		height: 3.5rem;
+		padding: 1rem;
+		outline: none;
+		border: 1px solid #fae3cf;
+		color: #fae3cf;
+		border-radius: 5rem;
+		backdrop-filter: blur(24px);
+		background-color: inherit;
+		box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px
+			2px;
+	}
+	.inputButton {
+		width: 18rem;
+		height: 3.5rem;
+		padding: 1rem;
+		outline: none;
+		background-color: #fae3cf;
+		border-radius: 5rem;
+		font-weight: 600;
+		cursor: pointer;
+		box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px
+			2px;
+	}
+	.ombre {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		box-shadow:  0 0 60px 30px #fae3cf, /* inner light-100 */ 0 0 100px 60px
+			#1b4c5e, /* middle blue-500 */ 0 10px 200px 90px #0ff; /* outer cyan */
+	}
+	.card_ombre {
+		width: 0px;
+		height: 0px;
+		border-radius: 100%;
+		box-shadow:  0 0 200px 50px #fae3cf, /* inner light-100 */ 0 0 100px 60px
+			#04374b, /* middle blue-500 */ 0 10px 200px 90px #075777; /* outer cyan */
+	}
+	.card_service_ombre {
+		width: 0px;
+		height: 0px;
+		border-radius: 0;
+		box-shadow: 0 0 500px 30px #07161b, /* inner light-100 */ 0 0px 200px 50px
+			#fae3cf, /* middle blue-500 */ 0 10px 500px 90px #07161b; /* outer cyan */
+	}
+
+	.ombre{
+background: rgba(250, 227, 207, 1.0);
+background: radial-gradient(at center, rgba(250, 227, 207, 1.0), rgba(7, 22, 27, 1.0));
+	}
+	.card_wrap {
+		box-shadow: inset 0px 0px 66px 37px #04374b, 0px 10px 15px -3px #04374b;
+	}
+
+	.parent {
+		background: white;
+		width: fit;
+		height: fit;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.parent[data-open="true"] {
+		width: 800px;
+		height: 400px;
+	}
+
+	.header-nav {
+		transition: max-height 0.3s ease-in-out;
+		overflow: hidden;
+	}
+
+	.button_shadow {
+		box-shadow: inset -4px 0px 39px 19px rgba(0, 0, 0, 0.1);
+	}
+	.cardText:before{
+		content: attr(data-parent);
+
+	}
+
+	.viva{
+		
+		background-image: radial-gradient( #fae3cf 40%, #07161b, #07161b );
+		background-repeat: no-repeat;
+
+	}
+
+		@keyframes scroll-right {
+		0% {
+			transform: translateX(0);
+		}
+		100% {
+			transform: translateX(-50%);
+		}
+	}
+
+	@keyframes scroll-left {
+		0% {
+			transform: translateX(-50%);
+		}
+		100% {
+			transform: translateX(0);
+		}
+	}
+	.primaire {
+		background: #0a2b38;
+	}
+	.secondaire {
+		background: #fae3cf;
+	}
+
+	.overflow-hidden {
+		overflow: hidden;
+	}
+
+	.inline-flex {
+		display: inline-flex;
+	}
+
+	.animate-scroll-right {
+		animation: scroll-right 120s linear infinite; /* Augmenté à 120s pour ralentir */
+	}
+
+	.animate-scroll-left {
+		animation: scroll-left 120s linear infinite; /* Augmenté à 120s pour ralentir */
+	}
+}
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+	.text-balance {
+		text-wrap: balance;
+	}
 }
+.scrollbar-hide {
+	scrollbar-width: none; /* Firefox */
+	-ms-overflow-style: none; /* IE 10+ */
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+	display: none; /* Chrome, Safari, Edge */
+  }
+  
+/* .bgheader {
+	background-image: linear-gradient(to bottom, #075c79, #094f68, #0b4357, #0b3747, #0a2b38); 
+	background: rgb(10,43,56);
+background: radial-gradient(circle, rgba(10,43,56,1) 0%, rgba(0,100,140,0.1) 58%, rgba(10,43,56,1) 100%); 
 
+	background: rgb(0,69,83);
+background: radial-gradient(circle, rgba(0,69,83,0.5) 5%, rgba(2,10,13,1) 30%); 
+	background: rgb(0, 69, 83);
+	background: radial-gradient(
+		circle,
+		rgba(0, 69, 83, 1) 16%,
+		rgba(10, 43, 56, 1) 40%
+	);
+} */
