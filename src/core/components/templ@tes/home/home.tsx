@@ -1,17 +1,14 @@
 import HeaderSection from "../../atoms/HeaderSection";
-import ExpandingCard from "../../molecules/dont.use/expandingcard/expandingcard";
 
 import Team from "../../molecules/dont.use/team/team";
 import TextCible from "../../molecules/dontUse/textCible/TextCible";
-import HowWeWork from "../../molecules/_all/HowWeWork/HowWeWork";
-import HowWeWorkList from "../../organisms/Home/HowWeWork.tsx/HowWeWork";
-import Hero from "../../organisms/Home/hero/hero";
-import Values from "../../organisms/Home/value/values";
 import ItemsService from "../../organisms/_all/itemsService/itemsService";
-import Success from "../../organisms/Home/success/success";
-import MakingContact from "../../organisms/Home/makingContact/makingContact";
-import Cible from "../../organisms/Home/cible/Cible";
-import StayInformed from "../../organisms/Home/stayInformed/stayInformed";
+import Cible from "../../organisms/home/cible/Cible";
+import Hero from "../../organisms/home/hero/hero";
+import MakingContact from "../../organisms/home/makingContact/makingContact";
+import StayInformed from "../../organisms/home/stayInformed/stayInformed";
+import Success from "../../organisms/home/success/success";
+import Values from "../../organisms/home/value/values";
 // import Link from "next/link";
 
 export default function HomeAll() {
@@ -26,8 +23,8 @@ export default function HomeAll() {
 				customSubtitleSize="16px"
 				align="center"
 			/>
-			
-			<ItemsService/>
+
+			<ItemsService />
 			{/* <ExpandingCard/> */}
 			<HeaderSection
 				title="Nos Projets à succès"

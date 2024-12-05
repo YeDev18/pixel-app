@@ -1,9 +1,9 @@
 "use client";
 
 import Button from "@/core/components/atoms/Button";
-import { SectionMotion } from "../../_all/sectionMotion/section.motion";
+import Card from "@/core/components/molecules/home/success/card";
 import { SuccessData } from "@/core/data/success.data";
-import Card from "@/core/components/molecules/Home/success/card";
+import { SectionMotion } from "../../_all/sectionMotion/section.motion";
 
 export default function Success() {
 	return (
@@ -24,8 +24,6 @@ export default function Success() {
 			</SectionMotion>
 		</>
 	);
-};
-
-
+}
 
 // ${index === 0 && "row-span-8"} ${index === 2 && "row-span-8"} ${index === 3 && "row-span-8"}
