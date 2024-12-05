@@ -4,6 +4,7 @@ import { ProcessProps } from "@/core/data/service.data";
 
 const ProcessItems = () => {
 	const { service } = useService();
+
 	return (
 		<div className="container mx-auto space-y-0.5 overflow-hidden lg:px-32">
 			{service?.process?.map((process: ProcessProps, index: number) => (
