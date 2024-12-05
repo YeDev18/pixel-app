@@ -4,7 +4,7 @@ import { SectionMotion } from "../../_all/sectionMotion/section.motion";
 
 function Values() {
 	return (
-		<div className="  relative flex items-center justify-center ">
+		<div className="  relative flex items-center justify-center overflow-hidden">
 			<motion.div
 				initial={{ opacity: 0, y: -200 }}
 				whileInView={{ opacity: 0.6, y: 80 }}

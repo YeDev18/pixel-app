@@ -20,18 +20,18 @@
 	}
 	body {
 		background: var(--background);
-		font-family: "Nineteenth", sans-serif;
+		font-family: "Montserrat", sans-serif;
 		color: #fae3cf;
 	}
 }
-@font-face {
+/* @font-face {
 	font-family: "Nineteenth";
 	font-style: normal;
 	font-weight: normal;
 	src: local("Nineteenth Regular"),
 		url("../../public/assets/font/Nineteenth\ \(Personal\ use\).woff")
 		format("woff");
-}
+} */
 
 @layer components {
 	.card:nth-child(5),
@@ -93,10 +93,6 @@
 	}
 
 	.ombre{
-		/*
-* Created with https://www.css-gradient.com
-* Gradient link: https://www.css-gradient.com/?c1=fae3cf&c2=07161b&gt=r&gd=dcc
-*/
 background: rgba(250, 227, 207, 1.0);
 background: radial-gradient(at center, rgba(250, 227, 207, 1.0), rgba(7, 22, 27, 1.0));
 	}
@@ -135,7 +131,6 @@ background: radial-gradient(at center, rgba(250, 227, 207, 1.0), rgba(7, 22, 27,
 		
 		background-image: radial-gradient( #fae3cf 40%, #07161b, #07161b );
 		background-repeat: no-repeat;
-
 
 	}
 

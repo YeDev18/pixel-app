@@ -19,7 +19,6 @@ export default function HomeAll() {
 		<div className="space-y-24 py-4">
 			<Hero />
 			<Values />
-			<HowWeWorkList/>
 			<HeaderSection
 				title="Notre Expertise, Votre succès "
 				subtitle=""
