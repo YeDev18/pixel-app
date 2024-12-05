@@ -5,6 +5,7 @@ import {
 	OptionsProps,
 	ProcessProps,
 	ServiceDataProps,
+	PackageProps,
 } from "@/core/data/service.data";
 import { createContext } from "@/core/hooks";
 import React, { Dispatch, ReactNode, useContext, useState } from "react";
