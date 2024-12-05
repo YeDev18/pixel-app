@@ -1,4 +1,5 @@
 "use client";
+import { PriceData } from "@/core/data/price.data";
 import { ServiceDataProps } from "@/core/data/service.data";
 
 const HeadService = ({
@@ -6,7 +7,8 @@ const HeadService = ({
 }: {
 	blog: ServiceDataProps | undefined;
 }) => {
-	console.log(blog);
+	const array = PriceData.find((data) => data.offre === blog?.name);
+	console.log(array);
 	return (
 		<div className="container mx-auto overflow-y-hidden py-4 text-light-100  xl:px-52">
 			<h1 className="py-7 text-3xl font-medium lg:text-5xl">

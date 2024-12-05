@@ -1,16 +1,15 @@
 "use client";
 import { ValueDataProps } from "@/core/data/value.data";
-import { useScroll, useTransform } from "framer-motion";
 import * as motion from "framer-motion/client";
-import { useRef } from "react";
 
 const ItemsValue = ({ value }: { value: ValueDataProps }) => {
-	const ref = useRef(null);
-	const { scrollYProgress } = useScroll({ target: ref });
-	const y = useTransform(scrollYProgress, [0, 1], [-300, 350]);
-	console.log(y);
+	
+	// const ref = useRef(null);
+	// const { scrollYProgress } = useScroll({ target: ref });
+	// const y = useTransform(scrollYProgress, [0, 1], [-300, 350]);
+	// console.log(y);
 	return (
-		<div className="flex flex-col gap-8 lg:gap-14" ref={ref}>
+		<div className="flex flex-col gap-8 lg:gap-14">
 			<div className="flex items-center justify-start gap-6 max-md:flex-col lg:gap-14">
 				<div
 					className="h-96 w-full overflow-hidden rounded-lg bg-cover bg-center md:max-w-[30rem] lg:h-[30rem]"

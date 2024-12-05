@@ -2,6 +2,7 @@
 import {
 	CardProps,
 	Definition,
+	OptionsProps,
 	ProcessProps,
 	ServiceDataProps,
 	PackageProps,
@@ -29,7 +30,7 @@ type ServiceType = {
 			definitions: Definition[];
 			card: CardProps[];
 			process: ProcessProps[];
-			package:PackageProps[];
+			option: OptionsProps[];
 		}>
 	>;
 };
@@ -55,11 +56,10 @@ export const data = {
 			paragraph: "",
 		},
 	],
-	package: [
+	option: [
 		{
-			id: 1,
 			name: "",
-			desc: "",
+			package: [{ name: ``, feature: [""], tarif: `` }],
 		},
 	],
 };
