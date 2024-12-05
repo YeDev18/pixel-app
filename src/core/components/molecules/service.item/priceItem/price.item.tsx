@@ -4,9 +4,10 @@ import CheckIcon from "@/core/components/atoms/icons/check.icon";
 
 const PriceItem = ({
 	tags,
+	read,
 	tarifs,
 	features,
-}: { tags: string; tarifs?: string; features?: string[] }) => {
+}: { tags: string; read?: string; tarifs?: string; features?: string[] }) => {
 	return (
 		<div className="container relative mx-auto w-[28rem] space-y-10  overflow-hidden rounded-xl bg-blue-950 p-8 shadow-md ">
 			<h1 className="bg-gradient-to-b from-neutral-200 to-light-300 bg-clip-text text-start text-3xl text-transparent">
@@ -29,6 +30,7 @@ const PriceItem = ({
 						</li>
 					</span>
 				))}
+				{read}
 			</ol>
 
 			<BackgroundBeams />
