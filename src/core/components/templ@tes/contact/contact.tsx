@@ -1,6 +1,6 @@
-import CommentForm from "../../organisms/Contact/commentsForm/comments.form";
 import Faq from "../../organisms/Contact/Faq/Faq";
 import Stat from "../../organisms/Contact/Stat/stat";
+import CommentForm from "../../organisms/contact/commentsForm/comments.form";
 
 const ContactAll = () => {
 	return (

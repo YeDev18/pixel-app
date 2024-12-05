@@ -1,8 +1,8 @@
 "use client";
 
 import { ContactData } from "@/core/data/contact.data";
-import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 
 function Faq() {
@@ -17,7 +17,11 @@ function Faq() {
 			{/* Titre de la FAQ */}
 			<div className="mb-8 flex justify-center md:w-2/5">
 				<h1 className="text-[52px] ">
-					Foire <span className="inline md:block">Aux Questions <span className='text-[70px] text-[#DC0000]'>.</span></span>
+					Foire{" "}
+					<span className="inline md:block">
+						Aux Questions{" "}
+						<span className="text-[70px] text-[#DC0000]">.</span>
+					</span>
 				</h1>
 			</div>
 
@@ -35,10 +39,10 @@ function Faq() {
 							<span className="text-[18px] font-semibold">
 								{item.question}
 							</span>
-							<FontAwesomeIcon
+							{/* <FontAwesomeIcon
 								icon={openIndex === index ? faMinus : faPlus}
 								className="ml-auto"
-							/>
+							/> */}
 						</div>
 
 						<div

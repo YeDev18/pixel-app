@@ -4,13 +4,13 @@ import ItemsMotion from "./items.motion";
 
 const ItemsHeader = () => {
 	return (
-		<div className="hidden items-center justify-center gap-x-16 tracking-wide md:flex ">
+		<div className="hidden items-center justify-center gap-x-16 tracking-wide text-[#092c37] md:flex ">
 			<menu className="flex space-x-4 max-lg:hidden max-lg:text-sm">
 				{Menus.map((item, index) => (
 					<ItemsMotion key={index}>
 						<Link
 							href={item.href}
-							className="transition-all hover:opacity-60"
+							className=" transition-all hover:opacity-60"
 						>
 							{item.label}
 						</Link>
