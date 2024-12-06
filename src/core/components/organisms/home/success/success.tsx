@@ -25,5 +25,3 @@ export default function Success() {
 		</>
 	);
 }
-
-// ${index === 0 && "row-span-8"} ${index === 2 && "row-span-8"} ${index === 3 && "row-span-8"}

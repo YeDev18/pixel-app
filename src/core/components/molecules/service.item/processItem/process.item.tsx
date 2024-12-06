@@ -14,23 +14,23 @@ const ProcessItem = ({ array }: { array: ProcessProps }) => {
 			className="group flex items-start justify-between gap-6 overflow-hidden rounded-[2.5rem] bg-light-100 px-8 py-10 text-blue-950 transition-all hover:bg-blue-950 max-lg:flex-col"
 		>
 			<div className="w-1/2 space-y-8">
-        <div className="flex items-center space-x-2">
-          <div className="w-12 px-10 py-1 flex items-center justify-center bg-[#115068] text-[#fae3cf] rounded-full">
-            Step
-          </div>
-          <div className="w-8 flex items-center justify-center bg-[#115068]  text-[#fae3cf] rounded-full text-lg font-semibold">
-            {array.id}
-          </div>
-        </div>
-        <h3 className="text-[32px] font-400 text-black group-hover:text-[#fae3cf] transition-colors ">
-        {array.item}
-        </h3>
-      </div>
-			<div className="w-1/2 pl-6">
-        <p className="text-gray-700 text-[16px] font-400 group-hover:text-[#fae3cf] transition-colors ">
-        {array.paragraph}
-        </p>
-      </div>
+				<div className="flex items-center space-x-2">
+					<div className="flex w-12 items-center justify-center rounded-full bg-[#115068] px-10 py-1 text-[#fae3cf]">
+						Step
+					</div>
+					<div className="flex w-8 items-center justify-center rounded-full  bg-[#115068] text-lg font-semibold text-[#fae3cf]">
+						{array.id}
+					</div>
+				</div>
+				<h3 className="text-[32px] font-light text-black transition-colors group-hover:text-[#fae3cf] ">
+					{array.item}
+				</h3>
+			</div>
+			<div className="lg:w-1/2">
+				<p className="text-[16px] font-light text-gray-700 transition-colors group-hover:text-[#fae3cf] ">
+					{array.paragraph}
+				</p>
+			</div>
 		</motion.div>
 	);
 };

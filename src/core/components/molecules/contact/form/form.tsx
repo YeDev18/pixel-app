@@ -39,7 +39,7 @@ const FormField = () => {
 						></textarea>
 					</div>
 
-					<button className="rounded-full border bg-light-100 py-4 text-base font-semibold text-blue-950 ">
+					<button className=" overflow-hidden rounded-full border bg-light-100 py-4 text-base font-semibold text-blue-950 ">
 						Envoyez
 					</button>
 				</div>

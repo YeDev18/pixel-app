@@ -2,37 +2,41 @@
 import PriceItem from "@/core/components/molecules/service.item/priceItem/price.item";
 import Tag from "@/core/components/molecules/service.item/priceItem/tag";
 import { useService } from "@/core/context/service/service.provider";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const PriceItems = () => {
 	const { service } = useService();
-	const [tags, setTags] = useState("Crystal");
-	console.log(service);
+
+	console.log(service.option);
+	const check = service.option[0].name;
+	const [tags, setTags] = useState("");
+	useEffect(() => {
+		setTags(check);
+	}, [service, check]);
+	const packages = service.option.find((pack) => pack.name === tags);
 	return (
 		<>
-			<div className="container mx-auto flex justify-center gap-4">
-				{["Crystal", "Emmeraude", "Rubi"].map((tag, index) => (
+			<div className="container mx-auto flex flex-wrap justify-center gap-4">
+				{service.option.map((option, index) => (
 					<menu
 						key={index}
-						className={`${tags === tag && "tagCheck "} cursor-pointer px-4 pt-4`}
-						onClick={() => setTags(tag)}
+						//
+						className={`${tags === option.name && "tagCheck "} cursor-pointer px-2 py-4`}
+						onClick={() => setTags(option.name)}
 					>
-						<Tag tag={tag} />
+						<Tag tag={option.name} />
 					</menu>
 				))}
 			</div>
 
-			<div className="container mx-auto flex flex-wrap gap-4 space-y-4">
-				{service.option.map((option, index) => {
-					const blog = option.package.find(
-						(pack) => pack.name === tags,
-					);
+			<div className="mx-auto flex flex-wrap  gap-x-2 gap-y-4   lg:container max-lg:gap-4">
+				{packages?.package.map((option, index) => {
 					return (
 						<PriceItem
 							key={index}
 							tags={option.name}
-							tarifs={blog?.tarif}
-							features={blog?.feature}
+							tarifs={option?.tarif}
+							features={option?.feature}
 						/>
 					);
 				})}
