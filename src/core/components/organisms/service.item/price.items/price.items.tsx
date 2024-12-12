@@ -20,7 +20,7 @@ const PriceItems = () => {
 				{service.option.map((option, index) => (
 					<menu
 						key={index}
-						//
+						
 						className={`${tags === option.name && "tagCheck "} cursor-pointer px-2 py-4`}
 						onClick={() => setTags(option.name)}
 					>

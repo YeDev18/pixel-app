@@ -6,6 +6,7 @@ import {
 	ProcessProps,
 	ServiceDataProps,
 	PackageProps,
+	StackProps,
 } from "@/core/data/service.data";
 import { createContext } from "@/core/hooks";
 import React, { Dispatch, ReactNode, useContext, useState } from "react";
@@ -31,6 +32,7 @@ type ServiceType = {
 			card: CardProps[];
 			process: ProcessProps[];
 			option: OptionsProps[];
+			stack: StackProps[];
 		}>
 	>;
 };
@@ -60,6 +62,12 @@ export const data = {
 		{
 			name: "",
 			package: [{ name: ``, feature: [""], tarif: `` }],
+		},
+	],
+	stack: [
+		{
+			id: 1,
+			stack: ``,
 		},
 	],
 };

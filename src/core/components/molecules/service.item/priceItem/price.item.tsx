@@ -13,7 +13,7 @@ const PriceItem = ({
 				<h1 className="bg-gradient-to-b from-neutral-200 to-light-300 bg-clip-text text-start text-2xl text-transparent lg:text-3xl">
 					{tags}
 				</h1>
-				<p className="bg-gradient-to-b  from-neutral-200 to-light-300 bg-clip-text  text-start text-3xl text-transparent lg:text-4xl">
+				<p className="bg-gradient-to-b  from-neutral-200 to-light-300 bg-clip-text  text-start text-3xl text-transparent lg:text-4xl overflow-hidden">
 					{tarifs}
 				</p>
 				<ol className="space-y-5">
