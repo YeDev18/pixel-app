@@ -10,8 +10,8 @@ const HowWeWork = () => {
 	});
 	const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
 	return (
-		<div ref={targetRef} className=" relative h-[150vh] lg:h-[200vh] ">
-			<div className="sticky top-0 flex h-[80vh] items-center overflow-hidden py-6  lg:h-screen ">
+		<div ref={targetRef} className=" relative h-[150vh]  lg:h-[200vh] ">
+			<div className="sticky top-0 flex  h-screen items-end overflow-hidden py-6 lg:items-center  ">
 				<motion.div style={{ x }}>
 					<HowWeWorkItem />
 				</motion.div>

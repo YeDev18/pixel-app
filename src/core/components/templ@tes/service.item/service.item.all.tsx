@@ -1,11 +1,10 @@
 "use client";
+import ServiceStackList from "@/core/components/molecules/service/ServiceStack/SeviceStack";
 import HeaderSection from "../../atoms/HeaderSection";
 import CardItems from "../../organisms/service.item/card/cardItems";
 import Cover from "../../organisms/service.item/cover/cover";
 import PriceItems from "../../organisms/service.item/price.items/price.items";
 import ProcessItems from "../../organisms/service.item/process.items/process.items";
-import ServiceStackList from "@/core/components/molecules/service/ServiceStack/SeviceStack";
-
 
 const ServiceItem = () => {
 	return (
@@ -25,7 +24,7 @@ const ServiceItem = () => {
 				customSubtitleSize="16px"
 				align="center"
 			/>
-			<ServiceStackList/>
+			<ServiceStackList />
 			<HeaderSection
 				title="Des Packages Adaptés Pour Vous"
 				customTitleSize="52px"
