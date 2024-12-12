@@ -7,11 +7,11 @@ import { HowWeWorkData } from "@/core/data/HowWeWork.data";
 
 const HowWeWorkItem = () => {
 	return (
-		<div className="flex items-center gap-4 overflow-hidden bg-red-500 p-6">
+		<div className="flex items-center gap-4 overflow-hidden  p-6">
 			{HowWeWorkData.map((item, index) => (
 				<div
 					key={index}
-					className="h-[500px] w-[45rem] flex-col rounded-[25px] bg-[#04232c] p-10"
+					className="h-[600px] w-[25rem] flex-col rounded-[25px] bg-[#04232c] p-10 lg:h-[600px] lg:w-[35rem]"
 				>
 					<div className="flex h-full flex-col justify-between">
 						<div>
@@ -24,7 +24,7 @@ const HowWeWorkItem = () => {
 								</div>
 							</div>
 						</div>
-						<div className="mt-auto text-[32px] font-medium">
+						<div className="mt-auto text-lg font-medium lg:text-3xl">
 							{item.label}
 						</div>
 					</div>

@@ -35,9 +35,8 @@ export default function HomeAll() {
 				align="center"
 			/>
 
-			<div className="bg-black">
-				<HowWeWork />
-			</div>
+			<HowWeWork />
+
 			<HeaderSection
 				title="Nos Projets à succès"
 				subtitle="Découvrez comment nous avons aidé nos clients à obtenir des résultats remarquables"
