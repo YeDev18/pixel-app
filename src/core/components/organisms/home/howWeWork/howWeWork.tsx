@@ -1,30 +1,22 @@
 "use client";
 import HowWeWorkItem from "@/core/components/molecules/_all/howWeWork/howWeWork";
-import { HowWeWorkData } from "@/core/data/HowWeWork.data";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
 const HowWeWork = () => {
-	const targetRef = useRef<HTMLDivElement | null>(null);
-	const { scrollYProgress } = useScroll({ target: targetRef });
-	const x = useTransform(scrollYProgress, [0, 1], ["1%", "-100%"]);
-	console.log(x);
+	const targetRef = useRef(null);
+	const { scrollYProgress } = useScroll({
+		target: targetRef,
+	});
+	const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
 	return (
-		<section ref={targetRef} className="relative h-[300vh] bg-neutral-900">
-			<div className="sticky top-0 flex h-screen items-center overflow-hidden">
-				<motion.div style={{ x }} className="flex gap-4">
-					{HowWeWorkData.map((item, index) => {
-						return (
-							<HowWeWorkItem
-								key={index}
-								id={item.id}
-								label={item.label}
-							/>
-						);
-					})}
+		<div ref={targetRef} className=" relative h-[300vh] bg-neutral-700">
+			<div className="sticky top-0 flex h-screen items-center overflow-hidden  bg-slate-100 py-6 ">
+				<motion.div style={{ x }}>
+					<HowWeWorkItem />
 				</motion.div>
 			</div>
-		</section>
+		</div>
 	);
 };
 

@@ -1,26 +1,35 @@
-import React from "react";
+import { HowWeWorkData } from "@/core/data/HowWeWork.data";
 
-interface HowWeWorkItemProps {
-	id: number;
-	label: string;
-}
+// interface HowWeWorkItemProps {
+// 	id: number;
+// 	label: string;
+// }
 
-const HowWeWorkItem: React.FC<HowWeWorkItemProps> = ({ id, label }) => {
+const HowWeWorkItem = () => {
 	return (
-		<div className="flex size-[520px] shrink-0 flex-col rounded-[25px] bg-[#035065] p-10">
-			<div className="flex h-full flex-col justify-between">
-				<div>
-					<div className="flex space-x-1">
-						<div className="flex w-12 items-center justify-center rounded-full bg-[#DC0000] px-10 py-1 text-white">
-							Step
+		<div className="flex items-center gap-4 overflow-hidden bg-red-500 p-6">
+			{HowWeWorkData.map((item, index) => (
+				<div
+					key={index}
+					className="h-[500px] w-[45rem] flex-col rounded-[25px] bg-[#04232c] p-10"
+				>
+					<div className="flex h-full flex-col justify-between">
+						<div>
+							<div className="flex space-x-1">
+								<div className="flex w-12 items-center justify-center rounded-full bg-[#DC0000] px-10 py-1 text-white">
+									Step
+								</div>
+								<div className="flex w-8 items-center justify-center rounded-full bg-[#DC0000] text-lg font-semibold text-white">
+									{item.id}
+								</div>
+							</div>
 						</div>
-						<div className="flex w-8 items-center justify-center rounded-full bg-[#DC0000] text-lg font-semibold text-white">
-							{id}
+						<div className="mt-auto text-[32px] font-medium">
+							{item.label}
 						</div>
 					</div>
 				</div>
-				<div className="mt-auto text-[32px] font-medium">{label}</div>
-			</div>
+			))}
 		</div>
 	);
 };

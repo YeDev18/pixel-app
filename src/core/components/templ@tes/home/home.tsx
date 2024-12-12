@@ -14,7 +14,7 @@ import Values from "../../organisms/home/value/values";
 
 export default function HomeAll() {
 	return (
-		<div className="space-y-24 py-4">
+		<main className="space-y-24 py-4">
 			<Hero />
 			<Values />
 			<HeaderSection
@@ -34,7 +34,10 @@ export default function HomeAll() {
 				customSubtitleSize="16px"
 				align="center"
 			/>
-			<HowWeWork />
+
+			<div className="bg-black">
+				<HowWeWork />
+			</div>
 			<HeaderSection
 				title="Nos Projets à succès"
 				subtitle="Découvrez comment nous avons aidé nos clients à obtenir des résultats remarquables"
@@ -62,6 +65,6 @@ export default function HomeAll() {
 				align="center"
 			/>
 			<StayInformed />
-		</div>
+		</main>
 	);
 }
