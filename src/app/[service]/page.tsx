@@ -13,6 +13,7 @@ const ServiceName = ({ params }: { params: { service: string } }) => {
 	return (
 		<div className="space-y-4 overflow-y-hidden">
 			<HeadService blog={blog} />
+
 			<ServiceItem />
 		</div>
 	);

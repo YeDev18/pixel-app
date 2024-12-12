@@ -6,6 +6,17 @@ import {
 	Marketing,
 } from "../components/atoms/icons/service.icon";
 
+import bootstrap5 from '@/app/img/bootstrap5.png'
+import figma from '@/app/img/figma.png'
+import Javascript from '@/app/img/Javascript logo.png'
+import react from '@/app/img/react.png'
+import nodejs from '@/app/img/nodejs.png'
+import next from '@/app/img/next.png'
+import tailwind from '@/app/img/tailwind.png'
+import github from '@/app/img/github.png'
+import laravel from '@/app/img/laravel.jpg'
+import { StaticImageData } from "next/image";
+
 export type Definition = {
 	paragraph: string;
 };
@@ -28,6 +39,10 @@ export type OptionsProps = {
 	name: string;
 	package: PackageProps[];
 };
+export type StackProps = {
+	id: number;
+	stack: StaticImageData;
+};
 
 export type ServiceDataProps = {
 	id: number;
@@ -38,6 +53,7 @@ export type ServiceDataProps = {
 	card: CardProps[];
 	process: ProcessProps[];
 	option: OptionsProps[];
+	stack: StackProps[];
 };
 export const ServiceData: ServiceDataProps[] = [
 	{
@@ -424,6 +440,36 @@ export const ServiceData: ServiceDataProps[] = [
 				],
 			},
 		],
+		stack: [
+			{
+				id: 1,
+				stack:Javascript,
+				},
+				{
+				id: 2,
+				stack:react,
+				},
+				{
+				id: 1,
+				stack:Javascript,
+				},
+				{
+				id: 1,
+				stack:Javascript,
+				},
+				{
+				id: 1,
+				stack:Javascript,
+				},
+				{
+				id: 1,
+				stack:Javascript,
+				},
+				{
+				id: 1,
+				stack:Javascript,
+				},
+		],
 	},
 	{
 		id: 2,
@@ -514,27 +560,27 @@ export const ServiceData: ServiceDataProps[] = [
 							`Formats de fichiers fournis : PNG, JPG, SVG, et PDF pour usage numérique et imprimé.`,
 							`Logo + Charte graphique`,
 						],
-						tarif: `85.000 FCFA`,
+						tarif: `Sur Devis`,
 					},
 					{
 						name: "EMMERAUDE",
 						feature: [
-							`Stratégie social media offerte`,
-							`Stratégie publicitaire et gestion des publicités.`,
-							`20 Publications / Mois. (2Publications par jours)`,
+							`Création de logos uniques et personnalisés en fonction de la vision, des valeurs, et de la cible de l'entreprise.`,
+							`Formats de fichiers fournis : PNG, JPG, SVG, et PDF pour usage numérique et imprimé.`,
+							`Logo + Charte graphique + Support de communication`,
 						],
-						tarif: `120.000 FCFA`,
+						tarif: `Sur Devis`,
 					},
 					{
 						name: "DIAMANT",
 						feature: [
-							`Stratégie social media offerte`,
-							`Stratégie publicitaire et gestion des publicités.`,
-							`40 Publications / Mois`,
-							`8 Posts sponsorisés / Mois`,
-							`Accompagnement pour des : 4 Direct (Live)/Mois`,
+							`Création de logos uniques et personnalisés en fonction de la vision, des valeurs, et de la cible de l'entreprise.`,
+							`Formats de fichiers fournis : PNG, JPG, SVG, et PDF pour usage numérique et imprimé.`,
+							`Définition des couleurs, typographies, styles d'images, et règles d’utilisation de l'identité visuelle`,
+							`Manuel détaillant l’utilisation cohérente du logo et des éléments visuels sur tous les supports.`,
+							`Identité visuelle complète (Logo + Charte Graphique + Supports de communication + Photographies)`,
 						],
-						tarif: `155.000 FCFA`,
+						tarif: `Sur Devis`,
 					},
 				],
 			},
@@ -544,13 +590,8 @@ export const ServiceData: ServiceDataProps[] = [
 					{
 						name: "Crystal",
 						feature: [
-							`Stratégie social media offerte`,
-							`Stratégie publicitaire et gestion des publicités.`,
-							`10 Publications / Mois`,
-							`3 Posts sponsorisés / Mois`,
-							`1 Seances photo (40 photos) & 1e seance Video PRO (Short content video 15s - 30s) / Mois`,
-							`Accompagnement pour des : 1 Direct (Live)`,
-							`15 Story / Mois`,
+						    `Conception de cartes de visite, flyers, brochures, bannières et tout autre support de communication.`,
+							`Adaptation des visuels pour le print et le digital`,
 						],
 						tarif: `Sur Devis`,
 					},
@@ -562,18 +603,44 @@ export const ServiceData: ServiceDataProps[] = [
 					{
 						name: "CRYSTAL",
 						feature: [
-							`Stratégie social media offerte`,
-							`Stratégie publicitaire et gestion des publicités.`,
-							`10 Publications / Mois`,
-							`3 Posts sponsorisés / Mois`,
-							`1 Seances photo (40 photos) & 1e seance Video PRO (Short content video 15s - 30s) / Mois`,
-							`Accompagnement pour des : 1 Direct (Live)`,
-							`15 Story / Mois`,
+							`Service de photographie pour la mise en valeur des produits, portraits corporate, ou événements de l’entreprise.`,
+							`Retouche et optimisation des images pour une utilisation sur divers supports.`,
+							
 						],
 						tarif: `Sur Devis`,
 					},
 				],
 			},
+		],
+		stack: [
+			{
+				id: 1,
+				stack:Javascript,
+				},
+				{
+				id: 2,
+				stack:react,
+				},
+				{
+				id: 1,
+				stack:Javascript,
+				},
+				{
+				id: 1,
+				stack:Javascript,
+				},
+				{
+				id: 1,
+				stack:Javascript,
+				},
+				{
+				id: 1,
+				stack:Javascript,
+				},
+				{
+				id: 1,
+				stack:Javascript,
+				},
 		],
 	},
 
@@ -664,6 +731,10 @@ export const ServiceData: ServiceDataProps[] = [
 						feature: [
 							`Format long (3 à 10 minutes) qui présente l’histoire, les valeurs, et les activités principales de l’entreprise. Conçu pour renforcer l’image de marque et communiquer de manière efficace auprès des investisseurs, clients ou partenaires.`,
 							`Scénarisation personnalisée pour raconter l’histoire de l’entreprise.Tournage en haute définition avec un matériel de qualité professionnelle.`,
+							`Tournage en haute définition avec un matériel de qualité professionnelle`,
+							`Prises de vue sur site, interviews des dirigeants et employés`,
+							`Montage vidéo professionnel avec musique et voix off`,
+							`Possibilité d’ajouter des animations ou des graphiques.`,
 						],
 						tarif: `Sur devis(inclut le tournage sur un ou plusieurs sites, interviews, montage, et animation de base)`,
 					},
@@ -676,7 +747,10 @@ export const ServiceData: ServiceDataProps[] = [
 						name: "",
 						feature: [
 							`Format long (3 à 10 minutes) qui présente l’histoire, les valeurs, et les activités principales de l’entreprise. Conçu pour renforcer l’image de marque et communiquer de manière efficace auprès des investisseurs, clients ou partenaires.`,
-							`Scénarisation personnalisée pour raconter l’histoire de l’entreprise.Tournage en haute définition avec un matériel de qualité professionnelle.`,
+							`Vidéo courte, impactante et percutante`,
+							`Scénarisation axée sur le produit ou service à promouvoir`,
+							`Tournage en studio ou sur site avec équipe spécialisée`,
+							`Montage dynamique avec effets visuels et sonore`,
 						],
 						tarif: `Sur devis(inclut le tournage sur un ou plusieurs sites, interviews, montage, et animation de base)`,
 					},
@@ -688,8 +762,11 @@ export const ServiceData: ServiceDataProps[] = [
 					{
 						name: "",
 						feature: [
-							`Format long (3 à 10 minutes) qui présente l’histoire, les valeurs, et les activités principales de l’entreprise. Conçu pour renforcer l’image de marque et communiquer de manière efficace auprès des investisseurs, clients ou partenaires.`,
-							`Scénarisation personnalisée pour raconter l’histoire de l’entreprise.Tournage en haute définition avec un matériel de qualité professionnelle.`,
+							`Push Produit" sont des vidéos courtes (30 à 90 secondes) spécifiquement conçues pour booster la visibilité d’un produit sur les réseaux sociaux ou dans une campagne digitale. Elles sont axées sur l'aspect promotionnel du produit et sa mise en valeur.`,
+							`Tournage en studio ou sur site avec une attention particulière aux détails du produit.`,
+							`Intégration de textes et d'effets visuels pour dynamiser le contenu`,
+							`Montage rapide et optimisé pour les plateformes comme Instagram, Facebook, ou LinkedIn`,
+							`Possibilité de sous-titrer la vidéo pour une diffusion plus large`,
 						],
 						tarif: `Sur devis(inclut le tournage sur un ou plusieurs sites, interviews, montage, et animation de base)`,
 					},
@@ -701,13 +778,49 @@ export const ServiceData: ServiceDataProps[] = [
 					{
 						name: "",
 						feature: [
-							`Vidéo de style reportage (2 à 5 minutes) qui combine journalisme et promotion commerciale. Il permet de présenter un produit ou un service sous un angle informatif, en ajoutant des témoignages, des démonstrations, ou des interviews.`,
-							`Scénarisation personnalisée pour raconter l’histoire de l’entreprise.Tournage en haute définition avec un matériel de qualité professionnelle.`,
+							`vidéo de style reportage (2 à 5 minutes) qui combine journalisme et promotion commerciale. Il permet de présenter un produit ou un service sous un angle informatif, en ajoutant des témoignages, des démonstrations, ou des interviews`,
+							`Vidéo de type reportage avec interviews, démonstrations, et scènes de contexte`,
+							`Prises de vue sur site pour capturer des images authentiques`,
+							`Écriture journalistique et promotionnelle`,
+							`Montage rapide et optimisé pour les plateformes comme Instagram, Facebook, ou LinkedIn`,
+							`Possibilité d'ajouter des graphiques explicatifs et des animations.`,
+							
 						],
 						tarif: `Sur devis(inclut le tournage sur un ou plusieurs sites, interviews, montage, et animation de base)`,
 					},
 				],
 			},
+		],
+		stack: [
+			{
+				id: 1,
+				stack:Javascript,
+				},
+				{
+				id: 2,
+				stack:Javascript,
+				},
+				{
+				id: 1,
+				stack:Javascript,
+				},
+				{
+				id: 1,
+				stack:Javascript,
+				},
+				{
+				id: 1,
+				stack:Javascript,
+				},
+				{
+				id: 1,
+				stack:Javascript,
+				},
+				{
+				id: 1,
+				stack:Javascript,
+				},
+		
 		],
 	},
 
@@ -791,119 +904,89 @@ export const ServiceData: ServiceDataProps[] = [
 		],
 		option: [
 			{
-				name: "PME",
+				name: "",
 				package: [
 					{
-						name: "CRYSTAL",
+						name: "Site web vitrine",
 						feature: [
-							`Stratégie social media offerte`,
-							`Stratégie publicitaire et gestion des publicités.`,
-							`10 Publications / Mois`,
-							`3 Posts sponsorisés / Mois`,
-							`1 Seances photo (40 photos) & 1e seance Video PRO (Short content video 15s - 30s) / Mois`,
-							`Accompagnement pour des : 1 Direct (Live)`,
-							`15 Story / Mois`,
+							`Présentation de l’entreprise et ses services de manière professionnelle, avec un design moderne et responsive.`,
+							`Pages incluses : Accueil, À propos, Services/Produits, Contact, Blog (facultatif)`,
+							`Personnalisation complète selon l’identité visuelle de l’entreprise`,
+							`Structure optimisée pour le référencement naturel afin d’améliorer la visibilité en ligne`,
+							`Adaptation à tous les écrans (ordinateurs, tablettes, smartphones)`,
+							`Mise à jour régulière, suivi des performances et sécurité du site`,
+							`1 nom de domaine gratuit pendant 1 an`,
+							`Hébergement performant inclus pour 1 an (renouvelable)`,
+							`Assistance pendant 6 mois (par email ou chat)`,
 						],
-						tarif: `85.000 FCFA`,
+						tarif: `Sur devis`,
 					},
 					{
-						name: "EMMERAUDE",
+						name: "Application web e-commerce",
 						feature: [
-							`Stratégie social media offerte`,
-							`Stratégie publicitaire et gestion des publicités.`,
-							`20 Publications / Mois. (2Publications par jours)`,
+							`Présentation de l’entreprise et ses services de manière professionnelle, avec un design moderne et responsive.`,
+							`Pages incluses : Accueil, À propos, Services/Produits, Contact, Blog (facultatif)`,
+							`Personnalisation complète selon l’identité visuelle de l’entreprise`,
+							`Structure optimisée pour le référencement naturel afin d’améliorer la visibilité en ligne`,
+							`Adaptation à tous les écrans (ordinateurs, tablettes, smartphones)`,
+							`Mise à jour régulière, suivi des performances et sécurité du site`,
+							`1 nom de domaine gratuit pendant 1 an`,
+							`Hébergement performant inclus pour 1 an (renouvelable)`,
+							`Assistance pendant 6 mois (par email ou chat)`,
 						],
-						tarif: `120.000 FCFA`,
+						tarif: `Sur devis`,
 					},
 					{
-						name: "RUBI",
+						name: "Application web/mobile",
 						feature: [
-							`Stratégie social media offerte`,
-							`Stratégie publicitaire et gestion des publicités.`,
-							`40 Publications / Mois`,
-							`8 Posts sponsorisés / Mois`,
-							`Accompagnement pour des : 4 Direct (Live)/Mois`,
+							`Présentation de l’entreprise et ses services de manière professionnelle, avec un design moderne et responsive.`,
+							`Pages incluses : Accueil, À propos, Services/Produits, Contact, Blog (facultatif)`,
+							`Personnalisation complète selon l’identité visuelle de l’entreprise`,
+							`Structure optimisée pour le référencement naturel afin d’améliorer la visibilité en ligne`,
+							`Adaptation à tous les écrans (ordinateurs, tablettes, smartphones)`,
+							`Mise à jour régulière, suivi des performances et sécurité du site`,
+							`1 nom de domaine gratuit pendant 1 an`,
+							`Hébergement performant inclus pour 1 an (renouvelable)`,
+							`Assistance pendant 6 mois (par email ou chat)`,
 						],
-						tarif: `155.000 FCFA`,
+						tarif: `Sur devis`,
 					},
 				],
 			},
+		],
+		stack: [
 			{
-				name: "Entreprises B2B & Secteur des Services",
-				package: [
-					{
-						name: "CRYSTAL",
-						feature: [
-							`Stratégie social media offerte`,
-							`Stratégie publicitaire et gestion des publicités.`,
-							`10 Publications / Mois`,
-							`3 Posts sponsorisés / Mois`,
-							`1 Seances photo (40 photos) & 1e seance Video PRO (Short content video 15s - 30s) / Mois`,
-							`Accompagnement pour des : 1 Direct (Live)`,
-							`15 Story / Mois`,
-						],
-						tarif: `85.000 FCFA`,
-					},
-					{
-						name: "EMMERAUDE",
-						feature: [
-							`Stratégie social media offerte`,
-							`Stratégie publicitaire et gestion des publicités.`,
-							`20 Publications / Mois. (2Publications par jours)`,
-						],
-						tarif: `120.000 FCFA`,
-					},
-					{
-						name: "RUBI",
-						feature: [
-							`Stratégie social media offerte`,
-							`Stratégie publicitaire et gestion des publicités.`,
-							`40 Publications / Mois`,
-							`8 Posts sponsorisés / Mois`,
-							`Accompagnement pour des : 4 Direct (Live)/Mois`,
-						],
-						tarif: `155.000 FCFA`,
-					},
-				],
-			},
-			{
-				name: "Organisations Non Gouvernementales (ONG)",
-				package: [
-					{
-						name: "CRYSTAL",
-						feature: [
-							`Stratégie social media offerte`,
-							`Stratégie publicitaire et gestion des publicités.`,
-							`10 Publications / Mois`,
-							`3 Posts sponsorisés / Mois`,
-							`1 Seances photo (40 photos) & 1e seance Video PRO (Short content video 15s - 30s) / Mois`,
-							`Accompagnement pour des : 1 Direct (Live)`,
-							`15 Story / Mois`,
-						],
-						tarif: `85.000 FCFA`,
-					},
-					{
-						name: "EMMERAUDE",
-						feature: [
-							`Stratégie social media offerte`,
-							`Stratégie publicitaire et gestion des publicités.`,
-							`20 Publications / Mois. (2Publications par jours)`,
-						],
-						tarif: `120.000 FCFA`,
-					},
-					{
-						name: "RUBI",
-						feature: [
-							`Stratégie social media offerte`,
-							`Stratégie publicitaire et gestion des publicités.`,
-							`40 Publications / Mois`,
-							`8 Posts sponsorisés / Mois`,
-							`Accompagnement pour des : 4 Direct (Live)/Mois`,
-						],
-						tarif: `155.000 FCFA`,
-					},
-				],
-			},
+				id: 1,
+				stack:Javascript,
+				},
+				{
+				id: 2,
+				stack:react,
+				},
+				{
+				id: 3,
+				stack:next,
+				},
+				{
+				id: 4,
+				stack:tailwind,
+				},
+				{
+				id: 5,
+				stack:figma,
+				},
+				{
+				id: 6,
+				stack:laravel,
+				},
+				{
+				id: 7,
+				stack:github,
+				},
+				{
+				id: 8,
+				stack:nodejs,
+				},
 		],
 	},
 ];
