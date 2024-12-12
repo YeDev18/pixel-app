@@ -5,6 +5,7 @@ import TextCible from "../../molecules/dontUse/textCible/TextCible";
 import ItemsService from "../../organisms/_all/itemsService/itemsService";
 import Cible from "../../organisms/home/cible/Cible";
 import Hero from "../../organisms/home/hero/hero";
+import HowWeWork from "../../organisms/home/howWeWork/howWeWork";
 import MakingContact from "../../organisms/home/makingContact/makingContact";
 import StayInformed from "../../organisms/home/stayInformed/stayInformed";
 import Success from "../../organisms/home/success/success";
@@ -26,6 +27,14 @@ export default function HomeAll() {
 
 			<ItemsService />
 			{/* <ExpandingCard/> */}
+			<HeaderSection
+				title="How We Work"
+				subtitle="Rejoignez ceux que nous aidons à atteindre l'excellence."
+				customTitleSize="52px"
+				customSubtitleSize="16px"
+				align="center"
+			/>
+			<HowWeWork />
 			<HeaderSection
 				title="Nos Projets à succès"
 				subtitle="Découvrez comment nous avons aidé nos clients à obtenir des résultats remarquables"
