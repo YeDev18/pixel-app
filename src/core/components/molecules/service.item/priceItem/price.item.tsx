@@ -1,5 +1,4 @@
 "use client";
-import { BackgroundBeams } from "@/components/ui/background-beams";
 import Button from "@/core/components/atoms/Button";
 import CheckIcon from "@/core/components/atoms/icons/check.icon";
 
@@ -14,7 +13,7 @@ const PriceItem = ({
 				<h1 className="bg-gradient-to-b from-neutral-200 to-light-300 bg-clip-text text-start text-2xl text-transparent lg:text-3xl">
 					{tags}
 				</h1>
-				<p className="bg-gradient-to-b  from-neutral-200 to-light-300 bg-clip-text  text-start text-3xl text-transparent lg:text-4xl">
+				<p className="bg-gradient-to-b  from-neutral-200 to-light-300 bg-clip-text  text-start text-3xl text-transparent lg:text-4xl overflow-hidden">
 					{tarifs}
 				</p>
 				<ol className="space-y-5">
@@ -37,8 +36,6 @@ const PriceItem = ({
 			<Button className="relative z-40 cursor-pointer text-blue-950">
 				Commencez Maintenant
 			</Button>
-
-			<BackgroundBeams />
 		</div>
 	);
 };

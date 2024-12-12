@@ -1,15 +1,11 @@
 import Image from 'next/image';
 import { StaticImageData } from 'next/image';
+import { StackProps } from "@/core/data/service.data";
 
-interface ServiceStackItemProps {
-  label: string;
-  image: StaticImageData;
-}
-
-const ServiceStackItem: React.FC<ServiceStackItemProps> = ({ label, image }) => {
+const ServiceStackItem = ({ stack }: { stack: StackProps }) => {
   return (
     <div className="flex flex-col w-[80px] h-[80px] justify-center items-center p-4 bg-white rounded-[24px]">
-      <Image src={image} alt={label} width={50} height={50}  />
+      <Image src={stack.stack} alt="service image" width={50} height={50} />
     </div>
   );
 };
