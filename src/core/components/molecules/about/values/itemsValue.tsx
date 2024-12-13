@@ -49,14 +49,13 @@ export default function Index(): JSX.Element {
     target: container,
     offset: ['start start', 'end end'],
   });
-
   return (
     <ReactLenis root>
       <main ref={container}>
 
         <section className='bg-white text-white w-full'>
           {ValueData.map((value, i) => {
-            const targetScale = 1 - (ValueData.length - i) * 0.05;
+            const targetScale = 1 - (ValueData.length - i) * 0.0;
             return (
               <Card
                 key={`value_${i}`}
@@ -65,7 +64,7 @@ export default function Index(): JSX.Element {
                 describe={value.describe}
                 image={value.image}
                 progress={scrollYProgress}
-                range={[i * 0.2, 0.8]}
+                range={[i * 1, 0.8]}
                 targetScale={targetScale}
               />
             );
@@ -96,22 +95,21 @@ export const Card: React.FC<CardProps> = ({
 }) => {
   const container = useRef(null);
 
-  // Transformation pour la parallaxe
   const translateY = useTransform(progress, range, [0, -10 * i]);
   const scale = useTransform(progress, range, [1, targetScale]);
 
   return (
     <div
       ref={container}
-      className='h-screen flex items-center justify-center sticky top-0'
+      className='h-screen flex items-center justify-center top-[15vh]'
     >
       <motion.div
         style={{
           scale,
           translateY, 
-          top: `calc(-5vh + ${i * 25}px)`,
+          top: `calc(-5vh + ${i * 5}px)`,
         }}
-        className={`flex flex-col relative -top-[10%] h-[500px] w-[80%] bg-slate-800 rounded-md p-10 origin-top`}
+        className={`flex flex-col relative -top-[10%] h-[550px] w-[90%] bg-slate-800 rounded-md p-10 origin-top`}
       >
         <h2 className='text-2xl text-center font-semibold'>{lib}</h2>
         <div className={`flex h-full mt-5 gap-10`}>
