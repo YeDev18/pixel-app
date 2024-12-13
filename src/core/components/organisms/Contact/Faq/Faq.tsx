@@ -13,7 +13,7 @@ function Faq() {
 	};
 
 	return (
-		<div className="mt-[180px] flex h-fit flex-col p-8 md:flex-row">
+		<div className="flex h-fit flex-col bg-black p-8 md:flex-row">
 			{/* Titre de la FAQ */}
 			<div className="mb-8 flex justify-center md:w-2/5">
 				<h1 className="text-[52px] ">

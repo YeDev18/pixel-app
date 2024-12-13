@@ -4,7 +4,7 @@ import CommentForm from "../../organisms/contact/commentsForm/comments.form";
 
 const ContactAll = () => {
 	return (
-		<div className="mb-10 mt-32 space-y-8">
+		<div className="">
 			<CommentForm />
 			<Faq />
 			<Stat />

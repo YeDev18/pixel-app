@@ -6,15 +6,14 @@ import {
 	Marketing,
 } from "../components/atoms/icons/service.icon";
 
-import bootstrap5 from '@/app/img/bootstrap5.png'
-import figma from '@/app/img/figma.png'
-import Javascript from '@/app/img/Javascript logo.png'
-import react from '@/app/img/react.png'
-import nodejs from '@/app/img/nodejs.png'
-import next from '@/app/img/next.png'
-import tailwind from '@/app/img/tailwind.png'
-import github from '@/app/img/github.png'
-import laravel from '@/app/img/laravel.jpg'
+import Javascript from "@/app/img/Javascript logo.png";
+import figma from "@/app/img/figma.png";
+import github from "@/app/img/github.png";
+import laravel from "@/app/img/laravel.jpg";
+import next from "@/app/img/next.png";
+import nodejs from "@/app/img/nodejs.png";
+import react from "@/app/img/react.png";
+import tailwind from "@/app/img/tailwind.png";
 import { StaticImageData } from "next/image";
 
 export type Definition = {
@@ -443,32 +442,32 @@ export const ServiceData: ServiceDataProps[] = [
 		stack: [
 			{
 				id: 1,
-				stack:Javascript,
-				},
-				{
+				stack: Javascript,
+			},
+			{
 				id: 2,
-				stack:react,
-				},
-				{
+				stack: react,
+			},
+			{
 				id: 1,
-				stack:Javascript,
-				},
-				{
+				stack: Javascript,
+			},
+			{
 				id: 1,
-				stack:Javascript,
-				},
-				{
+				stack: Javascript,
+			},
+			{
 				id: 1,
-				stack:Javascript,
-				},
-				{
+				stack: Javascript,
+			},
+			{
 				id: 1,
-				stack:Javascript,
-				},
-				{
+				stack: Javascript,
+			},
+			{
 				id: 1,
-				stack:Javascript,
-				},
+				stack: Javascript,
+			},
 		],
 	},
 	{
@@ -590,7 +589,7 @@ export const ServiceData: ServiceDataProps[] = [
 					{
 						name: "Crystal",
 						feature: [
-						    `Conception de cartes de visite, flyers, brochures, bannières et tout autre support de communication.`,
+							`Conception de cartes de visite, flyers, brochures, bannières et tout autre support de communication.`,
 							`Adaptation des visuels pour le print et le digital`,
 						],
 						tarif: `Sur Devis`,
@@ -605,7 +604,6 @@ export const ServiceData: ServiceDataProps[] = [
 						feature: [
 							`Service de photographie pour la mise en valeur des produits, portraits corporate, ou événements de l’entreprise.`,
 							`Retouche et optimisation des images pour une utilisation sur divers supports.`,
-							
 						],
 						tarif: `Sur Devis`,
 					},
@@ -615,32 +613,32 @@ export const ServiceData: ServiceDataProps[] = [
 		stack: [
 			{
 				id: 1,
-				stack:Javascript,
-				},
-				{
+				stack: Javascript,
+			},
+			{
 				id: 2,
-				stack:react,
-				},
-				{
+				stack: react,
+			},
+			{
 				id: 1,
-				stack:Javascript,
-				},
-				{
+				stack: Javascript,
+			},
+			{
 				id: 1,
-				stack:Javascript,
-				},
-				{
+				stack: Javascript,
+			},
+			{
 				id: 1,
-				stack:Javascript,
-				},
-				{
+				stack: Javascript,
+			},
+			{
 				id: 1,
-				stack:Javascript,
-				},
-				{
+				stack: Javascript,
+			},
+			{
 				id: 1,
-				stack:Javascript,
-				},
+				stack: Javascript,
+			},
 		],
 	},
 
@@ -784,7 +782,6 @@ export const ServiceData: ServiceDataProps[] = [
 							`Écriture journalistique et promotionnelle`,
 							`Montage rapide et optimisé pour les plateformes comme Instagram, Facebook, ou LinkedIn`,
 							`Possibilité d'ajouter des graphiques explicatifs et des animations.`,
-							
 						],
 						tarif: `Sur devis(inclut le tournage sur un ou plusieurs sites, interviews, montage, et animation de base)`,
 					},
@@ -794,33 +791,32 @@ export const ServiceData: ServiceDataProps[] = [
 		stack: [
 			{
 				id: 1,
-				stack:Javascript,
-				},
-				{
+				stack: Javascript,
+			},
+			{
 				id: 2,
-				stack:Javascript,
-				},
-				{
+				stack: Javascript,
+			},
+			{
 				id: 1,
-				stack:Javascript,
-				},
-				{
+				stack: Javascript,
+			},
+			{
 				id: 1,
-				stack:Javascript,
-				},
-				{
+				stack: Javascript,
+			},
+			{
 				id: 1,
-				stack:Javascript,
-				},
-				{
+				stack: Javascript,
+			},
+			{
 				id: 1,
-				stack:Javascript,
-				},
-				{
+				stack: Javascript,
+			},
+			{
 				id: 1,
-				stack:Javascript,
-				},
-		
+				stack: Javascript,
+			},
 		],
 	},
 
@@ -957,36 +953,36 @@ export const ServiceData: ServiceDataProps[] = [
 		stack: [
 			{
 				id: 1,
-				stack:Javascript,
-				},
-				{
+				stack: Javascript,
+			},
+			{
 				id: 2,
-				stack:react,
-				},
-				{
+				stack: react,
+			},
+			{
 				id: 3,
-				stack:next,
-				},
-				{
+				stack: next,
+			},
+			{
 				id: 4,
-				stack:tailwind,
-				},
-				{
+				stack: tailwind,
+			},
+			{
 				id: 5,
-				stack:figma,
-				},
-				{
+				stack: figma,
+			},
+			{
 				id: 6,
-				stack:laravel,
-				},
-				{
+				stack: laravel,
+			},
+			{
 				id: 7,
-				stack:github,
-				},
-				{
+				stack: github,
+			},
+			{
 				id: 8,
-				stack:nodejs,
-				},
+				stack: nodejs,
+			},
 		],
 	},
 ];
