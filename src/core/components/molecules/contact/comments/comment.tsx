@@ -18,8 +18,8 @@ const Comments = () => {
 		setCommentIndex((prev) => prev - 1);
 	};
 	return (
-		<div className="relative w-full bg-black ">
-			<div className="absolute bottom-14 right-14 flex flex-col space-y-4 text-2xl font-semibold text-light-100">
+		<div className="relative w-full ">
+			<div className="absolute bottom-14 right-4 flex flex-col space-y-4 text-2xl font-semibold text-light-100">
 				<button
 					onClick={() => prevIndex}
 					className=" cursor-pointer rounded-full border p-2"
@@ -28,9 +28,9 @@ const Comments = () => {
 				</button>
 				<button
 					onClick={() => nextIndex}
-					className="rotate-180 cursor-pointer  rounded-full border p-2 "
+					className="rotate-180 cursor-pointer  rounded-full border  p-2 "
 				>
-					<ArrowUp />
+					<ArrowUp className="" />
 				</button>
 			</div>
 			{CommmentsData.map((comment) => {
