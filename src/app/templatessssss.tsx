@@ -9,7 +9,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
 
 	return (
 		<div className="space-y-16 overflow-hidden">
-			<AnimatePresence mode="sync">
+			<AnimatePresence>
 				<motion.div
 					className="overflow-hidden"
 					variants={divVariante}

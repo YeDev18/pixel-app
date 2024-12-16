@@ -12,7 +12,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
 		return (
 			<input
 				type={type}
-				className={`rounded-[50px] bg-[#04374b] p-3 text-white opacity-30 shadow-inner ${className}`}
+				className={`rounded-[50px] bg-[rgba(4,55,75,0.3)] p-3 text-gray-300 shadow-inner ${className}`}
 				ref={ref}
 				{...props}
 			/>

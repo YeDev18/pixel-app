@@ -1,5 +1,4 @@
 "use client";
-import { BackgroundBeams } from "@/components/ui/background-beams";
 import Button from "@/core/components/atoms/Button";
 import CheckIcon from "@/core/components/atoms/icons/check.icon";
 
@@ -37,8 +36,6 @@ const PriceItem = ({
 			<Button className="relative z-40 cursor-pointer text-blue-950">
 				Commencez Maintenant
 			</Button>
-
-			<BackgroundBeams />
 		</div>
 	);
 };

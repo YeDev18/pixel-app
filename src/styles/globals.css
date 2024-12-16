@@ -16,22 +16,22 @@
 		padding: 0;
 		margin: 0;
 		box-sizing: border-box;
-		overflow-x: hidden;
+		/* overflow-x: hidden; */
 	}
 	body {
 		background: var(--background);
-		font-family: "Montserrat", sans-serif;
+		font-family: "Nineteenth", sans-serif;
 		color: #fae3cf;
 	}
 }
-/* @font-face {
+@font-face {
 	font-family: "Nineteenth";
 	font-style: normal;
 	font-weight: normal;
 	src: local("Nineteenth Regular"),
 		url("../../public/assets/font/Nineteenth\ \(Personal\ use\).woff")
 		format("woff");
-} */
+}
 
 @layer components {
 	.card:nth-child(5),

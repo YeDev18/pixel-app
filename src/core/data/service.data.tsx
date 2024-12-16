@@ -15,6 +15,15 @@ import next from '@/app/img/next.png'
 import tailwind from '@/app/img/tailwind.png'
 import github from '@/app/img/github.png'
 import laravel from '@/app/img/laravel.jpg'
+import xd from '../../../public/assets/xd.png'
+
+
+
+import canva from '../../../public/assets/canva.jpg'
+import illustrator from '../../../public/assets/illustrator.png'
+import ps from '../../../public/assets/ps.png'
+import morflax from '../../../public/assets/morflax.png'
+
 import { StaticImageData } from "next/image";
 
 export type Definition = {
@@ -615,32 +624,22 @@ export const ServiceData: ServiceDataProps[] = [
 		stack: [
 			{
 				id: 1,
-				stack:Javascript,
+				stack:morflax,
 				},
 				{
 				id: 2,
-				stack:react,
+				stack:illustrator,
 				},
 				{
-				id: 1,
-				stack:Javascript,
+				id: 3,
+				stack:ps,
 				},
 				{
-				id: 1,
-				stack:Javascript,
+				id: 4,
+				stack:canva,
 				},
-				{
-				id: 1,
-				stack:Javascript,
-				},
-				{
-				id: 1,
-				stack:Javascript,
-				},
-				{
-				id: 1,
-				stack:Javascript,
-				},
+				
+				
 		],
 	},
 

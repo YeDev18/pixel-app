@@ -1,6 +1,5 @@
 import HeadSectionAbout from "@/core/components/molecules/about/values/headSectionAbout";
 import ItemsValue from "@/core/components/molecules/about/values/itemsValue";
-import { ValueData } from "@/core/data/value.data";
 
 const Value = () => {
 	return (
@@ -9,9 +8,7 @@ const Value = () => {
 				head="Nos Valeurs"
 				information="The Team Behind Your Digital Success"
 			/>
-			{ValueData.map((data, index) => {
-				return <ItemsValue key={index} value={data} />;
-			})}
+			<ItemsValue />
 		</section>
 	);
 };
