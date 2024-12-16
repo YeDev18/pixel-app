@@ -13,11 +13,11 @@ function Faq() {
 	};
 
 	return (
-		<div className="flex h-fit flex-col bg-black p-8 md:flex-row">
+		<div className="flex h-fit flex-col bg-black p-12 md:flex-row">
 			{/* Titre de la FAQ */}
 			<div className="mb-8 flex justify-center md:w-2/5">
 				<h1 className="text-[52px] ">
-					Foire{" "}
+					Foire
 					<span className="inline md:block">
 						Aux Questions{" "}
 						<span className="text-[70px] text-[#DC0000]">.</span>
