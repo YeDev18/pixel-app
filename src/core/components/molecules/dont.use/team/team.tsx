@@ -1,7 +1,6 @@
 "use client";
 import Button from "@/core/components/atoms/Button";
 import { ContactData } from "@/core/data/contact.data";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 
 interface Stats {
@@ -111,9 +110,9 @@ function Team() {
 				<h2 className="shrink-0 text-[52px] font-medium">
 					{teamInfo.Title}
 				</h2>
-				<p className="shrink-0 text-lg mb-12">{teamInfo.Desc}</p>
-				<Button className="shrink-0 w-fit gap-4 align-middle text-black">
-						Voir plus
+				<p className="mb-12 shrink-0 text-lg">{teamInfo.Desc}</p>
+				<Button className="w-fit shrink-0 gap-4 align-middle text-black">
+					Voir plus
 				</Button>
 
 				<div className="size-full rounded-lg border border-[rgba(255,255,255,0.1)] p-4 shadow-md">
@@ -142,12 +141,14 @@ function Team() {
 				</div>
 			</div>
 
-			<div className="flex w-1/2 items-center justify-center">
-				<Image
+			<div className="flex w-1/2 items-center justify-center rounded-lg bg-emerald-400">
+				{/* <Image
 					src={teamInfo.img}
+					width={50}
+					height={50}
 					alt="Team"
-					className="size-full rounded-[40px] object-cover shadow-lg"
-				/>
+					className="w-full rounded-[40px] object-cover shadow-lg"
+				/> */}
 			</div>
 		</div>
 	);

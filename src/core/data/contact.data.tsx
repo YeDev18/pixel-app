@@ -1,4 +1,3 @@
-// import Team from "@/app/img/Team.jpg";
 export const ContactData = {
 	quotes: [
 		{
@@ -68,7 +67,7 @@ export const ContactData = {
 		{
 			Title: "Rencontrez Notre Equipe",
 			Desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint ullam, neque nulla iure placeat sequi exercitationem doloribus, dolor nobis nisi tenetur modi quidem amet, quasi repudiandae iusto? Doloremque, minus quidem!",
-			img: "/public/assets/blog/bg-11.webp",
+			img: "/assets/img/Team.jpg",
 		},
 	],
 };

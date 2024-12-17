@@ -56,7 +56,6 @@ const PriceItems = () => {
 							tags={option.name}
 							tarifs={option?.tarif}
 							features={option?.feature}
-							handleSubmit={handleSubmit(packages, service)}
 						/>
 					);
 				})}
