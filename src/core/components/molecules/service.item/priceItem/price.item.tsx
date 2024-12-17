@@ -5,10 +5,12 @@ const PriceItem = ({
 	tags,
 	tarifs,
 	features,
+	onClick,
 }: {
 	tags: string;
 	tarifs?: string;
 	features?: string[];
+	onClick?: () => void;
 }) => {
 	return (
 		<div className="container relative mx-auto flex w-96 flex-col justify-between space-y-10  overflow-hidden rounded-xl bg-blue-950 p-8 shadow-md ">
@@ -38,7 +40,7 @@ const PriceItem = ({
 
 			<Button1
 				className="relative z-20 cursor-pointer text-blue-950"
-				// onClick={() => handleSubmit()}
+				onClick={onClick}
 			>
 				Commencez Maintenant
 			</Button1>

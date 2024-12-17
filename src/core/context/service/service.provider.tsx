@@ -21,9 +21,10 @@ import React, { Dispatch, ReactNode, useContext, useState } from "react";
 // };
 
 export type ChoicesProps = {
+	id: number;
 	service: string;
 	tag: string;
-	// package: string;
+	package: string;
 };
 
 type ServiceType = {
@@ -47,9 +48,10 @@ type ServiceType = {
 
 export const dataChoices = [
 	{
+		id: Date.now(),
 		service: " ",
 		tag: "",
-		// package: "",
+		package: "",
 	},
 ];
 export const data = {

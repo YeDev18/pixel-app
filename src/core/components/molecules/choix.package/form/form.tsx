@@ -1,8 +1,13 @@
 "use client";
+import CloseIcons from "@/core/components/atoms/icons/close";
 import Input from "@/core/components/atoms/input";
+import { useService } from "@/core/context/service/service.provider";
+import { useRouter } from "next/navigation";
 
 const FormPackages = () => {
-	// const { choicePackages } = useService();
+	const { choicePackages, setChoicePackages } = useService();
+	const router = useRouter();
+	console.log(choicePackages);
 
 	return (
 		<div className="my-8 flex size-full h-fit  flex-col items-center justify-center gap-4 rounded-3xl bg-blue-800   py-4 lg:w-[50rem]">
@@ -30,32 +35,50 @@ const FormPackages = () => {
 					placeholder="Email"
 				/>
 				<div>
-					<fieldset className=" items-start justify-start gap-4 rounded-lg bg-[#04374b]/30 p-4  text-white shadow-inner">
-						{/* {choicePackages?.map((choice, index) => (
-							<>
-								<label>Viva</label>
-								<input
-									key={index}
-									type="text"
-									className=" line-clamp-1  w-60 truncate rounded-md bg-slate-600 p-1 text-center outline-none"
-									// value={}
-									disabled
-								/>
-							</>
-						))} */}
-						<div className="flex w-full flex-col ">
-							<label className="text-sm">
-								Devellopenment web
-							</label>
-							<input
-								type="text"
-								className="w-3/4 rounded-md bg-blue-950 p-2 text-start text-sm outline-none"
-								value="Support de Communication | Emmeraude"
-								disabled
-							/>
+					<fieldset className=" items-start justify-start gap-4 rounded-lg bg-[#04374b]/30 px-4 py-6  text-white  shadow-inner">
+						<div className="flex w-full flex-col gap-y-2 ">
+							{choicePackages?.map((choice, index) => {
+								if (choice.service === " ") return;
+								return (
+									<div key={index}>
+										<div className="flex w-3/4 items-center justify-between">
+											<label className="text-sm">
+												{choice.service}
+											</label>
+											<button
+												onClick={() => {
+													setChoicePackages(
+														choicePackages.filter(
+															(a) =>
+																a.id !==
+																choice.id,
+														),
+													);
+												}}
+											>
+												<span>
+													<CloseIcons />
+												</span>
+											</button>
+										</div>
+
+										<input
+											type="text"
+											className="w-3/4 rounded-md bg-blue-950 p-2 text-start text-sm outline-none"
+											value={`${choice.tag} | ${choice.package}`}
+											disabled
+										/>
+									</div>
+								);
+							})}
 						</div>
 					</fieldset>
-					<em className="p-4">choisir le packs</em>
+					<em
+						className="cursor-pointer px-2 py-4 font-medium"
+						onClick={() => router.back()}
+					>
+						choisissez un ou plusieurs pack(s)
+					</em>
 				</div>
 
 				<div className="h-56 max-h-60 w-full overflow-hidden  py-2 lg:px-1">

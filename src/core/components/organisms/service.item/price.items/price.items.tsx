@@ -2,6 +2,11 @@
 import PriceItem from "@/core/components/molecules/service.item/priceItem/price.item";
 import Tag from "@/core/components/molecules/service.item/priceItem/tag";
 import { useService } from "@/core/context/service/service.provider";
+import {
+	OptionsProps,
+	PackageProps,
+	ServiceDataProps,
+} from "@/core/data/service.data";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
@@ -18,22 +23,23 @@ const PriceItems = () => {
 	const packages = service.option.find((pack) => pack.name === tags);
 	console.log(packages);
 	console.log(service);
+	const handleSubmit = (
+		value1: OptionsProps,
+		value2: ServiceDataProps,
+		option: PackageProps,
+	) => {
+		router.push("/choix-package");
 
-	// const handleSubmit = (value1, value2) => {
-
-	// 	router.push("/choix-package");
-	// 	setChoicePackages([
-	// 		...choicePackages,
-	// 		{
-	// 			service: value2.name,
-	// 			tag: value1.name,
-	// 			// package: value1.package,
-	// 		},
-	// 	]);
-	// };
-	// const handleSubmit = () => {
-	// 	console.log("VIVA");
-	// };
+		setChoicePackages([
+			...choicePackages,
+			{
+				id: Date.now(),
+				service: value2.name,
+				tag: value1.name,
+				package: option.name,
+			},
+		]);
+	};
 	return (
 		<>
 			<div className="container mx-auto flex flex-wrap justify-center gap-4">
@@ -56,6 +62,9 @@ const PriceItems = () => {
 							tags={option.name}
 							tarifs={option?.tarif}
 							features={option?.feature}
+							onClick={() =>
+								handleSubmit(packages, service, option)
+							}
 						/>
 					);
 				})}
