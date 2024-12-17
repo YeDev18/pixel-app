@@ -44,36 +44,10 @@ const FormField = () => {
 					className="w-full border-none bg-[#04374b] outline-none"
 					options={options}
 				/>
-				{/* <div>
-					<fieldset className="flex flex-wrap gap-4 rounded-[50px] bg-[#04374b]/30 p-8  text-white shadow-inner">
-						{choicePackages?.map((choice, index) => (
-							<>
-								<label>Viva</label>
-								<input
-									key={index}
-									type="text"
-									className=" line-clamp-1  w-60 truncate rounded-md bg-slate-600 p-1 text-center outline-none"
-									// value={}
-									disabled
-								/>
-							</>
-						))}
-						<div className="w-fit">
-							<label className="text-xs">Viva</label>
-							<input
-								type="text"
-								className=" line-clamp-1 w-full rounded-md bg-slate-600 p-1 text-center outline-none"
-								value="Support de Communication | Emmeraude"
-								disabled
-							/>
-						</div>
-					</fieldset>
-					<em className="p-4">choisir le packs</em>
-				</div> */}
 
 				<div className="h-56 max-h-60 w-full overflow-hidden  py-2 lg:px-1">
 					<textarea
-						className="h-52 max-h-52 min-h-16 w-full rounded-[25px] bg-[#04374b] p-3  text-white shadow-inner outline-none"
+						className="h-52 max-h-52 min-h-16 w-full rounded-lg bg-[#04374b] p-3  text-white shadow-inner outline-none"
 						placeholder="Dites Nous Vos Besoins"
 					></textarea>
 				</div>

@@ -26,7 +26,10 @@ const ServiceLayout = ({ children }: { children: ReactNode }) => {
 						</span>
 						<span className=" font-medium">Revenir</span>
 					</button>
-					<button className="rounded-full border border-light-100 p-3">
+					<button
+						className="rounded-full border border-light-100 p-3"
+						onClick={() => router.push("/contact")}
+					>
 						Obtenir un devis
 					</button>
 				</div>
