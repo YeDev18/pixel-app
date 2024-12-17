@@ -1,20 +1,15 @@
-"use client";
 import Button1 from "@/core/components/atoms/button1";
 import CheckIcon from "@/core/components/atoms/icons/check.icon";
-import { useRouter } from "next/navigation";
 
 const PriceItem = ({
 	tags,
 	tarifs,
 	features,
-	handleSubmit,
 }: {
 	tags: string;
 	tarifs?: string;
 	features?: string[];
-	handleSubmit?: () => void;
 }) => {
-	const router = useRouter();
 	return (
 		<div className="container relative mx-auto flex w-96 flex-col justify-between space-y-10  overflow-hidden rounded-xl bg-blue-950 p-8 shadow-md ">
 			<div className="space-y-10  overflow-hidden">
@@ -43,12 +38,8 @@ const PriceItem = ({
 
 			<Button1
 				className="relative z-20 cursor-pointer text-blue-950"
-				onClick={handleSubmit}
+				// onClick={() => handleSubmit()}
 			>
-				<button
-					className="absolute inset-0 rounded-full "
-					onClick={() => router.push("/choix-package")}
-				></button>
 				Commencez Maintenant
 			</Button1>
 		</div>

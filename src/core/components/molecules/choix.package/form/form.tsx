@@ -30,7 +30,7 @@ const FormPackages = () => {
 					placeholder="Email"
 				/>
 				<div>
-					<fieldset className="flex flex-wrap items-start justify-start gap-4 rounded-lg bg-[#04374b]/30 p-4  text-white shadow-inner">
+					<fieldset className=" items-start justify-start gap-4 rounded-lg bg-[#04374b]/30 p-4  text-white shadow-inner">
 						{/* {choicePackages?.map((choice, index) => (
 							<>
 								<label>Viva</label>
@@ -43,29 +43,13 @@ const FormPackages = () => {
 								/>
 							</>
 						))} */}
-						<div className="w-fit">
-							<label className="text-xs">Viva</label>
+						<div className="flex w-full flex-col ">
+							<label className="text-sm">
+								Devellopenment web
+							</label>
 							<input
 								type="text"
-								className=" line-clamp-1 w-full rounded-md bg-slate-600 p-1 text-center outline-none"
-								value="Support de Communication | Emmeraude"
-								disabled
-							/>
-						</div>
-						<div className="w-fit">
-							<label className="text-xs">Viva</label>
-							<input
-								type="text"
-								className=" line-clamp-1 w-full rounded-md bg-slate-600 p-1 text-center outline-none"
-								value="Support de Communication | Emmeraude"
-								disabled
-							/>
-						</div>
-						<div className="w-fit">
-							<label className="text-xs">Viva</label>
-							<input
-								type="text"
-								className=" line-clamp-1 w-full rounded-md bg-slate-600 p-1 text-center outline-none"
+								className="w-3/4 rounded-md bg-blue-950 p-2 text-start text-sm outline-none"
 								value="Support de Communication | Emmeraude"
 								disabled
 							/>

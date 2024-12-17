@@ -6,16 +6,6 @@ import {
 	Marketing,
 } from "../components/atoms/icons/service.icon";
 
-import Javascript from "@/app/img/Javascript logo.png";
-import figma from "@/app/img/figma.png";
-import github from "@/app/img/github.png";
-import laravel from "@/app/img/laravel.jpg";
-import next from "@/app/img/next.png";
-import nodejs from "@/app/img/nodejs.png";
-import react from "@/app/img/react.png";
-import tailwind from "@/app/img/tailwind.png";
-import { StaticImageData } from "next/image";
-
 export type Definition = {
 	paragraph: string;
 };
@@ -40,7 +30,7 @@ export type OptionsProps = {
 };
 export type StackProps = {
 	id: number;
-	stack: StaticImageData;
+	stack: string;
 };
 
 export type ServiceDataProps = {
@@ -52,7 +42,7 @@ export type ServiceDataProps = {
 	card: CardProps[];
 	process: ProcessProps[];
 	option: OptionsProps[];
-	stack: StackProps[];
+	stack?: StackProps[];
 };
 export const ServiceData: ServiceDataProps[] = [
 	{
@@ -442,31 +432,31 @@ export const ServiceData: ServiceDataProps[] = [
 		stack: [
 			{
 				id: 1,
-				stack: Javascript,
+				stack: "/assets/stacks/javascriptLogo.png",
 			},
 			{
 				id: 2,
-				stack: react,
+				stack: "/assets/stacks/javascriptLogo.png",
 			},
 			{
 				id: 1,
-				stack: Javascript,
+				stack: "/assets/stacks/javascriptLogo.png",
 			},
 			{
 				id: 1,
-				stack: Javascript,
+				stack: "/assets/stacks/javascriptLogo.png",
 			},
 			{
 				id: 1,
-				stack: Javascript,
+				stack: "/assets/stacks/javascriptLogo.png",
 			},
 			{
 				id: 1,
-				stack: Javascript,
+				stack: "/assets/stacks/javascriptLogo.png",
 			},
 			{
 				id: 1,
-				stack: Javascript,
+				stack: "/assets/stacks/javascriptLogo.png",
 			},
 		],
 	},
@@ -613,31 +603,31 @@ export const ServiceData: ServiceDataProps[] = [
 		stack: [
 			{
 				id: 1,
-				stack: Javascript,
+				stack: "/assets/stacks/javascriptLogo.png",
 			},
 			{
 				id: 2,
-				stack: react,
+				stack: "/assets/stacks/javascriptLogo.png",
 			},
 			{
 				id: 1,
-				stack: Javascript,
+				stack: "/assets/stacks/javascriptLogo.png",
 			},
 			{
 				id: 1,
-				stack: Javascript,
+				stack: "/assets/stacks/javascriptLogo.png",
 			},
 			{
 				id: 1,
-				stack: Javascript,
+				stack: "/assets/stacks/javascriptLogo.png",
 			},
 			{
 				id: 1,
-				stack: Javascript,
+				stack: "/assets/stacks/javascriptLogo.png",
 			},
 			{
 				id: 1,
-				stack: Javascript,
+				stack: "/assets/stacks/javascriptLogo.png",
 			},
 		],
 	},
@@ -791,31 +781,31 @@ export const ServiceData: ServiceDataProps[] = [
 		stack: [
 			{
 				id: 1,
-				stack: Javascript,
+				stack: "/assets/stacks/javascriptLogo.png",
 			},
 			{
 				id: 2,
-				stack: Javascript,
+				stack: "/assets/stacks/javascriptLogo.png",
 			},
 			{
 				id: 1,
-				stack: Javascript,
+				stack: "/assets/stacks/javascriptLogo.png",
 			},
 			{
 				id: 1,
-				stack: Javascript,
+				stack: "/assets/stacks/javascriptLogo.png",
 			},
 			{
 				id: 1,
-				stack: Javascript,
+				stack: "/assets/stacks/javascriptLogo.png",
 			},
 			{
 				id: 1,
-				stack: Javascript,
+				stack: "/assets/stacks/javascriptLogo.png",
 			},
 			{
 				id: 1,
-				stack: Javascript,
+				stack: "/assets/stacks/javascriptLogo.png",
 			},
 		],
 	},
@@ -953,35 +943,35 @@ export const ServiceData: ServiceDataProps[] = [
 		stack: [
 			{
 				id: 1,
-				stack: Javascript,
+				stack: "/assets/stacks/javascriptLogo.png",
 			},
 			{
 				id: 2,
-				stack: react,
+				stack: "/assets/stacks/javascriptLogo.png",
 			},
 			{
 				id: 3,
-				stack: next,
+				stack: "/assets/stacks/javascriptLogo.png",
 			},
 			{
 				id: 4,
-				stack: tailwind,
+				stack: "/assets/stacks/javascriptLogo.png",
 			},
 			{
 				id: 5,
-				stack: figma,
+				stack: "/assets/stacks/javascriptLogo.png",
 			},
 			{
 				id: 6,
-				stack: laravel,
+				stack: "/assets/stacks/javascriptLogo.png",
 			},
 			{
 				id: 7,
-				stack: github,
+				stack: "/assets/stacks/javascriptLogo.png",
 			},
 			{
 				id: 8,
-				stack: nodejs,
+				stack: "/assets/stacks/javascriptLogo.png",
 			},
 		],
 	},
