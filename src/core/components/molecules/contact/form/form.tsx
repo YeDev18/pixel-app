@@ -11,7 +11,7 @@ const FormField = () => {
 		{ value: "design", label: "Conception Graphique" },
 	];
 	return (
-		<div className="flex size-full h-fit flex-col  items-center justify-center gap-4 rounded-3xl bg-blue-800  py-4 lg:w-[50rem]">
+		<div className="flex size-full flex-col items-center  justify-center gap-4 rounded-3xl bg-blue-800 py-4  lg:h-[45rem] lg:w-[50rem]">
 			<h4 className=" text-4xl font-extralight text-light-100">
 				Contactez-Nous
 			</h4>

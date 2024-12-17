@@ -18,7 +18,7 @@ const Comments = () => {
 		setCommentIndex((prev) => prev - 1);
 	};
 	return (
-		<div className="relative w-full ">
+		<div className="relative h-[30rem] w-full lg:h-[45rem] ">
 			<div className="absolute bottom-14 right-4 flex flex-col space-y-4 text-2xl font-semibold text-light-100">
 				<button
 					onClick={() => prevIndex}
@@ -36,8 +36,11 @@ const Comments = () => {
 			{CommmentsData.map((comment) => {
 				if (comment.id === commentIndex) {
 					return (
-						<div className="w-full text-light-100" key={comment.id}>
-							<div className="flex h-[45rem] max-h-[48rem] w-full  flex-col justify-between rounded-3xl bg-blue-800 p-8  lg:w-full">
+						<div
+							className="h-full  text-light-100 "
+							key={comment.id}
+						>
+							<div className="flex h-full flex-col  justify-between rounded-3xl bg-blue-800 p-8 lg:w-full">
 								<Quote color="#DC0000" />
 								<p className="text-xl/relaxed font-medium lg:text-2xl/relaxed">
 									{comment.text}
