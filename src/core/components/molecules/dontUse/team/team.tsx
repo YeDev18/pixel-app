@@ -3,12 +3,6 @@ import { ContactData } from "@/core/data/contact.data";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-// interface TeamInfo {
-// 	Title: string;
-// 	Desc: string;
-// 	img: string;
-// }
-
 interface Stats {
 	Team: number;
 	project: number;
@@ -23,7 +17,7 @@ function Team() {
 		Happy: Number(ContactData.stat[0]?.Happy) || 0,
 	};
 
-	console.log("Données de stats:", stats); 
+	console.log("Données de stats:", stats);
 
 	const [countTeam, setCountTeam] = useState<number>(0);
 	const [countProject, setCountProject] = useState<number>(0);

@@ -1,19 +1,24 @@
-"use client";
-import Button from "@/core/components/atoms/Button";
+import Button1 from "@/core/components/atoms/button1";
 import CheckIcon from "@/core/components/atoms/icons/check.icon";
 
 const PriceItem = ({
 	tags,
 	tarifs,
 	features,
-}: { tags: string; tarifs?: string; features?: string[] }) => {
+	onClick,
+}: {
+	tags: string;
+	tarifs?: string;
+	features?: string[];
+	onClick?: () => void;
+}) => {
 	return (
 		<div className="container relative mx-auto flex w-96 flex-col justify-between space-y-10  overflow-hidden rounded-xl bg-blue-950 p-8 shadow-md ">
 			<div className="space-y-10  overflow-hidden">
 				<h1 className="bg-gradient-to-b from-neutral-200 to-light-300 bg-clip-text text-start text-2xl text-transparent lg:text-3xl">
 					{tags}
 				</h1>
-				<p className="bg-gradient-to-b  from-neutral-200 to-light-300 bg-clip-text  text-start text-3xl text-transparent lg:text-4xl overflow-hidden">
+				<p className="overflow-hidden  bg-gradient-to-b from-neutral-200 to-light-300  bg-clip-text text-start text-3xl text-transparent lg:text-4xl">
 					{tarifs}
 				</p>
 				<ol className="space-y-5">
@@ -33,9 +38,12 @@ const PriceItem = ({
 				</ol>
 			</div>
 
-			<Button className="relative z-40 cursor-pointer text-blue-950">
+			<Button1
+				className="relative z-20 cursor-pointer text-blue-950"
+				onClick={onClick}
+			>
 				Commencez Maintenant
-			</Button>
+			</Button1>
 		</div>
 	);
 };
