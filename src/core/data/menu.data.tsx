@@ -30,10 +30,6 @@ export const Menus: MenuProps[] = [
 		label: "Blog",
 		href: "/blog",
 	},
-	// {
-	// 	label: "Price",
-	// 	href: "/price",
-	// },
 ];
 
 export const IconSocials: { label: string; icon: ReactNode }[] = [

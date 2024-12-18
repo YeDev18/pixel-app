@@ -11,7 +11,7 @@ import { createContext } from "@/core/hooks";
 import React, { Dispatch, ReactNode, useContext, useState } from "react";
 
 export type ChoicesProps = {
-	id: number;
+	id: string;
 	service: string;
 	tag: string;
 	package: string;
@@ -38,7 +38,7 @@ type ServiceType = {
 
 export const dataChoices = [
 	{
-		id: Date.now(),
+		id: "id" + new Date().getTime(),
 		service: " ",
 		tag: "",
 		package: "",

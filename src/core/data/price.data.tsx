@@ -328,13 +328,4 @@ export const PriceData: PriceDataProps[] = [
 			},
 		],
 	},
-	// {
-	// 	offre: "Conception Graphique",
-	// },
-	// {
-	// 	offre: "Audio Visuelle",
-	// },
-	// {
-	// 	offre: "Packaging WEB APP",
-	// },
 ];

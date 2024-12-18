@@ -105,12 +105,17 @@ function Team() {
 	}, [countTeam, countProject, countHappy]);
 
 	return (
-		<div className="flex h-screen space-x-8 px-8" id="team-section">
-			<div className="flex w-1/2 flex-col items-start justify-center space-y-8">
-				<h2 className="shrink-0 text-[52px] font-medium">
+		<div
+			className="flex h-screen space-y-8 max-lg:flex-col lg:gap-4 "
+			id="team-section"
+		>
+			<div className="flex w-full flex-col items-start justify-center space-y-8  max-lg:items-center lg:w-1/2">
+				<h2 className="shrink-0  text-3xl font-medium leading-relaxed lg:text-5xl">
 					{teamInfo.Title}
 				</h2>
-				<p className="mb-12 shrink-0 text-lg">{teamInfo.Desc}</p>
+				<p className="mb-12 shrink-0 text-base max-lg:text-center">
+					{teamInfo.Desc}
+				</p>
 				<Button className="w-fit shrink-0 gap-4 align-middle text-black">
 					Voir plus
 				</Button>
@@ -141,7 +146,7 @@ function Team() {
 				</div>
 			</div>
 
-			<div className="flex w-1/2 items-center justify-center rounded-lg bg-emerald-400">
+			<div className="flex items-center justify-center rounded-lg bg-emerald-400 max-lg:h-full lg:w-1/2">
 				{/* <Image
 					src={teamInfo.img}
 					width={50}

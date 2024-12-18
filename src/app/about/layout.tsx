@@ -9,8 +9,5 @@ export default function AboutLayout({ children }: { children: ReactNode }) {
 			/>
 			{children}
 		</>
-		// <AnimationLayout>
-
-		// </AnimationLayout>
 	);
 }

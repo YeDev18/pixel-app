@@ -17,22 +17,13 @@ export default function HomeAll() {
 		<main className="space-y-24  py-4">
 			<Hero />
 			<Values />
-			<HeaderSection
-				title="Notre Expertise, Votre succès "
-				subtitle=""
-				customTitleSize="52px"
-				customSubtitleSize="16px"
-				align="center"
-			/>
+			<HeaderSection title="Notre Expertise, Votre succès " subtitle="" />
 
 			<ServiceAll />
 
 			<HeaderSection
 				title="How We Work"
 				subtitle="Rejoignez ceux que nous aidons à atteindre l'excellence."
-				customTitleSize="52px"
-				customSubtitleSize="16px"
-				align="center"
 			/>
 
 			<HowWeWork />
@@ -40,9 +31,6 @@ export default function HomeAll() {
 			<HeaderSection
 				title="Nos Projets à succès"
 				subtitle="Découvrez comment nous avons aidé nos clients à obtenir des résultats remarquables"
-				customTitleSize="52px"
-				customSubtitleSize="16px"
-				align="center"
 			/>
 			<Success />
 			<Team />
@@ -50,18 +38,12 @@ export default function HomeAll() {
 			<HeaderSection
 				title="Vous Faites Partir De Nos Cibles"
 				subtitle="Rejoignez ceux que nous aidons à atteindre l'excellence."
-				customTitleSize="52px"
-				customSubtitleSize="16px"
-				align="center"
 			/>
 			<Cible />
 			<TextCible />
 			<HeaderSection
 				title="Restez Informé Et Inspriré"
 				subtitle="Découvrez Nos Dernières Idées, Astuces Et Tendances"
-				customTitleSize="52px"
-				customSubtitleSize="16px"
-				align="center"
 			/>
 			<StayInformed />
 		</main>

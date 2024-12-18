@@ -7,7 +7,6 @@ import { useRouter } from "next/navigation";
 const FormPackages = () => {
 	const { choicePackages, setChoicePackages } = useService();
 	const router = useRouter();
-	console.log(choicePackages);
 
 	return (
 		<div className="my-8 flex size-full h-fit  flex-col items-center justify-center gap-4 rounded-3xl bg-blue-800   py-4 lg:w-[50rem]">
