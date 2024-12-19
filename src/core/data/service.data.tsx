@@ -24,6 +24,10 @@ import illustrator from '../../../public/assets/illustrator.png'
 import ps from '../../../public/assets/ps.png'
 import morflax from '../../../public/assets/morflax.png'
 
+import capcut from '../../../public/assets/Capcut.png'
+import ae from '../../../public/assets/Ae.png'
+import pr from '../../../public/assets/pr.png'
+
 import { StaticImageData } from "next/image";
 
 export type Definition = {
@@ -637,9 +641,7 @@ export const ServiceData: ServiceDataProps[] = [
 				{
 				id: 4,
 				stack:canva,
-				},
-				
-				
+				},		
 		],
 	},
 
@@ -793,32 +795,16 @@ export const ServiceData: ServiceDataProps[] = [
 		stack: [
 			{
 				id: 1,
-				stack:Javascript,
+				stack:pr,
 				},
 				{
 				id: 2,
-				stack:Javascript,
+				stack:ae,
 				},
 				{
-				id: 1,
-				stack:Javascript,
-				},
-				{
-				id: 1,
-				stack:Javascript,
-				},
-				{
-				id: 1,
-				stack:Javascript,
-				},
-				{
-				id: 1,
-				stack:Javascript,
-				},
-				{
-				id: 1,
-				stack:Javascript,
-				},
+				id: 3,
+				stack:capcut,
+				},		
 		
 		],
 	},

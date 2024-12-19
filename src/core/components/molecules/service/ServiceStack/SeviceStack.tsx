@@ -1,14 +1,14 @@
 import ServiceStackItem from "@/core/components/atoms/Service/serviceStack/serviceStack";
-import { ServiceData } from "@/core/data/service.data";
+import { useService } from "@/core/context/service/service.provider";
+import { StackProps } from "@/core/data/service.data";
 
 const ServiceStackList = () => {
+  const { service } = useService(); 
+
   return (
     <div className="flex justify-center gap-[38px] overflow-x-auto py-4">
-      {ServiceData[0]?.stack?.map((item) => (
-        <ServiceStackItem
-          key={item.id}
-          stack={item}
-        />
+      {service.stack.map((stack: StackProps, index: number) => (
+        <ServiceStackItem key={index} stack={stack} />
       ))}
     </div>
   );

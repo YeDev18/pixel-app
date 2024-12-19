@@ -24,9 +24,7 @@ export default function HomeAll() {
 				customSubtitleSize="16px"
 				align="center"
 			/>
-
 			<ServiceAll />
-
 			<HeaderSection
 				title="How We Work"
 				subtitle="Rejoignez ceux que nous aidons à atteindre l'excellence."
